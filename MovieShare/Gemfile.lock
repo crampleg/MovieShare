@@ -105,12 +105,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-  bcrypt-ruby (~> 3.0.0)
-  bootstrap-sass
-=======
+
   anjlab-bootstrap-rails (~> 3.0.0.3)
->>>>>>> cc0beb7f4757ef4b08c62a9e842158677e494f36
+
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.14)
