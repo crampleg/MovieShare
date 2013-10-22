@@ -1,4 +1,14 @@
 MovieShare::Application.routes.draw do
+  get "pages/mainpage"
+
+  get "pages/profilepage"
+
+  get "pages/loginpage"
+
+  get "pages/moviepage"
+
+  get "pages/registerpage"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
