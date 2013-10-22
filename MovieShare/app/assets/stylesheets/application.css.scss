@@ -15,8 +15,17 @@
 /* Bootstrap override */
 body {
 	padding-top: 10px !important; 
+	
+
 }
 /*end*/
+
+.row-fluid.banner{
+	background-color: white !important;
+}
+.row-fluid{
+	background-color: grey !important;
+}
 
 .row{
 	padding: 10px !important;
@@ -24,6 +33,7 @@ body {
 	padding-top: 15px;
 	padding-left: 10px;
 	}
+	
 }
 
 .input-group{
