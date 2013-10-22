@@ -11,25 +11,38 @@
 <body>
 
 
- 	<div class ="row">
+ 	<div class ="row-fluid">
      <div class ="span4">
       	<%= image_tag("MovieShareLogo.png")%>
 	</div>
 	 <div class ="span4">
       	<div class="input-group">
-  <input type="text" class="form-control">
-  <span class="input-group-addon">Search</span>
-</div>
+      		<ul class="nav nav-tabs">
+  				<li class="active"><a href="#">Users</a></li>
+  				<li><a href="#">Movies</a></li>
+  				<li><a href="#">Lists</a></li>
+  				<input type="text" class="form-control">
+ 	 			<span class="input-group-addon">Search</span>
+ 	 		</ul>
+		</div>
 	</div>
  	<div class ="span4">
-      	<p> profil </p>
+      <div class="media">
+  <a class="pull-left" href="#">
+   
+    <%= image_tag("userpic.jpeg") %> 
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Julie Dahl</h4>
+    Edit profile
+  </div>
+</div>
+
 	</div>
 
 </div>
 
-
-
-
+<%= yield %>
 
 </body>
 </html>
