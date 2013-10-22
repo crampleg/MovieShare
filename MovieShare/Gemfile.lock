@@ -28,10 +28,16 @@ GEM
     activesupport (3.2.14)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    anjlab-bootstrap-rails (3.0.0.3)
+      railties (>= 3.0)
+      sass (>= 3.2)
     arel (3.0.2)
+<<<<<<< HEAD
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.3.1.3)
       sass (~> 3.2)
+=======
+>>>>>>> cc0beb7f4757ef4b08c62a9e842158677e494f36
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -105,8 +111,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   bcrypt-ruby (~> 3.0.0)
   bootstrap-sass
+=======
+  anjlab-bootstrap-rails (~> 3.0.0.3)
+>>>>>>> cc0beb7f4757ef4b08c62a9e842158677e494f36
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.14)

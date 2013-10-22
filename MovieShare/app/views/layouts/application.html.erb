@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title><%= content_for?(:title) ? yield(:title) : "Julie er superkul" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
+=======
+>>>>>>> cc0beb7f4757ef4b08c62a9e842158677e494f36
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -11,11 +14,11 @@
 <body>
 
 
- 	<div class ="row-fluid banner">
-     <div class ="span4">
+ 	<div class ="row">
+     <div class ="col-lg-3 col-md-3">
       <a href= "mainpage">	<%= image_tag("MovieShareLogo.png")%> </a>
 	</div>
-	 <div class ="span4">
+	 <div class ="col-lg-6 col-md-6">
       	<div class="input-group">
       		<ul class="nav nav-tabs">
   				<li class="active"><a href="#">Users</a></li>
@@ -26,7 +29,7 @@
  	 		</ul>
 		</div>
 	</div>
- 	<div class ="span4">
+ 	<div class ="col-lg-3 col-md-3">
       <div class="media">
   		<a class="pull-left" href="#">
    			<%= image_tag("userpic.jpeg") %> 
@@ -41,12 +44,12 @@
 
 
 
-<div class ="row-fluid">
-	<div class= "span9">
+<div class ="row">
+	<div class= "col-lg-9 col-md-9">
 		<%= yield %>
 	</div>
 
-	<div class= "span3">
+	<div class= "col-lg-3 col-md-3">
 	<h3> Have you seen this movie? </h3>
 	<div class="thumbnail">
       <div class="caption">
