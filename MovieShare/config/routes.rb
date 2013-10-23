@@ -1,4 +1,6 @@
 MovieShare::Application.routes.draw do
+  get "login/new"
+
   get "users/new"
   resources :users
 
