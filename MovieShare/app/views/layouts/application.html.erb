@@ -9,63 +9,69 @@
     <%= csrf_meta_tags %>
 </head>
 <body>
-
-
- 	<div class ="row">
-     <div class ="col-lg-3 col-md-3">
-      <a href= "mainpage">	<%= image_tag("MovieShareLogo.png")%> </a>
-	</div>
-	 <div class ="col-lg-6 col-md-6">
-      	<div class="input-group">
-      		<ul class="nav nav-tabs">
-  				<li class="active"><a href="#">Users</a></li>
-  				<li><a href="#">Movies</a></li>
-  				<li><a href="#">Lists</a></li>
-  				<input type="text" class="form-control">
- 	 			<span class="input-group-addon">Search</span>
- 	 		</ul>
-		</div>
-	</div>
- 	<div class ="col-lg-3 col-md-3">
-      <div class="media">
-  		<a class="pull-left" href="#">
-   			<%= image_tag("userpic.jpeg") %> 
- 		 </a>
-  		<div class="media-body">
-    		<h4 class="media-heading"><a href= "profilepage">Julie Dahl</a></h4>
-    			Edit profile
-  			</div>
-		</div>
-	</div>
-</div>
-
-
-
-<div class ="row">
-	<div class= "col-lg-9 col-md-9">
-		<%= yield %>
-	</div>
-
-	<div class= "col-lg-3 col-md-3">
-	<h3> Have you seen this movie? </h3>
-	<div class="thumbnail">
-      <div class="caption">
-        <h3><a href="moviepage">Title</a></h3>
-         <%= image_tag("userpic.jpeg") %>
-          <br>
-           <br>
-           <br>
-        <p><a href="#" class="btn btn-primary">Yes</a> <a href="#" class="btn btn-default">No</a></p>
+ 	<div class ="row banner">
+      <div class ="col-lg-3 col-md-3">
+         <a href="mainpage">
+            <div class="logo">
+               <%= image_tag("MovieShareLogo.png")%>   
+            </div>
+         </a>
+	   </div>
+	   <div class ="col-lg-6 col-md-6 search">
+      <div class="row btn-row">
+         <div class="btn-group">
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-film"></span> Movies
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-user"></span> Users
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-list"></span> Lists
+            </button>
+         </div>
+        </div>
+        <div class="row input-row">
+         <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Search!</button>
+          </span>
+        </div>
+        </div>
       </div>
+ 	   <div class ="col-lg-3 col-md-3 profile">
+      <div class="row">
+        <div class ="col-lg-4 col-md-4">
+          <%= image_tag("userpic.jpeg") %>
+        </div>
+        <div class ="col-lg-6 col-md-6">
+          <a href= "profilepage"><h4>Julie Dahl</h4></a>
+          <a href="profilepage">Edit profile</a>
+        </div>
+      </div>
+  		</div>
+	   </div>
 
-    </div>
-	</div>
-	
+   <div class ="row">
+	   <div class= "col-lg-9 col-md-9">
+		   <%= yield %>
+	   </div>
+      <div class= "col-lg-3 col-md-3">
+	     <h3> Have you seen this movie? </h3>
+	     <div class="thumbnail">
+            <div class="caption">
+               <h3><a href="moviepage">Title</a></h3>
+               <%= image_tag("userpic.jpeg") %>
+               <p><a href="#" class="btn btn-primary">Yes</a> <a href="#" class="btn btn-default">No</a></p>
+            </div>
+         </div>
+	  </div>
 
-</div>
+   </div>
 
-
-
-
+<div class="logout">
+    <a href="#">logout</a>
+  </div>
 </body>
 </html>

@@ -15,46 +15,73 @@
 @import "twitter/bootstrap";
 
 /* Bootstrap override */
-
-
 .thumbnail{
 	text-align: center !important;
 }
 /*end*/
 
-.row-fluid.banner{
-	background-color: white !important;
-}
-.row-fluid{
-	background-color: grey !important;
+body {
+	background-color: #E6E6E6!important;
 }
 
-.row{
-	padding: 10px !important;
-	img{
-	padding-top: 15px;
-	padding-left: 10px;
+.logout {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 5px;
+}
+
+.banner {
+	background-color: white;
+	padding: 10px;
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+
+	.search {
+		text-align: center;
+
+		.btn {
+			width: 100px;
+		}
+
+		.input-group {
+			padding: 0!important;
+			width: 300px;
+			display: inline-table;
+		}
+
+		.input-row {
+			padding: 0!important;
+		}
+
+		.btn-row {
+			padding-bottom: 5px!important;
+		}
 	}
-	
+
+	.profile {
+		img {
+			width: 60px;
+			height: 60px;
+			margin-top: 6px;
+		}
+	}
 }
 
-.input-group{
-	padding-top: 5px !important;
-	padding-left: 100px !important;
-}
 .nav.nav-tabs{
 	border: none;
 }
 
-.media{
-
-	padding-top: 10px;
-	padding-right: 80px !important;
-	
-	img{
-		width: 50px;
-		height: 50px;
+@media(max-width:991px){
+	.banner {
+		.profile {
+			border-top: solid 1px grey;
+			text-align: center;
+			padding-top: 20px;
+			margin-top: 20px;
+		}
 	}
 }
+@media(min-width:992px){}
+@media(min-width:1200px){}
 
 
