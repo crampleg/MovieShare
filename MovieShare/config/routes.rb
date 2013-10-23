@@ -1,4 +1,7 @@
 MovieShare::Application.routes.draw do
+  get "users/new"
+  resources :users
+
   get "pages/mainpage"
 
   get "pages/profilepage"
