@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20131023165528) do
     t.string   "lastname"
     t.string   "email"
     t.string   "gender"
-    t.string   "password_digest"
+    t.string   "password_diget"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
