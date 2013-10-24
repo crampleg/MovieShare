@@ -11,48 +11,37 @@
     <%= csrf_meta_tags %>
 </head>
 
-
-
 <body>
+	<div class="page-header">
+		<%= image_tag("MovieShareLogo.png") %>
+	</div>
 
 	<div class="row">
-		<br><br><br><br><br><br><br>
-   		<div class="col-lg-4 col-md-2"></div>
-       	<%= image_tag("MovieShareLogo.png") %>
-	</div>
-	
-	<div class="container">
-		<form class="form-signin">
-			<div class="col-lg-4 col-md-2"></div>
-			<div class="col-lg-3 col-md-2">
-
-				<h2 class="form-signin-heading"> 
-					Please Sign in 
-				</h2>
-				<input class="form-control" type="text" autofocus="" placeholder="Username"></input>
-				<input class="form-control" type="password" placeholder="Password"></input>
-				<label class="checkbox">
-					<input type="checkbox" value="remember-me"></input>
-					Remember me
-            	</label>
-            	<a href="/users/new">New User?</a><br><br>
-            	<button class="btn btn-lg btn-primary btn-block" type="submit">
-					Sign in
-				</button>
+			<div class ="col-lg-4 col-md-4">
+				<%yield%>
 			</div>
-		</form>
+			<form class="col-lg-4 col-md-4 form-signin">
+					<h2 class="form-signin-heading"> 
+						Please Sign in 
+					</h2>
+					<input class="form-control" type="text" autofocus="" placeholder="Username"></input>
+					<input class="form-control" type="password" placeholder="Password"></input>
+					<label class="checkbox">
+						<input type="checkbox" value="remember-me"></input>
+						Remember me
+	            	</label>
+	            	<div class="newuser">
+	            		<a href="/users/new">New User?</a>
+	            	</div>
+	            	<button class="btn btn-lg btn-primary btn-block" type="submit">
+						Sign in
+					</button>
+				</div>
+			</form>
 	</div>
-
-
-      
-	     
-          
-              
-               
-          
-	
-
-  
-
 </body>
 </html>
+
+
+
+
