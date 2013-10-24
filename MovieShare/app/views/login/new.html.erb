@@ -10,9 +10,18 @@
 	</head>
 
 <body>
+	
 	<div class="page-header">
 		<%= image_tag("MovieShareLogo.png") %>
 	</div>
+
+	<div class="row signin">
+		<div class="col-xs-12">
+			<h2> Please Sign in </h2>
+			<input class="form-control" type="text" autofocus="" placeholder="Username"></input>
+		</div>
+	</div>
+	<!--
 	<div class="row">
 			<div class ="col-lg-5 col-md-4">
 				<%yield%>
@@ -21,7 +30,7 @@
 					<h2 class="form-signin-heading"> 
 						Please Sign in 
 					</h2>
-					<input class="form-control" type="text" autofocus="" placeholder="Username"></input>
+					
 					<input class="form-control" type="password" placeholder="Password"></input>
 					<label class="checkbox">
 						<input type="checkbox" value="remember-me"></input>
@@ -36,5 +45,6 @@
 				</div>
 			</form>
 	</div>
+	-->
 </body>
 </html>
