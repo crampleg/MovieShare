@@ -62,19 +62,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131023155844_create_users.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="20131023155844_create_users.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="6" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+            <state line="4" column="26" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0931677">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="19" selection-start="857" selection-end="857" vertical-scroll-proportion="0.8369565">
+            <state line="24" column="5" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,8 +110,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/views/login/new.html.erb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb" />
       </list>
     </option>
   </component>
@@ -646,16 +646,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+        <state line="24" column="5" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="19" selection-start="857" selection-end="857" vertical-scroll-proportion="0.8369565">
+        <state line="4" column="26" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0931677">
           <folding />
         </state>
       </provider>
