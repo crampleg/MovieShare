@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
-
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Sign in to MovieShare" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
-    <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-</head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title><%= content_for?(:title) ? yield(:title) : "Sign in to MovieShare" %></title>
+	    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
+	    <%= stylesheet_link_tag "application", :media => "all" %>
+	    <%= javascript_include_tag "application" %>
+	    <%= csrf_meta_tags %>
+	</head>
 
 <body>
 	<div class="page-header">
 		<%= image_tag("MovieShareLogo.png") %>
 	</div>
-
 	<div class="row">
-			<div class ="col-lg-4 col-md-4">
+			<div class ="col-lg-5 col-md-4">
 				<%yield%>
 			</div>
-			<form class="col-lg-4 col-md-4 form-signin">
+			<form class="col-lg-2 col-md-4 form-signin">
 					<h2 class="form-signin-heading"> 
 						Please Sign in 
 					</h2>
@@ -41,7 +38,3 @@
 	</div>
 </body>
 </html>
-
-
-
-
