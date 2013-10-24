@@ -12,7 +12,29 @@ navbar.navbar-default.navbar-static-top{
 	
 
 }
+.container{
+
+	width: 470px;
+}
 
 body {
 	background-color: #E6E6E6!important;
+	font-family: helvetica !important;
+	
 }
+
+.page-header{
+img{
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    }
+  }
+
+  .btn.btn-lg.btn-success.btn-block{
+  background-color: #8AD7F8 !important;
+  border: black 0.2px solid;
+  }
+
