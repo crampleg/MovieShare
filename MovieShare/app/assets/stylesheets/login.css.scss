@@ -4,43 +4,14 @@
     	margin-left: auto;
     	margin-right: auto; 
    	}
-  }
+}
 
 
-	.rows{
-		.column1{
+.signin {
+	text-align: center;
 
-		}
-
-		.signin{
-			position: absolute;
-			right: 0;
-			left: 0;
-			top: 0;
-			padding: 0;
-
-
-			.form-signin-heading{
-				position:center;
-			}
-
-			.checkbox{
-				position: center;
-				right: 0;
-				top: 0;
-				padding: 10px;
-			}
-
-			.newuser {
-				position: center;
-				right: 0;
-				top: 0;
-				padding: 10px;
-			}
-
-			.btn.btn-lg.btn-primary.btn-block{
-				padding: 5px !important;
-				width: 200px;
-			}
-		}
+	.form-control {
+		width: 300px;
+		display: inline-table;
 	}
+}
