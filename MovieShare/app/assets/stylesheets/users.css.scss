@@ -10,12 +10,20 @@ navbar.navbar-default.navbar-static-top{
 	border: solid 1px rgba(0,0,0,0.2);
 	background-color: #8AD7F8 !important;
 	
-
 }
+
+.form-control{
+	display: inline-table;
+
+	}
+
+	
 .container{
 
 	width: 470px;
+
 }
+
 
 body {
 	background-color: #E6E6E6!important;
@@ -33,8 +41,31 @@ img{
     }
   }
 
-  .btn.btn-lg.btn-success.btn-block{
+  .btn.btn-lg.btn-block{
   background-color: #8AD7F8 !important;
   border: black 0.2px solid;
+  color: white;
+  
   }
+
+  @media(max-width:767px){
+  	.container{
+  		
+  		width: 330px;
+  	}
+	.form-control{
+	display: inline-table!important;
+	width: 300px;
+	display: block;
+
+	}
+	 .btn.btn-lg.btn-block{
+	  width: 300px;
+	  display: inline-table!important;
+   
+  
+  }
+
+		
+}
 
