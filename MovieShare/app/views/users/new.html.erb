@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Register" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
-    <%= stylesheet_link_tag "users", :media => "all" %>
-    <%= javascript_include_tag "users" %>
-    <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Register" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
+  <%= stylesheet_link_tag "users", :media => "all" %>
+  <%= javascript_include_tag "users" %>
+  <%= csrf_meta_tags %>
 </head>
-
 <body>
 
+<% @page_title = "UserAuth | Signup" %>
 
-<%= form_for(@user) do |f| %>
-		<div class="page-header">
-			<%= image_tag("MovieShareLogo.png") %>
-	    </div>
 
-    <% if @user.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
 
-          <ul>
-            <% @user.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
+
+
+    <div class="page-header">
+      <%= image_tag("MovieShareLogo.png") %>
+    </div>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-6">
+
+
+
+          <form accept-charset="UTF-8" role="form">
+            <fieldset>
+              <div class="form-group">
+                <input class="form-control" placeholder="username" name="<%=:username%>" type="text">
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="first name" name="<%= :firstname %>" type="text">
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="last name" name="<%=:lastname%>" type="text">
+              </div>
         </div>
-    <% end %>
+
+        <div class="col-sm-6">
+
+          <div class="form-group">
+            <input class="form-control" placeholder="email" name="<%=:email%>" type="text">
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="password" name="<%=:password%>" type="" value="">
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="confirm password" name="<%=:password_confirmation%>" type="password" value="">
+          </div>
+
+          </fieldset>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+        </label>
+      </div>
+      <a href="/login/new"> Already a user?</a><br/><br/>
 
 
-                    <fieldset>
-                    <legend>Enter User Details</legend>
-                    <div class="form-group">
-                      <%= f.label :username %><br />:
-                      <%= f.text_field :username, size: 40 %>
-			    	</div>
-			    	<div class="form-group">
-                      <%= f.label :firstname %><br />:
-                      <%= f.text_field :firstname, size: 40 %>
-			    	</div>
-			    	<div class="form-group">
-                      <%= f.label :lastname %><br />:
-                      <%= f.text_field :lastname, size: 40 %>
-			    	</div>
-                    div class="form-group">
-                      <%= f.label :gender %><br />:
-                      <%= f.text_field :gender, size: 40 %>
-                    </div>
-			 		</div>
-			    	<div class="form-group">
-                      <%= f.label :email %><br />:
-                      <%= f.text_field :email, size: 40 %>
-			    	</div>
-			   		<div class="form-group">
-                      <%= f.label :password, 'Password' %><br />:
-                      <%= f.password_field :password, size: 40 %>
-			    	</div>
-			    	<div class="form-group">
-                      <%= f.label :password_confirmation, 'Confirm' %><br />:
-                      <%= f.password_field :password_confirmation, size: 40 %>
-			    	</div>
+      <input class="btn btn-lg btn-block" type="submit" name= "<%=:Signup%>"value="Register!">
 
-                    <div>
-                      <%= f.submit %>
-                    </div>
-			    	</fieldset>
+<% end %>
+
+<br/>
+
+<% if @user.errors.any? %>
+
+    <ul class="Signup_Errors" >
+      <% for message_error in @user.errors.full_messages %>
+          <li>* <%= message_error %> </li>
+      <% end %>
+    </ul>
 
 <% end %>
 
 
-		
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 <html>

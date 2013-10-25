@@ -1,19 +1,19 @@
-class UsersController < ApplicationController
+class UsersController < ActionController::Base
   def new
-  	@user = User.new
+    @user = User.new
   end
 
   def create
-  	@user = User.new(params[:user])
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to users_url, notice: "User #{@user.name} was successfully created." }
-        format.json { render json: @user, status: :created, location: @user }
-  	  else
-        format.html { render action: "new" }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    @user = User.new(params[:user])
+    if @user.save
+      flash[:notice] = "You signed up successfully"
+      flash[:color] = "valid"
+    else
+      flash[:notice] = "Form is invalid"
+      flash[:notice] = "invalid"
     end
-	end
+
+    render "new"
+  end
 
 end
