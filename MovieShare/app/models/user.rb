@@ -9,6 +9,4 @@ class User < ActiveRecord::Base
   validates :gender, :presence => true
   validates :password, :presence => true, :confirmation => true #password_confirmation attr
   validates_length_of :password, :in => 6..20, :on => :create
-
-
 end
