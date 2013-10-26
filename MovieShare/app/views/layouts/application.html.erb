@@ -54,21 +54,61 @@
 	   </div>
 
    <div class ="row">
-	   <div class= "col-lg-9 col-md-9">
+	   <div class= "col-lg-8 col-md-8">
 		   <%= yield %>
 	   </div>
-      <div class= "col-lg-3 col-md-3">
-	     <h3> Have you seen this movie? </h3>
-	     <div class="thumbnail">
-            <div class="caption">
-               <h3><a href="moviepage">Title</a></h3>
-               <%= image_tag("userpic.jpeg") %>
-               <p><a href="#" class="btn btn-primary">Yes</a> <a href="#" class="btn btn-default">No</a></p>
+      <div class= "col-lg-4 col-md-4">
+      <div class="randommovie">
+        <h3> Gravity (2013) </h3>
+        <div class="row">
+          <div class="col-xs-2">
+            <button class="prev">
+            </button>
+          </div>
+          <div class="col-xs-8 poster">
+            <img id="poster" src="/assets/poster.jpeg">
+          </div>
+          <div class="col-xs-2">
+            <button class="next">
+            </button>
+          </div>
+        </div>
+        <div class="row">
+            <button class="yes btn btn-success">Seen</button>
+            <div class="stars">
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
             </div>
-         </div>
+        </div>
+        <div class="row line">
+            <button class="no btn btn-primary">Add to list</button>
+        </div>
+
+      </div>
 	  </div>
 
    </div>
+
+   <script>
+   // Previous random movie
+    $('.prev').click(function() {
+      $('#poster').fadeOut(500, function() {
+          $('#poster').attr("src","/assets/poster.jpeg");
+          $('#poster').fadeIn(500);
+      });
+    });
+
+    // Next random movie
+    $('.next').click(function() {
+      $('#poster').fadeOut(500, function() {
+          $('#poster').attr("src","/assets/poster.jpeg");
+          $('#poster').fadeIn(500);
+      });
+    });
+   </script>
 
 <div class="logout">
     <a href="#">logout</a>

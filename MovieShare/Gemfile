@@ -22,6 +22,7 @@ gem 'sqlite3'
 #end
 
 gem 'jquery-rails'
+gem 'jquery-star-rating-rails'
 
 gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
 

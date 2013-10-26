@@ -8,6 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require jquery-star-rating
  *= require_self
  *= require_tree .
  */
@@ -22,6 +23,10 @@
 
 body {
 	background-color: #E6E6E6!important;
+}
+
+.row {
+	margin: 0!important;
 }
 
 .logout {
@@ -67,6 +72,72 @@ body {
 	}
 }
 
+.randommovie {
+	text-align: center;
+
+	.poster {
+		img {
+			max-width: 175px;
+		}
+	}
+	.prev {
+		background: url('/assets/prev.png');
+		background-size: 50px 50px;
+		width: 50px;
+		height: 50px;
+		border: none;
+		padding-left: 5%;
+		margin-top: 90px;
+	}
+	.next {
+		background: url('/assets/next.png');
+		background-size: 50px 50px;
+		width: 50px;
+		height: 50px;
+		border: none;
+		padding-left: 0;
+		margin-left: -50%;
+		margin-top: 90px;
+	}
+	.no,
+	.yes {
+		width: 250px;
+		margin-top: 10px;
+	}
+
+	.line {
+		margin-top: 10px!important;
+		border-top: 2px dotted #898B8E;
+		width: 250px;
+		display: inline-block;
+	}
+
+	.stars {
+		.rating-cancel {
+			display: none!important;
+		}
+
+		.star-rating-control {
+			display: inline-block;
+			margin-top: 5px;
+		}
+
+		div.star-rating, div.star-rating a {
+			background: url('/assets/star1.png') no-repeat 0 0px!important;
+			width: 54px;
+			height: 50px;
+		}
+
+		div.star-rating-hover {
+			background: url('/assets/star2.png') no-repeat 0 0px!important;
+		}
+
+		div.star-rating-on {
+			background: url('/assets/star3.png') no-repeat 0 0px!important;
+		}
+	}
+}
+
 .nav.nav-tabs{
 	border: none;
 }
@@ -74,7 +145,7 @@ body {
 @media(max-width:991px){
 	.banner {
 		.profile {
-			border-top: solid 1px grey;
+			border-top: solid 1px rgba(0,0,0,0.2);
 			text-align: center;
 			padding-top: 20px;
 			margin-top: 20px;
