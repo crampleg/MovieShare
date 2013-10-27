@@ -26,11 +26,70 @@
 .mainpage {
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 10px;
 	
-	.moviescontainer {
+	.listcontainer {
 		height: 200px;
-		width: 100%;
-		background-color: black;
+		
+		img {
+			height: 190px;
+		}
+
+		.movies {
+			overflow-x: hidden;
+			white-space: nowrap;
+			padding: 5px;
+			margin-left: 45px;
+			margin-right: 45px;
+		}
+
+		.btn {
+			height: 200px;
+			text-align: center;
+			width: 50px;
+			background-color: #8ad7f8;
+			border: none;
+		}
+
+		.btn.left {
+			position: absolute;
+			left: 10px;
+			top: 43px;
+		}
+
+		.btn.right {
+			position: absolute;
+			right: 10px;
+			top: 43px;	
+		}
+
+	}
+
+	.friendactivity {
+		margin-bottom: 20px!important;
+	}
+
+	.friendinfo {
+		background-color: white;
+		font-size: 19px;
+		padding: 5px;
+
+		img {
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	.movielist {
+		background-color: white;
+		overflow-x: hidden;
+		white-space: nowrap;
+		padding-bottom: 5px;
+		padding-left: 5px;
+
+		img {
+			height: 120px;
+		}
 	}
 }
 .followingbuttons{

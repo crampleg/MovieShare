@@ -1,19 +1,92 @@
 <div class="mainpage">
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12">
 			<h2>Recently Top Rated</h2>
-			<div class="moviescontainer">
-				test
-			</div>	
+			<div class="listcontainer">
+				<button id="leftbtn" class="btn btn-default glyphicon glyphicon-chevron-left left"></button>
+				<div id="movies" class="movies">
+				<%= image_tag("poster.jpeg")%>
+				<%= image_tag("poster.jpeg")%>
+				<%= image_tag("poster.jpeg")%>
+				<%= image_tag("poster.jpeg")%>
+				<%= image_tag("poster.jpeg")%>
+				<%= image_tag("poster.jpeg")%>
+				<%= image_tag("poster.jpeg")%>
+				<%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+				</div>
+				<button id="rightbtn" class="btn btn-default glyphicon glyphicon-chevron-right right"></button>
+			</div>
 		</div>	
 	</div>
+	
+	<script>
+        $('#leftbtn').click(function(){
+            $('#movies').animate({scrollLeft : '-=300px'});        
+        });
+    
+        $('#rightbtn').click(function(){
+            $('#movies').animate({scrollLeft : '+=300px'});
+        });
+	</script>
 
-	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h2>Friends Activity</h2>
-			<div class="moviescontainer">
-				test
-			</div>		
+	<h2 style="margin-left: 12px;">Friends Activity</h2>
+	<div class="row friendactivity">
+		<div class="col-xs-12">
+			<div class="row friendinfo">
+				<%= image_tag("userpic.jpeg") %>
+				<strong><a href="#">oeseth</a></strong> 
+				just added 
+				<strong><a href="#">'Thor'</a></strong>
+				to
+				<strong><a href="#">'Top Movies of All Time'</a></strong>
+			</div>
+			<div class="row movielist">
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+            </div>
 		</div>	
 	</div>
+    <div class="row friendactivity">
+        <div class="col-xs-12">
+            <div class="row friendinfo">
+                <%= image_tag("userpic.jpeg") %>
+                <strong><a href="#">oeseth</a></strong> 
+                just added 
+                <strong><a href="#">'Thor'</a></strong>
+                to
+                <strong><a href="#">'Top Movies of All Time'</a></strong>
+            </div>
+            <div class="row movielist">
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+                <%= image_tag("poster.jpeg")%>
+            </div>
+        </div>  
+    </div>
 </div>
