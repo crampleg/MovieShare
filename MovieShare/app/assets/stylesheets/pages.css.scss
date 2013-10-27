@@ -33,3 +33,46 @@
 		background-color: black;
 	}
 }
+.followingbuttons{
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+
+}
+
+
+.btn.followers{
+	background-color: #E6E6E6 !important;
+ 	border: 1px solid grey;
+  	color: black;
+  	width: 130px;
+  	height: 60px;
+  	padding-top: -20px;
+}
+.btn.btn-lg.btn-block{
+	padding: 10px;
+	
+
+}
+
+
+
+.profilegroup{
+	position: block;
+	float:left;
+	
+	img{
+		width: 140px;
+		height: 140px;
+		border:1px solid #E6E6E6;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;  
+		padding: 10px;
+	}
+	h1{
+
+		
+
+	}
+}

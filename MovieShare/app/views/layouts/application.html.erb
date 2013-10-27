@@ -46,18 +46,18 @@
           <%= image_tag("userpic.jpeg") %>
         </div>
         <div class ="col-lg-6 col-md-6">
-          <a href= "profilepage"><h4>Julie Dahl</h4></a>
-          <a href="profilepage">Edit profile</a>
+          <a href= "/pages/profilepage"><h4>Julie Dahl</h4></a>
+          <a href="/pages/profilepage">Edit profile</a>
         </div>
       </div>
   		</div>
 	   </div>
 
-   <div class ="row">
-	   <div class= "col-lg-9 col-md-9">
+   <div class ="row ">
+	   <div class= "col-lg-9 col-md-9 ">
 		   <%= yield %>
 	   </div>
-      <div class= "col-lg-3 col-md-3">
+      <div class= "col-lg-3 col-md-3 randommovie">
 	     <h3> Have you seen this movie? </h3>
 	     <div class="thumbnail">
             <div class="caption">
@@ -71,7 +71,7 @@
    </div>
 
 <div class="logout">
-    <a href="#">logout</a>
+    <a href="/login/new">logout</a>
   </div>
 </body>
 </html>
