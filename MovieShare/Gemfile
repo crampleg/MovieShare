@@ -41,5 +41,5 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 # gem 'debugger'
 
 #MySQL stuff
-# gem 'mysql2', '< 0.4'
+gem 'mysql2', '< 0.4'
 
