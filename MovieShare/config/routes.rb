@@ -1,5 +1,7 @@
 MovieShare::Application.routes.draw do
 
+  get "pages/profile"
+
   #get 'pages' => 'pages#mainpage'
 
   controller :login do               #added by Simon due to login context
