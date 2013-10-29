@@ -1,0 +1,91 @@
+<div class="row">
+	<div class="col-sm-6">
+		<div class="row profilegroup">
+			<div class="col-xs-5">
+				<%= image_tag("userpic.jpeg") %>
+			</div>
+			<div class="col-xs-7">
+				<h2>Julie Dahl</h2>
+				Om meg:
+			</div>		 	
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class= "row followingbuttons">
+			<div class="col-xs-4" >
+				<a type="button" class="btn followers" href="#following_modal" data-toggle="modal">following</a>
+					<div class="modal fade" id="following_modal">
+					  	<div class="modal-header">
+					    	<a class="close" data-dismiss="modal">&times;</a>
+					    	<h3>Following</h3>
+					  	</div>
+					  	<div class="modal-body">
+					  		<p>Description</p>
+						</div>
+					</div>
+			</div>
+			<div class="col-xs-4">
+				<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal">followers</a>
+					 <div class="modal fade" id="followers_modal">
+			 			<div class="modal-header">
+			    			<a class="close" data-dismiss="modal">&times;</a>
+			    			<h3>Following</h3>
+				  		</div>
+					  	<div class="modal-body">
+					    	<p>Description</p>
+					  	</div>
+					</div>
+			</div>
+
+			<div class="col-xs-4">
+				<a type="button" class="btn followers" href="#movies_modal" data-toggle="modal">movies seen</a>
+					 <div class="modal fade" id="movies_modal">
+			 			<div class="modal-header">
+			    			<a class="close" data-dismiss="modal">&times;</a>
+			    			<h3>Following</h3>
+				  		</div>
+					  	<div class="modal-body">
+					    	<p>Description</p>
+					  	</div>
+					</div>
+			</div>
+			<div class= "row">
+		 		<button class="btn btn-primary">Follow</button>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-xs-4">
+		<h1>My Lists</h1>
+		<div class="button-group-vertical">
+		<button class="btn btn-primary active"><%= :list_name%></button>
+		<button class="btn btn-primary"><%= :list_name%></button>
+		<button class="btn btn-primary"><%= :list_name%></button>
+	
+		</div>
+	
+	</div>
+
+	<div class="col-sm-8">
+		<div class "row">
+			<div class="list-name">
+			<h1><%= :list_name %></h1>
+		</div></div>
+		<div class="row list-info">
+			<%= image_tag("poster.jpeg") %>
+			<%= image_tag("poster.jpeg") %>
+			<%= image_tag("poster.jpeg") %>
+			<%= image_tag("poster.jpeg") %>
+			<%= image_tag("poster.jpeg") %>
+			<%= image_tag("poster.jpeg") %>
+			<%= image_tag("poster.jpeg") %>
+
+		</div>
+	</div>
+
+
+</div><h1>Pages#profile</h1>
+<p>Find me in app/views/pages/profile.html.erb</p>

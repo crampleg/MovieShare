@@ -3,9 +3,7 @@ MovieShare::Application.routes.draw do
      get "pages/profile"
     #get 'pages' => 'pages#mainpage'
 
-   controller :login do               #added by Simon due to login context
-     get 'login' => :new
-     post 'login' => :create
+
    controller :login do               #added by Simon due to login context:
      get 'login' => :new              #user clicks button with Submit_tag 'Logi
      post 'login' => :create          #and the function 'create' in login_contr
@@ -89,3 +87,4 @@ controller :pages do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+
