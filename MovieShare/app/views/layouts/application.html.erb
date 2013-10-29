@@ -2,13 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Julie er superkul" %></title>
+    <title><%= $current_user.firstname +"'s Profile"%></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
 </head>
 <body>
+    <% if !$current_user %>
+    <% session.clear %>
+    <% end %>
  	<div class ="row banner">
       <div class ="col-lg-3 col-md-3">
          <a href="mainpage">
@@ -46,7 +49,7 @@
           <%= image_tag("userpic.jpeg") %>
         </div>
         <div class ="col-lg-6 col-md-6">
-          <a href= "/pages/profilepage"><h4><%= $current_user ? $current_user.firstname + " " +$current_user.lastname : logout_path %></h4></a>
+          <a href= "/pages/profilepage"><h4><%= $current_user.firstname + " " +$current_user.lastname %></h4></a>
           <a href="/pages/profilepage">Edit profile</a>
         </div>
       </div>
