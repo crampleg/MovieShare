@@ -9,7 +9,7 @@
     <file path="/Gemfile" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1382991859263" ignored="false" />
     <file path="/user.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1382999502503" ignored="false" />
     <file path="/20131023155844_create_users.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1382654531819" ignored="false" />
-    <file path="/new.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383081367378" ignored="false" />
+    <file path="/new.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383081711243" ignored="false" />
     <file path="/users_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383080377635" ignored="false" />
     <file path="/schema.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1382657226377" ignored="false" />
     <file path="/mainpage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383000313729" ignored="false" />
@@ -58,7 +58,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/login/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="29" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.75">
+            <state line="43" column="37" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.75">
               <folding />
             </state>
           </provider>
@@ -786,7 +786,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="29" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.75">
+        <state line="43" column="37" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.75">
           <folding />
         </state>
       </provider>
