@@ -7,6 +7,47 @@
 	.poster {
 		text-align: center;
 		margin-top: 20px;
+
+		.seen {
+			width: 100%;
+			max-width: 250px;
+			margin-top: 10px;
+		}
+
+		.line {
+			width: 100%;
+			max-width: 250px;
+		}
+		.addtolist {
+			width: 100%;
+			max-width: 220px;
+			margin-top: 10px;
+		}
+
+		.dropdown-menu {
+			width: 100%!important;
+			text-align: left;
+			padding: 10px;
+		}
+
+		.dropdown-menu tr td:first-child {
+			width: 80%;
+		}
+
+		.dropdown-menu tr {
+			border-bottom: 1px solid #898B8E;
+		}
+
+		.dropdown-menu tr td{
+			padding: 5px;
+		}
+
+
+		.nocaret {
+			width: 100%;
+			max-width: 30px;
+			margin-top: 10px;
+		}
 	}
 
 	.title {
@@ -18,7 +59,14 @@
 	}
 
 	.desc {
+		padding-top: 10px;
+		padding-bottom: 5px;
+		border-bottom: 2px dotted #898B8E;
+		border-top: 2px dotted #898B8E;
+	}
 
+	.releasedate {
+		margin-top: 10px!important;
 	}
 	
 }

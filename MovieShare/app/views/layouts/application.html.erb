@@ -83,8 +83,29 @@
               <input name="star3" type="radio" class="star" />
             </div>
         </div>
-        <div class="row line">
-            <button class="no btn btn-primary">Add to list</button>
+        <div class="row line btn-group">
+          <button type="button" class="btn no btn-primary">Add to list</button>
+          <button type="button" class="btn nocaret btn-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <table class="dropdown-menu" role="menu">
+            <tr>
+              <td>WishList</td> 
+              <td><button class="btn btn-success">Add</button></td>
+            <tr>
+            <tr>
+              <td>My Top Ten Movies</td>
+              <td><button class="btn btn-success">Add</button></td>
+            <tr>
+            <tr>
+              <td>Top Horror Movies</td>
+              <td><button class="btn btn-success">Add</button></td>
+            <tr>
+            <tr>
+              <td>Worst Movies</td>
+              <td><button class="btn btn-success">Add</button></td>
+            <tr>
+          </table>
         </div>
 
       </div>

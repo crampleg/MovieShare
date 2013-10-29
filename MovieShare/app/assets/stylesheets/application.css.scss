@@ -9,11 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require jquery-star-rating
+ *= require twitter/bootstrap
  *= require_self
  *= require_tree .
  */
 
-@import "twitter/bootstrap";
+
 
 /* Bootstrap override */
 .thumbnail{
@@ -102,9 +103,41 @@ body {
 		margin-left: -147%;
 		margin-top: 90px;
 	}
-	.no,
+	
 	.yes {
-		width: 250px;
+		width: 100%;
+		max-width: 250px;
+		margin-top: 10px;
+	}
+
+	.no {
+		width: 100%;
+		max-width: 220px;
+		margin-top: 10px;
+	}
+
+	.dropdown-menu {
+		width: 100%!important;
+		text-align: left;
+		padding: 10px;
+	}
+
+	.dropdown-menu tr td:first-child {
+		width: 80%;
+	}
+
+	.dropdown-menu tr {
+		border-bottom: 1px solid #898B8E;
+	}
+
+	.dropdown-menu tr td{
+		padding: 5px;
+	}
+
+
+	.nocaret {
+		width: 100%;
+		max-width: 30px;
 		margin-top: 10px;
 	}
 
