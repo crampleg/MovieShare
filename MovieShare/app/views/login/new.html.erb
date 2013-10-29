@@ -13,6 +13,9 @@
 <div class="page-header">
   <%= image_tag("MovieShareLogo.png") %>
 </div>
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
 
     <div class="depot_form">
       <% if flash[:alert] %>
