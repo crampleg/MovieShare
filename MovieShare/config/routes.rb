@@ -2,7 +2,7 @@ MovieShare::Application.routes.draw do
 
   #get 'pages' => 'pages#mainpage'
 
-  controller :login do               #added by Simon due to login context
+  controller :logins do               #added by Simon due to login context
     get 'login' => :new
     post 'login' => :create
     delete 'logout' => :destroy
