@@ -9,7 +9,8 @@ class UsersController < ActionController::Base
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to '/pages/mainpage', notice: "You have successfully created a user!" }
+        $current_user=@user;
+        format.html { redirect_to '/pages/mainpage', notice: "#{@user.firstname}'s profile was successfully created!" }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }
