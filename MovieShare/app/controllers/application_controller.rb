@@ -7,5 +7,8 @@ class ApplicationController < ActionController::Base
     unless User.find_by_id(session[:user_id])
       redirect_to '/login/new', notice: "Please log in"
     end
+    if (!$current_user)
+      redirect_to '/login/new', notice: "Please log in"
+    end
   end
 end
