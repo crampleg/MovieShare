@@ -1,4 +1,5 @@
-class LoginController < ActionController::Base
+class LoginController < ApplicationController
+  skip_before_filter :authorize   #everyone can access the methods in this controller by logging in (whitelisting)
   def new
   end
 
