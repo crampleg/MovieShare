@@ -1,13 +1,19 @@
 MovieShare::Application.routes.draw do
 
-  get "pages/profile"
+     get "pages/profile"
+    #get 'pages' => 'pages#mainpage'
 
-  #get 'pages' => 'pages#mainpage'
-
-  controller :login do               #added by Simon due to login context
-    get 'login' => :new
-    post 'login' => :create
+   controller :login do               #added by Simon due to login context
+     get 'login' => :new
+     post 'login' => :create
+   controller :login do               #added by Simon due to login context:
+     get 'login' => :new              #user clicks button with Submit_tag 'Logi
+     post 'login' => :create          #and the function 'create' in login_contr
     delete 'logout' => :destroy
+   end
+
+controller :pages do
+    post 'search' => :create
   end
 
 
