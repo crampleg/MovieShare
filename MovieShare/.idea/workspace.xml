@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="31" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="3" selection-start="50" selection-end="50" vertical-scroll-proportion="0.023291925">
+            <state line="20" column="6" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/login/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -770,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="31" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="30" selection-start="30" selection-end="52" vertical-scroll-proportion="0.0">
@@ -786,7 +779,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="50" selection-end="50" vertical-scroll-proportion="0.023291925">
+        <state line="20" column="6" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

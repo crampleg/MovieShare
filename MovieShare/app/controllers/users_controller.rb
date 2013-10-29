@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UsersController < ActionController::Base
   skip_before_filter :authorize
   def new
     @user = User.new
