@@ -5,7 +5,7 @@ class LoginController < ActionController::Base
   def create
     user = User.find_by_username(params[:username])
     if user and user.authenticate(params[:password])
-      login[:user_id] = user.id
+      session[:user_id] = user.id           #session is a built-in feature of rails that keep track of users logged in via userID
       redirect_to '/pages/mainpage'
     else
       redirect_to '/login/new', alert: "Invalid username/password combination"
@@ -13,7 +13,7 @@ class LoginController < ActionController::Base
   end
 
   def destroy
-    login[:user_id] = nil
+    session[:user_id] = nil
     redirect_to '/login/new', notice: "Logged out"
   end
 

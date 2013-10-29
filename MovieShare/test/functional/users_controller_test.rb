@@ -1,9 +1,33 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
+  setup do
+    @input_attributes = {
+        name: "sam",
+        password: "private",
+        password_confirmation: "private"
+    }
+    @user = users(:one)
+  end
+
+
+  test "should create user" do
+    assert_difference('User.count') do
+      post :create, user: @input_attributes
+    end
+    assert_redirected_to '/pages/mainpage'
+  end
+
+  test "should update user" do
+    put :update, id: @user, user: @input_attributes
+    assert_redirected_to '/pages/mainpage'
+  end
+
   test "should get new" do
     get :new
     assert_response :success
   end
+
+
 
 end
