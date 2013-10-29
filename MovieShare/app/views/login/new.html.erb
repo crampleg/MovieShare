@@ -13,31 +13,34 @@
 <div class="page-header">
   <%= image_tag("MovieShareLogo.png") %>
 </div>
- 
-<div class="row">
-  <div class ="col-lg-12 col-xs-12 signin">
-    <form class="form-signin">
-      <h2 class="form-signin-heading">
-        Please Sign in
-      </h2>
-      <div class="row">
-        <input class="form-control" type="text" autofocus="" placeholder="Username"/>
-      </div>
-      <div class="row">
-        <input class="form-control" type="password" placeholder="Password"/>
-      </div>
-      <label class="checkbox">
-        <input type="checkbox" value="remember-me"/>
-        Remember me
-      </label>
-      <div class="newuser">
-        <a href="/users/new">New User?</a>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">
-        Sign in
-      </button>
-    </form>
-  </div>
-</div>
+
+    <div class="depot_form">
+      <% if flash[:alert] %>
+        <p id="notice"><%= flash[:alert] %></p>
+      <% end %>
+
+      <%= form_tag do %>
+          <fieldset>
+            <legend>Please Log In</legend>
+            <div>
+              <%= label_tag :username, 'Username:' %>
+              <%= text_field_tag :username, params[:username] %>
+            </div>
+
+            <div>
+              <%= label_tag :password, 'Password:' %>
+              <%= password_field_tag :password, params[:password] %>
+            </div>
+
+            <div>
+              <%= submit_tag "Login" %>
+            </div>
+
+          </fieldset>
+      <% end %>
+
+    </div>
+
+
 </body>
 </html>

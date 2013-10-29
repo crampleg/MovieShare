@@ -1,4 +1,12 @@
 MovieShare::Application.routes.draw do
+
+  controller :logins do               #added by Simon due to login context
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
+
   get "login/new"
 
   get "users/new"
