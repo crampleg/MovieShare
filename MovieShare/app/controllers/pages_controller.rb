@@ -13,4 +13,8 @@ class PagesController < ApplicationController
 
   def registerpage
   end
+
+  def movielists
+    
+  end
 end

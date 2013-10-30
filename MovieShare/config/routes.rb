@@ -1,5 +1,8 @@
 MovieShare::Application.routes.draw do
 
+  resources :movielists
+
+
      get "pages/profile"
     #get 'pages' => 'pages#mainpage'
 
