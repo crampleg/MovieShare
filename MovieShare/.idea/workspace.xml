@@ -21,7 +21,7 @@
     <file path="/users_controller_test.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383073782512" ignored="false" />
     <file path="/application.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383090440125" ignored="false" />
     <file path="/application_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383090819151" ignored="false" />
-    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383164570623" ignored="false" />
+    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383164665827" ignored="false" />
     <file path="/follower.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383095376458" ignored="false" />
     <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383109077100" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +64,7 @@
       <file leaf-file-name="profilepage.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="57" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.46774194">
+            <state line="59" column="53" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.46774194">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="pages_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="63" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+            <state line="28" column="4" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -816,14 +816,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="63" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+        <state line="28" column="4" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="57" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.46774194">
+        <state line="59" column="53" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.46774194">
           <folding />
         </state>
       </provider>
