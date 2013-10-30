@@ -45,17 +45,15 @@ class PagesController < ApplicationController
     redirect_to '/pages/list'
   end
 
-<<<<<<< HEAD
   def movielists
     
   end
-=======
+
   #def find_followers
     #find all followers of a user with id $current_user.id
     @list_of_followers = Follower.find_all_by_user_id_model(2)
   #end
 
 
->>>>>>> 85c3c9cfcef9ed2f2634cb68d538bbfd81c3f452
 end
 
