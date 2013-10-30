@@ -1,23 +1,12 @@
 MovieShare::Application.routes.draw do
 
-<<<<<<< HEAD
-  controller :login do               #added by Simon due to login context
-    get 'login' => :new
-    post 'login' => :create
-=======
-     get "pages/profile"
-    #get 'pages' => 'pages#mainpage'
+  resources :followers
 
 
-   controller :login do               #added by Simon due to login context:
-     get 'login' => :new              #user clicks button with Submit_tag 'Logi
-     post 'login' => :create          #and the function 'create' in login_contr
->>>>>>> a5f1eebf6fd337d3745573cfddb26bc36c77eb44
+  controller :login do               #added by Simon due to login context:
+    get 'login' => :new              #user clicks button with Submit_tag 'Logi
+    post 'login' => :create          #and the function 'create' in login_contr
     delete 'logout' => :destroy
-   end
-
-controller :pages do
-    post 'search' => :create
   end
 
   controller :pages do 
@@ -30,6 +19,8 @@ controller :pages do
   get "users/new"
   resources :users
   resources :movies
+
+  get "pages/profile"
 
   get "pages/mainpage"
 
