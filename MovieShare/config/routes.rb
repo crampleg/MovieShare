@@ -1,9 +1,23 @@
 MovieShare::Application.routes.draw do
 
+<<<<<<< HEAD
   controller :login do               #added by Simon due to login context
     get 'login' => :new
     post 'login' => :create
+=======
+     get "pages/profile"
+    #get 'pages' => 'pages#mainpage'
+
+
+   controller :login do               #added by Simon due to login context:
+     get 'login' => :new              #user clicks button with Submit_tag 'Logi
+     post 'login' => :create          #and the function 'create' in login_contr
+>>>>>>> a5f1eebf6fd337d3745573cfddb26bc36c77eb44
     delete 'logout' => :destroy
+   end
+
+controller :pages do
+    post 'search' => :create
   end
 
   controller :pages do 
@@ -86,3 +100,4 @@ MovieShare::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+

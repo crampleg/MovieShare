@@ -189,6 +189,12 @@
 	h2 {
 		margin-left: 10px;
 	}
+	a{
+		margin-left: 10px;
+	}
+	p{
+		margin-left: 10px;
+	}
 }
 
 .searchlist {
@@ -200,6 +206,16 @@
 
 .button-group-vertical{
 		.inputtt{
-		background-color: #E6E6E6 !important;
+		background-color: grey !important;
+		border: 0px;
 	}
+}
+
+.modal.fade{
+	background-color: white;
+    width: 750px !important; 
+    position:block;
+    margin: auto;
+    height: 500px !important;
+
 }
