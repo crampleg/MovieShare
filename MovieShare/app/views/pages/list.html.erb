@@ -1,11 +1,8 @@
 <div class="row searchlist">
 	<% $movies.each do |movie| %>
 	<div class="row movieinlist">
-		<% if movie != $movies.last %>
-		<div class="lineseperator">
-		<% end %>
 			<div class="col-sm-3 poster">
-				<%= image_tag(movie["poster"]["imdb"]) %>
+				<%= image_tag(movie["poster"]["imdb"]) rescue "<p>No image</p>" %>
 			</div>
 			<div class="col-sm-9">
 				<div class="row">
@@ -33,8 +30,8 @@
 				<div class="row">
 					<p>
 						<strong>Actors:</strong> 
-						<% movie["actors"].take(5).each do |actor| %>
-							<% if actor != movie["actors"][4] %>
+						<% movie["actors"].each do |actor| %>
+							<% if actor != movie["actors"].last %>
 								<%= actor %>,
 							<% else %>
 								<%= actor %>.
@@ -55,13 +52,7 @@
 					</p>
 				</div>
 			</div>
-		<% if movie != $movies.last %>
-		</div>
-		<% end %>
 	</div>
 	<% end %>
 </div>
-
-<%= $listname %>
-
 
