@@ -11,24 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20131030012212) do
 
-  create_table "line_items", :force => true do |t|
-    t.string   "title"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+#ActiveRecord::Schema.define(:version => 20131030012212) do
 
-  create_table "lists", :force => true do |t|
-    t.string   "title"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+#  create_table "line_items", :force => true do |t|
+#    t.string   "title"
+#    t.datetime "created_at", :null => false
+#    t.datetime "updated_at", :null => false
+#  end
+#
+#  create_table "lists", :force => true do |t|
+#    t.string   "title"
+#    t.datetime "created_at", :null => false
+#    t.datetime "updated_at", :null => false
+#  end
 
-  create_table "movielists", :force => true do |t|
-    t.string   "title"
-=======
+#  create_table "movielists", :force => true do |t|
+#    t.string   "title"
+
 ActiveRecord::Schema.define(:version => 20131030005111) do
 
   create_table "followers", :force => true do |t|
@@ -38,11 +38,6 @@ ActiveRecord::Schema.define(:version => 20131030005111) do
     t.datetime "updated_at",       :null => false
   end
 
-  create_table "logins", :force => true do |t|
->>>>>>> 85c3c9cfcef9ed2f2634cb68d538bbfd81c3f452
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
   create_table "users", :force => true do |t|
     t.string   "username"
