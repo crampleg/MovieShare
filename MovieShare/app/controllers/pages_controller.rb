@@ -46,6 +46,6 @@ class PagesController < ApplicationController
   end
 
   #find all followers of a user with id $current_user.id
-  @list_of_followers = Follower.find_by_user_id_model($current_user.id)
+  $list_of_followers = Follower.find_by_user_id_model($current_user.id)
 
 end
