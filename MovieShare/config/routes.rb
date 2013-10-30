@@ -1,27 +1,34 @@
 MovieShare::Application.routes.draw do
 
+<<<<<<< HEAD
   resources :movielists
 
 
      get "pages/profile"
     #get 'pages' => 'pages#mainpage'
+=======
+  resources :followers
+>>>>>>> 85c3c9cfcef9ed2f2634cb68d538bbfd81c3f452
 
 
-   controller :login do               #added by Simon due to login context:
-     get 'login' => :new              #user clicks button with Submit_tag 'Logi
-     post 'login' => :create          #and the function 'create' in login_contr
+  controller :login do               #added by Simon due to login context:
+    get 'login' => :new              #user clicks button with Submit_tag 'Logi
+    post 'login' => :create          #and the function 'create' in login_contr
     delete 'logout' => :destroy
-   end
-
-controller :pages do
-    post 'search' => :create
   end
 
+  controller :pages do 
+    post 'pages/mainpage' => :getmovie
+    post 'pages/list' => :getmovie
+  end
 
   get "login/new"
 
   get "users/new"
   resources :users
+  resources :movies
+
+  get "pages/profile"
 
   get "pages/mainpage"
 
@@ -32,6 +39,8 @@ controller :pages do
   get "pages/moviepage"
 
   get "pages/registerpage"
+
+  get "pages/list"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

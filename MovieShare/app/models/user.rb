@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :followers, dependent: :destroy   #when a user is deleted, the follower object should also be deleted
+
   attr_accessible :username, :firstname, :lastname, :email, :password_digest, :password, :password_confirmation
   #attr_accessor :password
   #EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
