@@ -1,6 +1,11 @@
 MovieShare::Application.routes.draw do
 
+
+  resources :movielists
+
+
   resources :followers
+
 
 
   controller :login do               #added by Simon due to login context:
