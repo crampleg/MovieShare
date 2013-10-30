@@ -45,8 +45,10 @@ class PagesController < ApplicationController
     redirect_to '/pages/list'
   end
 
+  def find_followers
     #find all followers of a user with id $current_user.id
-    @list_of_followers = Follower.find($current_user.id)
+    Follower.find($current_user.id)
+  end
 
 
 end
