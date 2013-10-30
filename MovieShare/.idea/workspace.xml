@@ -70,7 +70,7 @@
       <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="2" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.86024845">
+            <state line="48" column="36" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.8835404">
               <folding />
             </state>
           </provider>
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/follower.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/profilepage.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
       </list>
     </option>
   </component>
@@ -841,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="2" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.86024845">
+        <state line="48" column="36" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.8835404">
           <folding />
         </state>
       </provider>
