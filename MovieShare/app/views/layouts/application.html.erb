@@ -31,14 +31,16 @@
             </button>
          </div>
         </div>
+        <%= form_tag do %>
         <div class="row input-row">
          <div class="input-group">
-          <input type="text" class="form-control">
+         <%= text_field_tag :query, params[:query], class: 'form-control' %>
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Search!</button>
+            <%= submit_tag "Search", class: 'btn btn-default' %>
           </span>
         </div>
         </div>
+        <% end %>
       </div>
  	   <div class ="col-lg-3 col-md-3 profile">
       <div class="row">
