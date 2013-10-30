@@ -17,6 +17,7 @@ MovieShare::Application.routes.draw do
   controller :pages do 
     post 'pages/mainpage' => :getmovie
     post 'pages/list' => :getmovie
+    get 'pages/profilepage' => :find_followers
   end
 
   get "login/new"
