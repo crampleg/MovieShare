@@ -1,14 +1,11 @@
 MovieShare::Application.routes.draw do
 
-<<<<<<< HEAD
+
   resources :movielists
 
 
-     get "pages/profile"
-    #get 'pages' => 'pages#mainpage'
-=======
   resources :followers
->>>>>>> 85c3c9cfcef9ed2f2634cb68d538bbfd81c3f452
+
 
 
   controller :login do               #added by Simon due to login context:
