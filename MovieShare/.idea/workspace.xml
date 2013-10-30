@@ -18,9 +18,9 @@
     <file path="/users_controller_test.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383073782512" ignored="false" />
     <file path="/application.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383090440125" ignored="false" />
     <file path="/application_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383090819151" ignored="false" />
-    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383107854141" ignored="false" />
+    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383108096072" ignored="false" />
     <file path="/follower.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383095376458" ignored="false" />
-    <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383107607566" ignored="false" />
+    <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383108086978" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <file leaf-file-name="profilepage.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="39" selection-start="1754" selection-end="1754" vertical-scroll-proportion="0.535284">
+            <state line="55" column="49" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.48364887">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="pages_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="36" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
+            <state line="47" column="3" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -834,14 +834,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="36" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
+        <state line="47" column="3" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="39" selection-start="1754" selection-end="1754" vertical-scroll-proportion="0.535284">
+        <state line="55" column="49" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.48364887">
           <folding />
         </state>
       </provider>
