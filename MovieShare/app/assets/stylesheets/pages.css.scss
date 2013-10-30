@@ -198,9 +198,43 @@
 }
 
 .searchlist {
-	margin-top: 20px!important;
+	margin-top: 30px!important;
+
 	img {
 		width: 175px;
+		text-align: center;
+	}
+
+	
+
+
+	.movieinlist {
+		margin-bottom: 20px!important;
+
+		.poster{
+			text-align: center;
+		}
+
+		.addtolist {
+			margin: 0!important;
+			margin-top: -9px!important;
+			width: 80%;
+			max-width: 150px;
+		}
+
+		.caret {
+			margin: 0!important;
+			margin-top: -9px!important;
+			width: 20%;
+			max-width: 10px;
+		}
+
+		.plot {
+			padding-top: 7px;
+			border-bottom: 2px dotted #898B8E;
+			border-top: 2px dotted #898B8E;
+			margin-bottom: 7px!important;
+		}
 	}
 }
 
