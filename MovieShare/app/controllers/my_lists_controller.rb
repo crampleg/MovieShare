@@ -16,7 +16,7 @@ class MyListsController < ApplicationController
     @my_list = MyList.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { redirect_to '/pages/profilepage'}
       format.json { render json: @my_list }
     end
   end
@@ -27,7 +27,7 @@ class MyListsController < ApplicationController
     @my_list = MyList.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { redirect_to '/pages/profilepage'}
       format.json { render json: @my_list }
     end
   end
@@ -44,7 +44,7 @@ class MyListsController < ApplicationController
 
     respond_to do |format|
       if @my_list.save
-        format.html { redirect_to @my_list, notice: 'My list was successfully created.' }
+        format.html { redirect_to '/pages/profilepage', notice: 'My list was successfully created.' }
         format.json { render json: @my_list, status: :created, location: @my_list }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class MyListsController < ApplicationController
 
     respond_to do |format|
       if @my_list.update_attributes(params[:my_list])
-        format.html { redirect_to @my_list, notice: 'My list was successfully updated.' }
+        format.html { redirect_to '/pages/profilepage', notice: 'My list was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

@@ -10,7 +10,7 @@
 				<%= image_tag("userpic.jpeg") %>
 			</div>
 			<div class="col-xs-7">
-				
+				<h3><%= $current_user.firstname + " " + $current_user.lastname %></h3>
 				<p> About me: </p>
 				<div class="aboutfield">
 					<p> Test test </p>
@@ -103,13 +103,26 @@
 		<a type="button" class ="btn btn-default"href= "#newlist_modal" data-toggle="modal"> <span class="glyphicon glyphicon-plus"></span> New Movielist</a></div>
 
 			<div class="modal fade" id="newlist_modal">
+				<form accept-charset="UTF-8" action="/my_lists" class="new_my_list" id="new_my_list" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="GcmRwZclX8C/Rp62Uj5y7Ykp2mILicCBIH2vqP1u3kU="></div>
+	
+
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">&times;</a>
-					<a href="#"><h1> Add title </h1></a>
+					<h3> Title </h3>
+					<input id="my_list_list_name" name="my_list[list_name]" size="30" type="text" >
 				</div>
 					<div class="modal-body">
 					<p> add movies </p>
 					</div>
+					<div class="footer">
+					 	<div class="row">
+				    		<div class="actions">
+   								 <input name="commit" type="submit" value="Create My list" href="/pages/profilepage">
+  							</div>
+						</div>
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+					</div>
+				</form>
 			</div>
 
 
