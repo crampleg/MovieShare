@@ -44,10 +44,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="25" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.6040373">
+            <state line="49" column="32" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131023155844_create_users.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="20131023155844_create_users.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="32" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+            <state line="7" column="31" selection-start="212" selection-end="212" vertical-scroll-proportion="0.16304348">
               <folding />
             </state>
           </provider>
@@ -111,15 +120,6 @@
         <entry file="file://$PROJECT_DIR$/db/migrate/20131030005111_create_followers.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="49" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb" />
       </list>
     </option>
   </component>
@@ -761,13 +761,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="51" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/registerpage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -859,16 +852,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="25" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.6040373">
+        <state line="49" column="32" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="212" selection-end="212" vertical-scroll-proportion="0.16304348">
           <folding />
         </state>
       </provider>

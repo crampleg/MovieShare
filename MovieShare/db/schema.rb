@@ -48,8 +48,6 @@ ActiveRecord::Schema.define(:version => 20131031182252) do
     t.string   "lastname"
     t.string   "email"
     t.string   "password_digest"
-    t.integer  "following"
-    t.integer  "followers"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
