@@ -25,6 +25,10 @@ class PagesController < ApplicationController
     Follower.find_all_by_user_id_model(2)
   end
 
+def getmylists
+ $mylist = User.getmylists
+   
+end
 
 end
 
