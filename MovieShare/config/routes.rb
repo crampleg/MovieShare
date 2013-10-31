@@ -26,10 +26,10 @@ MovieShare::Application.routes.draw do
 
   controller :pages do 
     post 'pages/mainpage' => :getmovie
-    post 'pages/profilepage' => :getlist
     post 'pages/list' => :getmovie
 
   end
+
 
   get "login/new"
 
@@ -53,6 +53,8 @@ MovieShare::Application.routes.draw do
   get "pages/registerpage"
 
   get "pages/list"
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -103,7 +105,7 @@ MovieShare::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  #root :to => 'pages/mainpage'
 
   # See how all your routes lay out with "rake routes"
 
