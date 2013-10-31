@@ -1,5 +1,8 @@
 class PagesController < ApplicationController
 
+  
+
+
   def getmovie
     require 'net/http'
     require 'json'
@@ -25,10 +28,16 @@ class PagesController < ApplicationController
     Follower.find_all_by_user_id_model(2)
   end
 
-def getmylists
- $mylist = User.getmylists
-   
-end
+  
+  def getmylists
+    @mylist = 'title'
+  end
+  def createlist
+  end
+  def destroylist
+  end
+  def updatelist
+  end
 
 end
 

@@ -2,6 +2,18 @@ MovieShare::Application.routes.draw do
 
 
 
+  resources :unseen_movies
+
+
+  resources :list_movies
+
+
+  resources :my_lists
+
+
+  resources :watched_movies
+
+
   resources :followers
 
 

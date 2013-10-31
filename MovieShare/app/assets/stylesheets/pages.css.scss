@@ -240,6 +240,11 @@
 		border: 0px;
 	}
 }
+.aboutfield{
+	background-color: white !important;
+	height: 50px;
+	width: 200px;
+}
 
 .modal.fade{
 	background-color: white;
@@ -247,6 +252,7 @@
     position:block;
     margin: auto;
     height: 500px !important;
+
 
 }
 .moviesinlists{
@@ -256,3 +262,19 @@
 .lists{
 	border-bottom: 1px dotted white;
 }
+
+    .span6.input-large{
+    	width: 500px;
+    	height: 100px;
+    }
+
+    .fileinput{
+    	padding-top: 10px;
+    	position: relative;
+    }
+
+    .btn-primary{
+    	width: 120px !important;
+    }
+
+

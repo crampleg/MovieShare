@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  list_id: 1
+  list_name: MyString
+  owner_id: 1
+
+two:
+  list_id: 1
+  list_name: MyString
+  owner_id: 1

@@ -11,7 +11,10 @@
 			</div>
 			<div class="col-xs-7">
 				
-				<p> Om meg: </p>
+				<p> About me: </p>
+				<div class="aboutfield">
+					<p> Test test </p>
+				</div>
 				<div class="row">
 					<a href="#test_modal" data-toggle="modal">Edit profile</a>
 				</div>
@@ -21,11 +24,24 @@
 				    <h3>Edit profile</h3>
 				  </div>
 				  <div class="modal-body">
-				    <p>Description</p>
-
+				    <div class="row-fluid">
+				    	<div class="col-xs-12">
+				    		<p> About me:</p>
+				    		<input class="span6 input-large" type="text" >
+				    		<div class="fileinput">
+				    			<p> Profile picture: </p>
+				    			<input type="file" class="file"></input>
+				    		</div>
+				    	</div>
+				    </div>
 				  </div>
 				  <div class="modal-footer">
-				    <a href="#" class="btn btn-primary">Save Changes</a>
+				  	<div class="row">
+				  	<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				  </div>
+				  <div class="row">
+				    <a href="/pages/profilepage" class="btn btn-primary">Save Changes</a>
+				</div>
 				  </div>
 				</div>
 			
@@ -80,12 +96,12 @@
 </div>
 
 <div class="row mylists">
+
 	
 		<div class="page-header"><h2>My Movielists</h2>
+
 		<a type="button" class ="btn btn-default"href= "#newlist_modal" data-toggle="modal"> <span class="glyphicon glyphicon-plus"></span> New Movielist</a></div>
-		
-		
-			
+
 			<div class="modal fade" id="newlist_modal">
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">&times;</a>
@@ -93,24 +109,33 @@
 				</div>
 					<div class="modal-body">
 					<p> add movies </p>
-				</div>
+					</div>
 			</div>
+
+
 			
 			<% $movies.each do |movie| %>
 			<a href ="#mylist_modal"data-toggle="modal">
+
 				<div class="row lists">
 				<span class="glyphicon glyphicon-list">
-				<%= movie["title"] %></span></a>
-			</div>
-			
-			<div class="modal fade" id="mylist_modal">
+				<%= movie["title"] %>
+				</div>
+				<%end%>
+
+
+
+				
+				<div class="modal fade" id="mylist_modal">
+				<% $movies.each do |movie| %>
+
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">&times;</a>
-						<h1> <%= movie["title"] %>  </h1><a href="#">Change Title</p></a>
+					<h1> <%= movie["title"] %>  </h1><a href="#">Change Title</a>
+				
 				</div>
+				
 					<div class="modal-body">
-						<div class="row">
-							<% $movies.each do |movie| %>
 							<div class="row moviesinlists">
 								<div class="col-xs-4">
 									<%= image_tag("poster.jpeg") %>
@@ -118,12 +143,17 @@
 								<div class="col-xs-8">
 								<h2><%= movie["title"] %> <%= movie["year"]%></h2>
 								</div>
-							</div>
-							<% end %>
+								
+							</div>			
+							
 						</div>
+						<% end %>
 					</div>
-			</div>
-			<% end %>
-</div>
+	
+				
+					
+		</div>			
+
+
 </body>
 </html>

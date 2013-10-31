@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @watched_movie.user_id %>
+</p>
+
+<p>
+  <b>Movies:</b>
+  <%= @watched_movie.movies %>
+</p>
+
+
+<%= link_to 'Edit', edit_watched_movie_path(@watched_movie) %> |
+<%= link_to 'Back', watched_movies_path %>
