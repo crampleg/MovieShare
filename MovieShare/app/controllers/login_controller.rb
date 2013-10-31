@@ -16,6 +16,7 @@ class LoginController < ActionController::Base
 
   def destroy
     session[:user_id] = nil
+    $current_user = nil
     redirect_to '/login/new', notice: "Logged out"
   end
 
