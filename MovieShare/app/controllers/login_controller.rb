@@ -7,8 +7,8 @@ class LoginController < ActiveRecord::Base
     user = User.find_by_username(params[:username])
     if user and user.authenticate(params[:password])
       session[:user_id] = user.id           #session is a built-in feature of rails that keep track of users logged in via userID
-      user.following = '0'
-      user.followers = '0'
+      user.following = 0
+      user.followers = 0
       user.save!
       $current_user = user  #sets the current user to the global value $user
       redirect_to '/pages/mainpage', notice: "Welcome #{user.firstname}!"

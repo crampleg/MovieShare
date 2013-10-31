@@ -74,7 +74,7 @@
       <file leaf-file-name="login_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="494" selection-end="494" vertical-scroll-proportion="0.2614897">
+            <state line="10" column="24" selection-start="473" selection-end="473" vertical-scroll-proportion="0.23771791">
               <folding />
             </state>
           </provider>
@@ -862,7 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="494" selection-end="494" vertical-scroll-proportion="0.2614897">
+        <state line="10" column="24" selection-start="473" selection-end="473" vertical-scroll-proportion="0.23771791">
           <folding />
         </state>
       </provider>
