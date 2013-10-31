@@ -79,52 +79,51 @@
 </div>
 </div>
 
-<div class="row">
-
+<div class="row mylists">
 	
-		<h1>My Lists</h1>
-		<a href= "#newlist_modal" data-toggle="modal"> <p> + New list </p></a>
-		<div class="modal fade" id="newlist_modal">
+		<div class="page-header"><h2>My Movielists</h2>
+		<a type="button" class ="btn btn-default"href= "#newlist_modal" data-toggle="modal"> <span class="glyphicon glyphicon-plus"></span> New Movielist</a></div>
+		
+		
+			
+			<div class="modal fade" id="newlist_modal">
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">&times;</a>
 					<a href="#"><h1> Add title </h1></a>
-					
 				</div>
-				<div class="modal-body">
-					
+					<div class="modal-body">
 					<p> add movies </p>
-
 				</div>
 			</div>
 			
-		
-		<% $movies.each do |movie| %>
-		<a href ="#mylist_modal"data-toggle="modal"><p><%= movie["title"] %> (<%= movie["year"]%>)</p></a>
-		<% end %>
+			<% $movies.each do |movie| %>
+			<a href ="#mylist_modal"data-toggle="modal">
+				<div class="row lists">
+				<span class="glyphicon glyphicon-list">
+				<%= movie["title"] %></span></a>
+			</div>
+			
 			<div class="modal fade" id="mylist_modal">
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">&times;</a>
-					<h1> List title </h1><a href="#">Change Title</p></a>
-					
+						<h1> <%= movie["title"] %>  </h1><a href="#">Change Title</p></a>
 				</div>
-				<div class="modal-body">
-					<div class="row">
-					<% $movies.each do |movie| %>
-					<p>"<"IMAGE">"</p>
-					<p><%= movie["title"] %> (<%= movie["year"]%></p>
-					<% end %>
+					<div class="modal-body">
+						<div class="row">
+							<% $movies.each do |movie| %>
+							<div class="row moviesinlists">
+								<div class="col-xs-4">
+									<%= image_tag("poster.jpeg") %>
+								</div>
+								<div class="col-xs-8">
+								<h2><%= movie["title"] %> <%= movie["year"]%></h2>
+								</div>
+							</div>
+							<% end %>
+						</div>
 					</div>
-					
-
-				</div>
 			</div>
-			
-				
-
+			<% end %>
 </div>
-
-
-
-
-
-</body></html>
+</body>
+</html>
