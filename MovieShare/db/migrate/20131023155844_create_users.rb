@@ -6,8 +6,6 @@ class CreateUsers < ActiveRecord::Migration
     	t.string :lastname
     	t.string :email
     	t.string :password_digest
-      t.integer :following
-      t.integer :followers
 
     	t.timestamps
     end
