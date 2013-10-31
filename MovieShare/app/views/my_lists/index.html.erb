@@ -23,22 +23,23 @@
       </div>
 
 <table>
-
 <% @my_lists.each do |my_list| %>
   <tr>
-    <td><%= my_list.list_id %></td>
-    <td><%= my_list.list_name %></td>
-    <td><%= my_list.owner_id %></td>
-    <td><%= link_to 'Show', my_list %></td>
-    <td><%= link_to 'Edit', edit_my_list_path(my_list) %></td>
+ 
+    <td><%=  my_list.list_id %></td>
+    <td><h3><span class="glyphicon glyphicon-list"> </span> <%= link_to my_list.list_name , my_list %></h3></td>
+    <td><%= my_list.owner_id %>  </td> 
+    <td><%= link_to 'Edit', edit_my_list_path(my_list) %> | </td>
     <td><%= link_to 'Destroy', my_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
   </tr>
 <% end %>
 </table>
 
+
 <br />
 
-
+<a href ="/pages/profilepage">back</a>
 
      
 
