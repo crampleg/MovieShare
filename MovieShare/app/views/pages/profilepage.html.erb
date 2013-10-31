@@ -18,94 +18,59 @@
 				<div class="row">
 					<a href="#test_modal" data-toggle="modal">Edit profile</a>
 				</div>
-				 <div class="modal fade" id="test_modal">
-				  <div class="modal-header">
-				    <a class="close" data-dismiss="modal">&times;</a>
-				    <h3>Edit profile</h3>
-				  </div>
-				  <div class="modal-body">
-				    <div class="row-fluid">
-				    	<div class="col-xs-12">
-				    		<p> About me:</p>
-				    		<input class="span6 input-large" type="text" >
-				    		<div class="fileinput">
-				    			<p> Profile picture: </p>
-				    			<input type="file" class="file"></input>
-				    		</div>
-				    	</div>
-				    </div>
-				  </div>
-				  <div class="modal-footer">
-				  	<div class="row">
-				  	<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-				  </div>
-				  <div class="row">
-				    <a href="/pages/profilepage" class="btn btn-primary">Save Changes</a>
-				</div>
-				  </div>
-				</div>
-			
 			</div>
-		</div>
-
-		
+		</div>	
 	</div>
 	<div class="col-sm-6">
-
-<div class= "row followingbuttons">
-			<div class="col-xs-4" >
-				<a type="button" class="btn followers" href="#following_modal" data-toggle="modal">following</a>
-					<div class="modal fade" id="following_modal">
-					  	<div class="modal-header">
-					    	<a class="close" data-dismiss="modal">&times;</a>
-					    	<h3>Following</h3>
-					  	</div>
-					  	<div class="modal-body">
-					  		<p>Description</p>
-						</div>
+		<div class= "row followingbuttons">
+					<div class="col-xs-4" >
+						<a type="button" class="btn followers" href="#following_modal" data-toggle="modal">following</a>
+							<div class="modal fade" id="following_modal">
+							  	<div class="modal-header">
+							    	<a class="close" data-dismiss="modal">&times;</a>
+							    	<h3>Following</h3>
+							  	</div>
+							  	<div class="modal-body">
+							  		<p>Description</p>
+								</div>
+							</div>
 					</div>
-			</div>
-			<div class="col-xs-4">
-				<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal">followers</a>
-					 <div class="modal fade" id="followers_modal">
-			 			<div class="modal-header">
-			    			<a class="close" data-dismiss="modal">&times;</a>
-			    			<h3>Followers</h3>
-				  		</div>
-					  	<div class="modal-body">
-                               
-					  	</div>
+					<div class="col-xs-4">
+						<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal">followers</a>
+							 <div class="modal fade" id="followers_modal">
+					 			<div class="modal-header">
+					    			<a class="close" data-dismiss="modal">&times;</a>
+					    			<h3>Followers</h3>
+						  		</div>
+							  	<div class="modal-body">
+		                               
+							  	</div>
+							</div>
 					</div>
-			</div>
 
-			<div class="col-xs-4">
-				<a type="button" class="btn followers" href="#movies_modal" data-toggle="modal">movies seen</a>
-					 <div class="modal fade" id="movies_modal">
-			 			<div class="modal-header">
-			    			<a class="close" data-dismiss="modal">&times;</a>
-			    			<h3>Movies seen</h3>
-				  		</div>
-					  	<div class="modal-body">
-					    	<p>Description</p>
-					  	</div>
+					<div class="col-xs-4">
+						<a type="button" class="btn followers" href="#movies_modal" data-toggle="modal">movies seen</a>
+							 <div class="modal fade" id="movies_modal">
+					 			<div class="modal-header">
+					    			<a class="close" data-dismiss="modal">&times;</a>
+					    			<h3>Movies seen</h3>
+						  		</div>
+							  	<div class="modal-body">
+							    	<p>Description</p>
+							  	</div>
+							</div>
 					</div>
-			</div>
 
-		</div>	
-</div>
-</div>
+				</div>	
+		</div>
+		</div>
 
 <div class="row mylists">
-
-	
 		<div class="page-header"><h2>My Movielists</h2>
-
 		<a type="button" class ="btn btn-default"href= "#newlist_modal" data-toggle="modal"> <span class="glyphicon glyphicon-plus"></span> New Movielist</a></div>
-
 			<div class="modal fade" id="newlist_modal">
 				<form accept-charset="UTF-8" action="/my_lists" class="new_my_list" id="new_my_list" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="GcmRwZclX8C/Rp62Uj5y7Ykp2mILicCBIH2vqP1u3kU="></div>
 	
-
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">&times;</a>
 					<h3> Title </h3>
@@ -135,9 +100,6 @@
 				<%= movie["title"] %>
 				</div>
 				<%end%>
-
-
-
 				
 				<div class="modal fade" id="mylist_modal">
 				<% $movies.each do |movie| %>
@@ -161,12 +123,7 @@
 							
 						</div>
 						<% end %>
-					</div>
-	
-				
-					
+					</div>	
 		</div>			
-
-
 </body>
 </html>
