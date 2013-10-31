@@ -12,7 +12,7 @@
     <file path="/Gemfile" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1382991859263" ignored="false" />
     <file path="/user.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383095116257" ignored="false" />
     <file path="/20131023155844_create_users.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1382654531819" ignored="false" />
-    <file path="/new.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383081711243" ignored="false" />
+    <file path="/new.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383247676915" ignored="false" />
     <file path="/users_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383089187151" ignored="false" />
     <file path="/schema.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383109766407" ignored="false" />
     <file path="/mainpage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383000313729" ignored="false" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="profilepage.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="51" selection-start="829" selection-end="829" vertical-scroll-proportion="-19.375">
+            <state line="31" column="51" selection-start="899" selection-end="899" vertical-scroll-proportion="-19.375">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="-3.75">
+            <state line="7" column="4" selection-start="364" selection-end="407" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="113" selection-start="283" selection-end="283" vertical-scroll-proportion="0.09677419">
+            <state line="6" column="35" selection-start="373" selection-end="373" vertical-scroll-proportion="0.14516129">
               <folding />
             </state>
           </provider>
@@ -900,21 +900,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="51" selection-start="829" selection-end="829" vertical-scroll-proportion="-19.375">
+        <state line="31" column="51" selection-start="899" selection-end="899" vertical-scroll-proportion="-19.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="-3.75">
+        <state line="7" column="4" selection-start="364" selection-end="407" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="113" selection-start="283" selection-end="283" vertical-scroll-proportion="0.09677419">
+        <state line="6" column="35" selection-start="373" selection-end="373" vertical-scroll-proportion="0.14516129">
           <folding />
         </state>
       </provider>
