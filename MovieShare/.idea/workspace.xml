@@ -17,7 +17,7 @@
     <file path="/schema.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383109766407" ignored="false" />
     <file path="/mainpage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383000313729" ignored="false" />
     <file path="/login_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383089074647" ignored="false" />
-    <file path="/routes.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383250868234" ignored="false" />
+    <file path="/routes.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383250945416" ignored="false" />
     <file path="/users_controller_test.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383073782512" ignored="false" />
     <file path="/application.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383247159968" ignored="false" />
     <file path="/application_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383249633152" ignored="false" />
@@ -121,7 +121,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="8" selection-start="835" selection-end="835" vertical-scroll-proportion="-0.5372671">
+            <state line="54" column="3" selection-start="830" selection-end="830" vertical-scroll-proportion="0.58074534">
               <folding />
             </state>
           </provider>
@@ -887,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="835" selection-end="835" vertical-scroll-proportion="-0.5372671">
+        <state line="54" column="3" selection-start="830" selection-end="830" vertical-scroll-proportion="0.58074534">
           <folding />
         </state>
       </provider>
