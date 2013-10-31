@@ -10,6 +10,7 @@ class LoginController < ActiveRecord::Base
       user.following = 0
       user.followers = 0
       user.save!
+      user.reload
       $current_user = user  #sets the current user to the global value $user
       redirect_to '/pages/mainpage', notice: "Welcome #{user.firstname}!"
     else
