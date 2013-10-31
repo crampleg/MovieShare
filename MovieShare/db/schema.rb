@@ -11,14 +11,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-
-ActiveRecord::Schema.define(:version => 20131030005111) do
+ActiveRecord::Schema.define(:version => 20131031182252) do
 
   create_table "followers", :force => true do |t|
     t.integer  "user_id_model"
     t.integer  "user_id_follower"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+  end
+
+  create_table "list_movies", :force => true do |t|
+    t.integer  "list_id"
+    t.string   "movie_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "my_lists", :force => true do |t|
+    t.integer  "list_id"
+    t.string   "list_name"
+    t.integer  "owner_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "unseen_movies", :force => true do |t|
+    t.integer  "owner_id"
+    t.string   "movie_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -29,6 +50,13 @@ ActiveRecord::Schema.define(:version => 20131030005111) do
     t.string   "password_digest"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "watched_movies", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "movies"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
