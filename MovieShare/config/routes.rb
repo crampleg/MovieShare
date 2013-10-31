@@ -52,7 +52,6 @@ MovieShare::Application.routes.draw do
 
   get "pages/list"
 
-  get "/"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
