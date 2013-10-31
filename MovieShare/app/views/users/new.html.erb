@@ -28,9 +28,11 @@
         </div>
     <% end %>
 
-
+<div class= "container">
     <fieldset>
-      <legend>Enter User Details</legend>
+     Enter user details
+     <div class="row">
+      <div class="col-xs-6">
       <div class="form-group">
         <%= f.label :username %><br />:
         <%= f.text_field :username, size: 40 %>
@@ -43,6 +45,8 @@
         <%= f.label :lastname %><br />:
         <%= f.text_field :lastname, size: 40 %>
       </div>
+    </div>
+    <div class= "col-xs-6">
       <div class="form-group">
         <%= f.label :email %><br />:
         <%= f.text_field :email, size: 40 %>
@@ -55,15 +59,17 @@
         <%= f.label :password_confirmation, 'Confirm' %><br />:
         <%= f.password_field :password_confirmation, size: 40 %>
       </div>
+    </div>
 
       <div>
         <%= f.submit %>
       </div>
+    </div>
     </fieldset>
 
 <% end %>
 
 
-
+</div>
 </body>
 <html>

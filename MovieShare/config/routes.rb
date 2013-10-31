@@ -1,8 +1,6 @@
 MovieShare::Application.routes.draw do
 
 
-  resources :movielists
-
 
   resources :followers
 
@@ -17,7 +15,8 @@ MovieShare::Application.routes.draw do
   controller :pages do 
     post 'pages/mainpage' => :getmovie
     post 'pages/list' => :getmovie
-    get 'pages/profilepage' => :find_followers
+    post 'pages/profilepage' => :getmylists
+   # get 'pages/profilepage' => :find_followers
   end
 
   get "login/new"
@@ -27,6 +26,8 @@ MovieShare::Application.routes.draw do
   resources :movies
 
   get "pages/profile"
+
+  get "pages/mylist"
 
   get "pages/mainpage"
 
