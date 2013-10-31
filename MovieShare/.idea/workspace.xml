@@ -13,7 +13,7 @@
     <file path="/user.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383255941953" ignored="false" />
     <file path="/20131023155844_create_users.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383255629760" ignored="false" />
     <file path="/new.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383251560355" ignored="false" />
-    <file path="/users_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383089187151" ignored="false" />
+    <file path="/users_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383258989783" ignored="false" />
     <file path="/schema.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383253435813" ignored="false" />
     <file path="/mainpage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383000313729" ignored="false" />
     <file path="/login_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383258208368" ignored="false" />
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="36" selection-start="681" selection-end="681" vertical-scroll-proportion="0.35657686">
+            <state line="15" column="36" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="77" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+            <state line="9" column="23" selection-start="213" selection-end="213" vertical-scroll-proportion="0.20962733">
               <folding />
             </state>
           </provider>
@@ -144,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/profile.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/follower.rb" />
@@ -160,6 +159,7 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -855,16 +855,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="77" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+        <state line="15" column="36" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="36" selection-start="681" selection-end="681" vertical-scroll-proportion="0.35657686">
+        <state line="9" column="23" selection-start="213" selection-end="213" vertical-scroll-proportion="0.20962733">
           <folding />
         </state>
       </provider>

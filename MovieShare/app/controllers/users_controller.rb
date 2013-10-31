@@ -6,7 +6,8 @@ class UsersController < ActionController::Base
 
   def create
     @user = User.new(params[:user])
-
+    @user.following='0'
+    @user.followers='0'
     respond_to do |format|
       if @user.save
         $current_user=@user;
