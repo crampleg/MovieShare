@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131031182252) do
+ActiveRecord::Schema.define(:version => 20131031212111) do
 
   create_table "followers", :force => true do |t|
     t.integer  "user_id_model"
@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(:version => 20131031182252) do
     t.string   "password_digest"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.integer  "following"
+    t.integer  "followers"
   end
 
   create_table "watched_movies", :force => true do |t|
