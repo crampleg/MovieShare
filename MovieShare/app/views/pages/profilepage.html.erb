@@ -2,6 +2,8 @@
 <head></head>
 <body>
 
+Title: 
+<%= $title rescue "nothing" %>
 <div class="row">
 
 	<div class="col-sm-6">
@@ -127,24 +129,23 @@
 
 
 			
-			<% $movies.each do |movie| %>
+			
 			<a href ="#mylist_modal"data-toggle="modal">
 
 				<div class="row lists">
-				<span class="glyphicon glyphicon-list">
-				<%= movie["title"] %>
+				<a href="/my_lists"> <span class="glyphicon glyphicon-list"> Show My Movielists</a>
+				
 				</div>
-				<%end%>
-
+				
 
 
 				
 				<div class="modal fade" id="mylist_modal">
-				<% $movies.each do |movie| %>
+				
 
 				<div class="modal-header">
 					<a class="close" data-dismiss="modal">&times;</a>
-					<h1> <%= movie["title"] %>  </h1><a href="#">Change Title</a>
+					<h1>  </h1><a href="#">Change Title</a>
 				
 				</div>
 				
@@ -154,13 +155,13 @@
 									<%= image_tag("poster.jpeg") %>
 								</div>
 								<div class="col-xs-8">
-								<h2><%= movie["title"] %> <%= movie["year"]%></h2>
+								<h2><%= @my_list %></h2>
 								</div>
 								
 							</div>			
 							
 						</div>
-						<% end %>
+						
 					</div>
 	
 				

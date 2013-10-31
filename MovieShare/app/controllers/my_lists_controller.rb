@@ -1,4 +1,8 @@
-class MyListsController < ApplicationController
+class MyListsController < PagesController
+ 
+    # some code
+ 
+
   # GET /my_lists
   # GET /my_lists.json
   def index
@@ -16,7 +20,7 @@ class MyListsController < ApplicationController
     @my_list = MyList.find(params[:id])
 
     respond_to do |format|
-      format.html { redirect_to '/pages/profilepage'}
+      format.html # show.html.erb
       format.json { render json: @my_list }
     end
   end
@@ -27,7 +31,7 @@ class MyListsController < ApplicationController
     @my_list = MyList.new
 
     respond_to do |format|
-      format.html { redirect_to '/pages/profilepage'}
+      format.html { redirect_to '/my_lists'}
       format.json { render json: @my_list }
     end
   end
@@ -44,7 +48,7 @@ class MyListsController < ApplicationController
 
     respond_to do |format|
       if @my_list.save
-        format.html { redirect_to '/pages/profilepage', notice: 'My list was successfully created.' }
+        format.html { redirect_to '/my_lists', notice: 'My list was successfully created.' }
         format.json { render json: @my_list, status: :created, location: @my_list }
       else
         format.html { render action: "new" }
@@ -80,4 +84,6 @@ class MyListsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+
 end

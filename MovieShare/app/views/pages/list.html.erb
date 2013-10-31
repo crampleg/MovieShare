@@ -1,3 +1,4 @@
+
 <div class="row searchlist">
 	<% $movies.each do |movie| %>
 	<div class="row movieinlist">
@@ -22,7 +23,7 @@
 					<p><%= movie["plot_simple"] %></p>
 				</div>
 				<div class="row">
-					<p>
+					<p> 
 					<strong>Rated</strong> <%= movie["rated"] %> ||
 					<strong>Release Date</strong> <%= movie["release_date"].to_s[4..5] %>/<%= movie["release_date"].to_s[6..7] %>
 					</p>
