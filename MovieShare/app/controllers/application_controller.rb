@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   protected
   def authorize
-    unless User.find_by_id(session[:user_id]) || $current_user                #the session list must contain a userID
+    unless User.find_by_id(session[:user_id]) && $current_user                #the session list must contain a userID
       redirect_to '/login/new', notice: "Please log in"
     end
   end
