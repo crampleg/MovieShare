@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="26" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1050">
+            <state line="53" column="28" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.6052632" vertical-offset="404" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="20131023155844_create_users.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="315">
+            <state line="9" column="30" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
@@ -98,19 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="113" selection-start="145" selection-end="145" vertical-scroll-proportion="0.023696683" vertical-offset="0" max-vertical-offset="633">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131030005111_create_followers.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131030005111_create_followers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="3" column="141" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -135,13 +126,13 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb" />
       </list>
     </option>
   </component>
@@ -614,11 +605,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="32" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -658,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="26" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="49" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -693,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="27" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
@@ -709,7 +681,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="113" selection-start="145" selection-end="145" vertical-scroll-proportion="0.023696683" vertical-offset="0" max-vertical-offset="633">
+        <state line="3" column="141" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="28" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.6052632" vertical-offset="404" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
