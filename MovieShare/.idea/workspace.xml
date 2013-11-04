@@ -8,7 +8,7 @@
     <ignored path="MovieShare.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383604607509" ignored="false" />
-    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383605316055" ignored="false" />
+    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383606433100" ignored="false" />
     <file path="/my_lists_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383602317012" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <file leaf-file-name="profilepage.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="46" selection-start="3766" selection-end="3766" vertical-scroll-proportion="0.54280823">
+            <state line="108" column="119" selection-start="3780" selection-end="3780" vertical-scroll-proportion="0.46575344">
               <folding />
             </state>
           </provider>
@@ -782,7 +782,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="252" selection-end="293" vertical-scroll-proportion="0.0" />
+        <state line="11" column="8" selection-start="252" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/my_lists_controller.rb">
@@ -854,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="46" selection-start="3766" selection-end="3766" vertical-scroll-proportion="0.54280823">
+        <state line="108" column="119" selection-start="3780" selection-end="3780" vertical-scroll-proportion="0.46575344">
           <folding />
         </state>
       </provider>
