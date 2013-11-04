@@ -73,7 +73,7 @@ Title:
 		</div>
 
 <div class="row mylists">
-		<div class="page-header"><h2>My Movielists</h2>
+		<div class="page-header"><h2>My Movie Lists</h2>
 		<a type="button" class ="btn btn-default"href= "#newlist_modal" data-toggle="modal"> <span class="glyphicon glyphicon-plus"></span> New Movielist</a></div>
 			<div class="modal fade" id="newlist_modal">
 				<form accept-charset="UTF-8" action="/my_lists" class="new_my_list" id="new_my_list" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="GcmRwZclX8C/Rp62Uj5y7Ykp2mILicCBIH2vqP1u3kU="></div>
@@ -103,7 +103,7 @@ Title:
 			<a href ="#mylist_modal"data-toggle="modal">
 
 				<div class="row lists">
-				<a href="/my_lists"> <span class="glyphicon glyphicon-list"> Show My Movielists</a>
+				<a href="/my_lists"> <span class="glyphicon glyphicon-list"> Show My Movie Lists</a>
 				</br>
                 <% find_lists.each do |list| %>
                     <p><a href='/my_lists/<%=MyList.find_by_list_name_and_owner_id(list.list_name, $current_user.id).id%>'><%= list.list_name %></a></p>

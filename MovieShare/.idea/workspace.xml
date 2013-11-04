@@ -8,8 +8,9 @@
     <ignored path="MovieShare.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383604607509" ignored="false" />
-    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383606433100" ignored="false" />
+    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383606638168" ignored="false" />
     <file path="/my_lists_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383602317012" ignored="false" />
+    <file path="/Gemfile" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383607070577" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profilepage.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profilepage.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="119" selection-start="3780" selection-end="3780" vertical-scroll-proportion="0.46575344">
+            <state line="88" column="28" selection-start="3282" selection-end="3282" vertical-scroll-proportion="-14.958333">
               <folding />
             </state>
           </provider>
@@ -114,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
+            <state line="39" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="0.71014494">
               <folding />
             </state>
           </provider>
@@ -146,9 +147,9 @@
         <option value="$PROJECT_DIR$/app/views/my_lists/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/my_lists_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/profilepage.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -805,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/my_lists/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
@@ -856,7 +850,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="119" selection-start="3780" selection-end="3780" vertical-scroll-proportion="0.46575344">
+        <state line="88" column="28" selection-start="3282" selection-end="3282" vertical-scroll-proportion="-14.958333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="0.71014494">
           <folding />
         </state>
       </provider>
