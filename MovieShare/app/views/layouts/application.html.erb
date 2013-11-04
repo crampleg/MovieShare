@@ -19,6 +19,9 @@
 	   </div>
 	   <div class ="col-lg-6 col-md-6 search">
       <div class="row btn-row">
+         
+          
+        
          <div class="btn-group">
             <button type="button" class="btn btn-default">
               <span class="glyphicon glyphicon-film"></span> Movies
@@ -31,7 +34,7 @@
             </button>
          </div>
         </div>
-        <%= form_tag do %>
+       <%= form_tag do %>
         <div class="row input-row">
          <div class="input-group">
          <%= text_field_tag :query, params[:query], class: 'form-control' %>

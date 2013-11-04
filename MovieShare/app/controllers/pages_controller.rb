@@ -3,8 +3,11 @@ class PagesController < ApplicationController
 
   $title = nil
 
+  $type = "users"
+
   $description = "default"
   def getmovie
+    $searchtype = "movies"
     require 'net/http'
     require 'json'
     
@@ -23,6 +26,10 @@ class PagesController < ApplicationController
     
     redirect_to '/pages/list'
   
+  end
+
+  def set_search_type
+    redirect_to(:back)
   end
 
   def find_followers
@@ -57,7 +64,7 @@ class PagesController < ApplicationController
     redirect_to(:back)
   end
 
-  helper_method :find_followers, :find_following
+  helper_method :find_followers, :find_following, :set_search_type
 
 end
 
