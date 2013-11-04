@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :followers, dependent: :destroy   #when a user is deleted, the follower object should also be deleted
+  #has_many :followers, dependent: :destroy   #when a user is deleted, the follower object should also be deleted
 
   attr_accessible :username, :firstname, :lastname, :email, :password_digest, :password, :password_confirmation, :following, :followers
   #attr_accessor :password
