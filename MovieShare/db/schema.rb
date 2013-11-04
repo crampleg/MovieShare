@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20131031212111) do
     t.integer  "owner_id"
     t.string   "movie_name"
     t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "updated_at", :null => false 
   end
 
   create_table "users", :force => true do |t|
