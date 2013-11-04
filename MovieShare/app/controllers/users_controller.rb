@@ -9,6 +9,7 @@ class UsersController < ActionController::Base
     respond_to do |format|
       if @user.save
         @user.following='0'
+        @user.save
         @user.followers='0'
         @user.save
         $current_user=@user;
