@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Owner:</b>
+  <%= @unseen_movie.owner_id %>
+</p>
+
+<p>
+  <b>Movie name:</b>
+  <%= @unseen_movie.movie_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_unseen_movie_path(@unseen_movie) %> |
+<%= link_to 'Back', unseen_movies_path %>

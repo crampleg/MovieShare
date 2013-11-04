@@ -2,7 +2,19 @@ MovieShare::Application.routes.draw do
 
 
 
+  resources :unseen_movies
+
+
+  resources :list_movies
+
+  
+  resources :watched_movies
+
+
   resources :followers
+
+
+  resources :my_lists
 
 
 
@@ -15,9 +27,10 @@ MovieShare::Application.routes.draw do
   controller :pages do 
     post 'pages/mainpage' => :getmovie
     post 'pages/list' => :getmovie
-    post 'pages/profilepage' => :getmylists
-   # get 'pages/profilepage' => :find_followers
+    post 'pages/profilepage' => :updateprofile
+
   end
+
 
   get "login/new"
 
@@ -32,6 +45,7 @@ MovieShare::Application.routes.draw do
   get "pages/mainpage"
 
   get "pages/profilepage"
+   
 
   get "pages/loginpage"
 
@@ -40,6 +54,8 @@ MovieShare::Application.routes.draw do
   get "pages/registerpage"
 
   get "pages/list"
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -90,7 +106,7 @@ MovieShare::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  #root :to => 'pages/mainpage'
 
   # See how all your routes lay out with "rake routes"
 

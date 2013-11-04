@@ -173,8 +173,9 @@
 }
 
 .profilegroup{
-	position: block;
-	float:left;
+	.profilepic{
+		padding-left: 0px !important;
+	}
 	
 	img{
 		width: 140px;
@@ -186,15 +187,7 @@
 		margin-top: 10px;
 	}
 
-	h2 {
-		margin-left: 10px;
-	}
-	a{
-		margin-left: 10px;
-	}
-	p{
-		margin-left: 10px;
-	}
+	
 }
 
 .searchlist {
@@ -266,6 +259,16 @@
     margin: auto;
     height: 500px !important;
 
+
+}
+.moviesinlists{
+	border-bottom: 1px dotted #898B8E;
+}
+
+.lists{
+	border-bottom: 1px dotted white;
+}
+
     .span6.input-large{
     	width: 500px;
     	height: 100px;
@@ -280,6 +283,5 @@
     	width: 120px !important;
     }
 
-}	
 
 

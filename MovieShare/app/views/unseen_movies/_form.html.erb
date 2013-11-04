@@ -1,0 +1,25 @@
+<%= form_for(@unseen_movie) do |f| %>
+  <% if @unseen_movie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unseen_movie.errors.count, "error") %> prohibited this unseen_movie from being saved:</h2>
+
+      <ul>
+      <% @unseen_movie.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :owner_id %><br />
+    <%= f.number_field :owner_id %>
+  </div>
+  <div class="field">
+    <%= f.label :movie_name %><br />
+    <%= f.text_field :movie_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

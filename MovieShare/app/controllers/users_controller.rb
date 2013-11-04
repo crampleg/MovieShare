@@ -6,9 +6,12 @@ class UsersController < ActionController::Base
 
   def create
     @user = User.new(params[:user])
-
     respond_to do |format|
       if @user.save
+        @user.following_no='0'
+        @user.followers_no='0'
+        @user.save
+        session[:user_id] = @user.id
         $current_user=@user;
         format.html { redirect_to '/pages/mainpage', notice: "#{@user.firstname}'s profile was successfully created!" }
         format.json { render json: @user, status: :created, location: @user }
