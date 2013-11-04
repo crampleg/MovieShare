@@ -46,7 +46,9 @@ Title:
 					    			<h3>Followers</h3>
 						  		</div>
 							  	<div class="modal-body">
-                                  <p><%= find_followers %></p>
+                                  <% find_followers.each do |follower| %>
+                                  <p><%= follower %></p>
+                                  <% end %>
 							  	</div>
 							</div>
 					</div>
