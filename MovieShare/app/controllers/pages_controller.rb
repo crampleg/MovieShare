@@ -28,7 +28,12 @@ class PagesController < ApplicationController
 
   def find_followers
     #find all followers of a user with id $current_user.id
-    Follower.find_all_by_user_id_model(2)
+    followers = Follower.find_all_by_user_id_model(2)
+    fol_user_names = []
+    followers.each do |follower|
+      fol_user_names.push(follower.user_id_follower)
+    end
+    return fol_user_names
   end
 
 
