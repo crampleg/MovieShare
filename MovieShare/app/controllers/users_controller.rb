@@ -8,9 +8,9 @@ class UsersController < ActionController::Base
     @user = User.new(params[:user])
     respond_to do |format|
       if @user.save
-        @user.following='0'
+        @user.following_no='0'
         @user.save
-        @user.followers='0'
+        @user.followers_no='0'
         @user.save
         $current_user=@user;
         format.html { redirect_to '/pages/mainpage', notice: "#{@user.firstname}'s profile was successfully created!" }
