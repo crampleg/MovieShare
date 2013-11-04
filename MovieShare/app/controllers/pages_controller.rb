@@ -29,12 +29,23 @@ class PagesController < ApplicationController
   def find_followers
     #find all followers of a user with id $current_user.id
     followers = Follower.find_all_by_user_id_model($current_user.id)
-    fol_user_names = []
+    followers_user_names = []
     followers.each do |follower|
       username = User.find(follower.user_id_follower).username
-      fol_user_names.push(username)
+      followers_user_names.push(username)
     end
-    return fol_user_names
+    return followers_user_names
+  end
+
+  def find_following
+    #find all user the current user is following
+    following = Follower.find_all_by_user_id_follower($current_user)
+    following_user_names = []
+    following.each do [fol]
+      username = User.find(fol.user_id_model).username
+      following_user_names.push(username)
+    end
+    return following_user_names
   end
 
 
@@ -47,7 +58,7 @@ class PagesController < ApplicationController
     redirect_to(:back)
   end
 
-  helper_method :find_followers
+  helper_method :find_followers, :find_following
 
 end
 
