@@ -104,7 +104,10 @@ Title:
 
 				<div class="row lists">
 				<a href="/my_lists"> <span class="glyphicon glyphicon-list"> Show My Movielists</a>
-				
+				</br>
+                <% find_lists.each do |list| %>
+                    <%= list.list_name %>
+                <% end %>
 				</div>
 
 				

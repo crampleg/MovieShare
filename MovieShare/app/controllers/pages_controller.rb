@@ -47,6 +47,10 @@ class PagesController < ApplicationController
     return following_user_names
   end
 
+  def find_lists
+    MyList.find_all_by_owner_id($current_user.id)
+  end
+
 
   def getlist
     $title = "Hello world"
@@ -57,7 +61,7 @@ class PagesController < ApplicationController
     redirect_to(:back)
   end
 
-  helper_method :find_followers, :find_following
+  helper_method :find_followers, :find_following, :find_lists
 
 end
 
