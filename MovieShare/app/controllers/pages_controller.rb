@@ -31,7 +31,8 @@ class PagesController < ApplicationController
     followers = Follower.find_all_by_user_id_model(2)
     fol_user_names = []
     followers.each do |follower|
-      fol_user_names.push(follower.user_id_follower)
+      username = User.find(follower.user_id_follower).username
+      fol_user_names.push(username)
     end
     return fol_user_names
   end

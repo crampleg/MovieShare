@@ -7,7 +7,7 @@
     <list default="true" id="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" name="Default" comment="" />
     <ignored path="MovieShare.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383599129722" ignored="false" />
+    <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383599375612" ignored="false" />
     <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383598478536" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,7 @@
       <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="25" selection-start="901" selection-end="901" vertical-scroll-proportion="0.8082409">
+            <state line="34" column="31" selection-start="909" selection-end="909" vertical-scroll-proportion="0.78446907">
               <folding />
             </state>
           </provider>
@@ -811,7 +811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="901" selection-end="901" vertical-scroll-proportion="0.8082409">
+        <state line="34" column="31" selection-start="909" selection-end="909" vertical-scroll-proportion="0.78446907">
           <folding />
         </state>
       </provider>
