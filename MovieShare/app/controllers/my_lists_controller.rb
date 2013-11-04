@@ -48,6 +48,8 @@ class MyListsController < PagesController
 
     respond_to do |format|
       if @my_list.save
+        @my_list.owner_id = $current_user.id
+        @my_list.save
         format.html { redirect_to '/my_lists', notice: 'My list was successfully created.' }
         format.json { render json: @my_list, status: :created, location: @my_list }
       else
