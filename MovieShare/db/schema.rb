@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(:version => 20131031212111) do
   end
 
   create_table "my_lists", :force => true do |t|
-    t.integer  "list_id"
     t.string   "list_name"
     t.integer  "owner_id"
     t.datetime "created_at", :null => false
