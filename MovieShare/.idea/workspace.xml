@@ -8,7 +8,7 @@
     <ignored path="MovieShare.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pages_controller.rb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383599974157" ignored="false" />
-    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383599965805" ignored="false" />
+    <file path="/profilepage.html.erb" changelist="232e7f4c-2f34-472a-a4dd-7a2cb5d4697f" time="1383600391523" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="profilepage.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="48" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.49423394">
+            <state line="37" column="49" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.32125205">
               <folding />
             </state>
           </provider>
@@ -805,7 +805,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/profilepage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="48" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.49423394">
+        <state line="37" column="49" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.32125205">
           <folding />
         </state>
       </provider>
