@@ -205,9 +205,6 @@
 		text-align: center;
 	}
 
-	
-
-
 	.movieinlist {
 		margin-bottom: 20px!important;
 		padding-bottom: 30px;
@@ -216,24 +213,33 @@
 		.poster{
 			text-align: center;
 			margin-top: 25px;
+
+			button {
+				width: 175px;
+				margin-top: 10px;
+			}
 		}
 
 		.addtolist {
-			margin: 0!important;
-			margin-top: -9px!important;
-			width: 80%;
-			max-width: 150px;
+			width: 190px;
+			height: 32px;
+			float: right;
+			margin-top: -18px!important;
+
+			button {
+				height: 30px;
+				padding-top: 5px;
+			}
 		}
 
 		.caret {
-			margin: 0!important;
-			margin-top: -9px!important;
-			width: 20%;
-			max-width: 10px;
+			float: right;
+			margin-top: 7px;
 		}
 
-		.plot {
-			padding-top: 7px;
+		.plot p {
+			padding-top: 10px;
+			padding-bottom: 10px;
 			border-bottom: 2px dotted #898B8E;
 			border-top: 2px dotted #898B8E;
 			margin-bottom: 7px!important;
@@ -275,4 +281,5 @@
     }
 
 }	
+
 

@@ -1,58 +1,131 @@
 <div class="row searchlist">
-	<% $movies.each do |movie| %>
-	<div class="row movieinlist">
-			<div class="col-sm-3 poster">
-				<%= image_tag(movie["poster"]["imdb"]) rescue "<p>No image</p>" %>
-			</div>
-			<div class="col-sm-9">
-				<div class="row">
-					<h2><%= movie["title"] %> (<%= movie["year"]%>)</h2>
+	<% if $movies.size == 2 %>
+		<h2> I'm sorry, we could not find what you were looking for...</h2>
+	<% else %>
+		<% $movies.each do |movie| %>
+		<div class="row movieinlist">
+				<div class="col-sm-3 poster">
+					<div class="row">
+						<%= image_tag(movie["poster"]["imdb"]) rescue image_tag("empty.png") %>
+					</div>
+					<div class="row">
+						<button class="btn btn-success seen">Seen</button>
+					</div>
 				</div>
-				<div class="row">
-					<p>
-						<% movie["genres"].each do |genre| %>
-							<strong><%= genre %></strong> 
-							<% if genre != movie["genres"].last %>
-								||
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2><%= movie["title"] %> (<%= movie["year"]%>)</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<p class="genre">
+								<% if movie["genres"] != nil %>
+									<% movie["genres"].each do |genre| %>
+										<strong><%= genre %></strong> 
+										<% if genre != movie["genres"].last %>
+											||
+										<% end %>
+									<% end %>
+								<% end %>
+							</p>
+						</div>
+						<div class="col-xs-6">
+							<div class="btn-group addtolist">
+								<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									Add to list<span class="caret"></span>
+								</button>
+								<table class="dropdown-menu" role="menu">
+						            <tr>
+						              <td>WishList</td> 
+						              <td><button class="btn btn-success">Add</button></td>
+						            <tr>
+						            <tr>
+						              <td>My Top Ten Movies</td>
+						              <td><button class="btn btn-success">Add</button></td>
+						            <tr>
+						            <tr>
+						              <td>Top Horror Movies</td>
+						              <td><button class="btn btn-success">Add</button></td>
+						            <tr>
+						            <tr>
+						              <td>Worst Movies</td>
+						              <td><button class="btn btn-success">Add</button></td>
+						            <tr>
+						            <tr>
+						              <td>Worst Movies</td>
+						              <td><button class="btn btn-success">Add</button></td>
+						            <tr>
+						            <tr>
+						              <td>Worst Movies</td>
+						              <td><button class="btn btn-success">Add</button></td>
+						            <tr>
+						            <tr>
+						              <td>Worst Movies</td>
+						              <td><button class="btn btn-success">Add</button></td>
+						            <tr>
+	          					</table>
+	          				</div>
+						</div>
+					</div>
+					<div class="row plot">
+						<div class="col-xs-12">
+							<p>
+							<% if movie["plot_simple"] != nil %>
+								<%= movie["plot_simple"] %>
 							<% end %>
-						<% end %>
-					</p>
-				</div>
-				<div class="row plot">
-					<p><%= movie["plot_simple"] %></p>
-				</div>
-				<div class="row">
-					<p>
-					<strong>Rated</strong> <%= movie["rated"] %> ||
-					<strong>Release Date</strong> <%= movie["release_date"].to_s[4..5] %>/<%= movie["release_date"].to_s[6..7] %>
-					</p>
-				</div>
-				<div class="row">
-					<p>
-						<strong>Actors:</strong> 
-						<% movie["actors"].each do |actor| %>
-							<% if actor != movie["actors"].last %>
-								<%= actor %>,
-							<% else %>
-								<%= actor %>.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p>
+							<strong>Rated</strong> 
+							<% if movie["rated"] != nil %>
+								<%= movie["rated"] %>
 							<% end %>
-						<% end %>
-					</p>
-				</div>
-				<div class="row">
-					<p>
-						<strong>Directors:</strong> 
-						<% movie["directors"].each do |director| %>
-							<% if director != movie["directors"].last %>
-								<%= director %>,
-							<% else %>
-								<%= director %>.
+							||
+							<strong>Release Date</strong> 
+							<% if movie["release_date"] != nil %>
+								<%= movie["release_date"].to_s[4..5] %>/<%= movie["release_date"].to_s[6..7] %>
 							<% end %>
-						<% end %>
-					</p>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p>
+								<strong>Actors:</strong> 
+								<% if movie["actors"] != nil %>
+									<% movie["actors"].each do |actor| %>
+										<% if actor != movie["actors"].last %>
+											<%= actor %>,
+										<% else %>
+											<%= actor %>.
+										<% end %>
+									<% end %>
+								<% end %>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p>
+								<strong>Directors:</strong> 
+								<% movie["directors"].each do |director| %>
+									<% if director != movie["directors"].last %>
+										<%= director %>,
+									<% else %>
+										<%= director %>.
+									<% end %>
+								<% end %>
+							</p>
+						</div>
+					</div>
 				</div>
-			</div>
-	</div>
+		</div>
+		<% end %>
 	<% end %>
 </div>
 

@@ -11,7 +11,7 @@
 <body>
  	<div class ="row banner">
       <div class ="col-lg-3 col-md-3">
-         <a href="pages/mainpage">
+         <a href="/pages/mainpage">
             <div class="logo">
                <%= image_tag("MovieShareLogo.png")%>   
             </div>
@@ -61,17 +61,19 @@
 	   </div>
       <div class= "col-lg-4 col-md-4 rm">
       <div class="randommovie">
-        <h3> Gravity (2013) </h3>
+        <h3> 
+          Gravity (2013)
+        </h3>
         <div class="row">
           <div class="col-xs-2">
             <button class="prev">
             </button>
           </div>
           <div class="col-xs-8 poster">
-            <img id="poster" src="/assets/poster.jpeg">
+            <%= image_tag("empty.png") %>
           </div>
           <div class="col-xs-2">
-            <button class="next">
+              <button class="next">
             </button>
           </div>
         </div>
@@ -127,22 +129,29 @@
     // Next random movie
     $('.next').click(function() {
       $('#poster').fadeOut(500, function() {
-          $('#poster').attr("src","/assets/poster.jpeg");
+          $('#poster').attr("src","/assets/empty.png");
           $('#poster').fadeIn(500);
       });
     });
 
     var el = $('.rm');
     var elpos_original = el.offset().top;
+
     $(window).scroll(function(){
-        var elpos = el.offset().top;
-        var windowpos = $(window).scrollTop();
-        var finaldestination = windowpos;
-        if(windowpos<elpos_original) {
-            finaldestination = elpos_original;
-            el.stop().css({'top':10});
-        } else {
-            el.stop().animate({'top':finaldestination-elpos_original+10},500);
+      if(window.innerWidth >= 991){
+          var elpos = el.offset().top;
+          var windowpos = $(window).scrollTop();
+          var finaldestination = windowpos;
+          
+          if(windowpos<elpos_original) {
+              finaldestination = elpos_original;
+              el.stop().css({'top':10});
+          } else {
+              el.stop().animate({'top':finaldestination-elpos_original+10},500);
+          }
+        }
+        else {
+          el.stop().css({'top':10})
         }
     });
    </script>
