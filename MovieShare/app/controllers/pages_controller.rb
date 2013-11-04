@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   
   $title = nil
 
+  $description = "default"
   def getmovie
     require 'net/http'
     require 'json'
@@ -34,6 +35,12 @@ class PagesController < ApplicationController
   def getlist
     $title = "Hello world"
   end 
+
+  def updateprofile
+    $description = params[:mytext]
+    redirect_to(:back)
+  end
+
 
 end
 

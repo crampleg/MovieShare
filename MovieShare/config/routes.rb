@@ -27,6 +27,7 @@ MovieShare::Application.routes.draw do
   controller :pages do 
     post 'pages/mainpage' => :getmovie
     post 'pages/list' => :getmovie
+    post 'pages/profilepage' => :updateprofile
 
   end
 
