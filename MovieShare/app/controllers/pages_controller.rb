@@ -41,7 +41,7 @@ class PagesController < ApplicationController
     #find all user the current user is following
     following = Follower.find_all_by_user_id_follower($current_user)
     following_user_names = []
-    following.each do [fol]
+    following.each do |fol|
       username = User.find(fol.user_id_model).username
       following_user_names.push(username)
     end
