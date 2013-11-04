@@ -28,6 +28,7 @@ Title:
 		<div class= "row followingbuttons">
 					<div class="col-xs-4" >
 						<a type="button" class="btn followers" href="#following_modal" data-toggle="modal">following</a>
+							<p><%= $current_user.following_no %></p>
 							<div class="modal fade" id="following_modal">
 							  	<div class="modal-header">
 							    	<a class="close" data-dismiss="modal">&times;</a>
@@ -40,6 +41,7 @@ Title:
 					</div>
 					<div class="col-xs-4">
 						<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal">followers</a>
+							 <p><%= $current_user.followers_no %></p>
 							 <div class="modal fade" id="followers_modal">
 					 			<div class="modal-header">
 					    			<a class="close" data-dismiss="modal">&times;</a>
