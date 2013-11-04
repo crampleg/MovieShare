@@ -41,6 +41,7 @@ class PagesController < ApplicationController
     redirect_to(:back)
   end
 
+  helper_method :find_followers
 
 end
 
