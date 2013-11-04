@@ -29,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="my_list.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/my_list.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/my_lists/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,10 +83,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_lists_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="my_lists_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/my_lists_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.3478261">
+            <state line="51" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="39" selection-start="309" selection-end="309" vertical-scroll-proportion="0.3726708">
               <folding />
             </state>
           </provider>
@@ -129,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -145,6 +144,7 @@
         <option value="$PROJECT_DIR$/app/views/my_lists/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/my_lists/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/my_lists_controller.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -749,11 +749,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131023155844_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="303" selection-end="332" vertical-scroll-proportion="0.0">
@@ -852,7 +847,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/my_lists_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.3478261">
+        <state line="51" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="309" selection-end="309" vertical-scroll-proportion="0.3726708">
           <folding />
         </state>
       </provider>
