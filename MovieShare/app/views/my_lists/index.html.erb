@@ -25,7 +25,6 @@
 <table>
 <% @my_lists.each do |my_list| %>
   <tr>
-    <td><%=  my_list.list_id %></td>
     <td><h3><span class="glyphicon glyphicon-list"> </span> <%= link_to my_list.list_name , my_list %></h3></td>
     <td><%= my_list.owner_id %>  </td> 
     <td><%= link_to 'Edit', edit_my_list_path(my_list) %> | </td>
