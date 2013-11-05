@@ -29,6 +29,7 @@ MovieShare::Application.routes.draw do
     post 'pages/list' => :search
     post 'pages/profilepage' => :updateprofile
     post "pages/mainpage" => :toprated
+    get 'pages/moviepage' => :getmovie
 
   end
 

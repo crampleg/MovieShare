@@ -1,10 +1,9 @@
-
 <div class="row searchlist">
 	<% if $type == "movies" %>
 		<% if $movies.size == 2 %>
 			<h2> I'm sorry, we could not find what you were looking for...</h2>
 		<% else %>
-			<% $movies.each do |movie| %>
+			<% $movies.flatten(1).each do |movie| %>
 			<div class="row movieinlist">
 					<div class="col-sm-3 poster">
 						<div class="row">
@@ -17,7 +16,7 @@
 					<div class="col-sm-9">
 						<div class="row">
 							<div class="col-xs-12">
-								<h2><%= movie["title"] %> (<%= movie["year"]%>)</h2>
+								<h2><%= movie["title"] rescue "none" %> (<%= movie["year"] rescue "none" %>)</h2>
 							</div>
 						</div>
 						<div class="row">
@@ -154,7 +153,7 @@
 		<% else %>
 			<h2> I'm sorry, we could not find what you were looking for...</h2>
 		<% end %>
-	<% else %>
+	<% elsif $type == "lists" %>
 		<% if $lists != nil %>
 		<% $lists.each do |list| %>
 		<div class="row users">

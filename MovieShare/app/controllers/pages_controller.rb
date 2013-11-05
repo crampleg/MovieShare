@@ -1,14 +1,17 @@
 
 class PagesController < ApplicationController
-
+  require 'net/http'
+  require 'json'
   $title = nil
   $randomsearch = "randomsearch"
   $randommovie = "randommovie"
   $randomnr = "randomnr"
   $lists = "test"
   $description = "default"
+  $lol = "lol"
+  $test = "lolololol"
 
-    topratedsearch = "a"
+    topratedsearch = "p"
     url = "http://mymovieapi.com/?title=#{topratedsearch}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
     begin
       response = Net::HTTP.get(URI.parse(url))
@@ -18,15 +21,13 @@ class PagesController < ApplicationController
     rescue SocketError => e
       puts e.message
     end
-
+  
   def search
-    $searchtype = "movies"
-    require 'net/http'
-    require 'json'
+
     query = params[:query]
     $users = []
-
     $q = query
+    $lol = params[:type]
     if params[:type] == "users"
       usrs = User.all
 
@@ -111,12 +112,27 @@ class PagesController < ApplicationController
     $title = "Hello world"
   end 
 
+  def getmovie
+    $type ="movies"
+    $test = params[:id]
+    url = "http://mymovieapi.com/?id=#{$test}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
+    begin
+      response = Net::HTTP.get(URI.parse(url))
+      parsed_json = ActiveSupport::JSON.decode(response)
+      $movies = parsed_json
+      $movies = [ $movies ]
+     rescue SocketError => e
+        puts e.message
+    end
+    redirect_to '/pages/list'
+  end 
+
   def updateprofile
     $description = params[:mytext]
     redirect_to(:back)
   end
 
-  helper_method :find_followers, :find_following, :find_lists
+  helper_method :find_followers, :find_following, :find_lists, :search
 
 end
 

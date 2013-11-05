@@ -8,9 +8,9 @@
 			<div class="listcontainer">
 				<button id="leftbtn" class="btn btn-default glyphicon glyphicon-chevron-left left"></button>
 				<div id="movies" class="movies">
-                <% $topmovies.each do |movie| %>
-				    <%= image_tag(movie["poster"]["imdb"]) rescue image_tag("empty.png") %>
-                <% end %>
+                    <% $topmovies.each do |movie| %>
+                        <%= link_to image_tag(movie["poster"]["imdb"]), :controller => "pages", :action => "moviepage", :id => movie["imdb_id"] %>
+                    <% end %>
 				</div>
 				<button id="rightbtn" class="btn btn-default glyphicon glyphicon-chevron-right right"></button>
 			</div>
