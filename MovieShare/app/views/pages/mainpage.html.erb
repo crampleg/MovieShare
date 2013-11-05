@@ -8,23 +8,9 @@
 			<div class="listcontainer">
 				<button id="leftbtn" class="btn btn-default glyphicon glyphicon-chevron-left left"></button>
 				<div id="movies" class="movies">
-				<%= image_tag("poster.jpeg")%>
-				<%= image_tag("poster.jpeg")%>
-				<%= image_tag("poster.jpeg")%>
-				<%= image_tag("poster.jpeg")%>
-				<%= image_tag("poster.jpeg")%>
-				<%= image_tag("poster.jpeg")%>
-				<%= image_tag("poster.jpeg")%>
-				<%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
+                <% $topmovies.each do |movie| %>
+				    <%= image_tag(movie["poster"]["imdb"]) rescue image_tag("empty.png") %>
+                <% end %>
 				</div>
 				<button id="rightbtn" class="btn btn-default glyphicon glyphicon-chevron-right right"></button>
 			</div>

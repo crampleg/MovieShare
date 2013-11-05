@@ -15,6 +15,7 @@
             <div class="logo">
                <%= image_tag("MovieShareLogo.png")%>   
             </div>
+
          </a>
 	   </div>
 	   <div class ="col-lg-6 col-md-6 search">
@@ -37,7 +38,6 @@
             </div>
             </div>              
         <% end %>
-        
          <!--<div class="btn-group">
             <button type="button" class="btn btn-default">
               <span class="glyphicon glyphicon-film"></span> Movies
@@ -120,19 +120,18 @@
       <div class= "col-lg-4 col-md-4 rm">
       <div class="randommovie">
         <h3> 
-          Gravity (2013)
+          <%= $randommovie["title"] %> (<%= $randommovie["year"]%>)
         </h3>
         <div class="row">
           <div class="col-xs-2">
-            <button class="prev">
-            </button>
           </div>
           <div class="col-xs-8 poster">
-            <%= image_tag("empty.png") %>
+            <%= image_tag($randommovie["poster"]["imdb"]) rescue image_tag("empty.png") %>
           </div>
-          <div class="col-xs-2">
-              <button class="next">
-            </button>
+          <div class="col-xs-1">
+              <%= form_tag do %>
+                  <%= submit_tag "Next", class: 'btn btn-primary', id: 'nextrandom' %>
+              <% end %>
           </div>
         </div>
         <div class="row">

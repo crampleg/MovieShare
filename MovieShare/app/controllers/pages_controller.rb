@@ -2,9 +2,23 @@
 class PagesController < ApplicationController
 
   $title = nil
-
+  $randomsearch = "randomsearch"
+  $randommovie = "randommovie"
+  $randomnr = "randomnr"
   $lists = "test"
   $description = "default"
+
+    topratedsearch = "a"
+    url = "http://mymovieapi.com/?title=#{topratedsearch}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
+    begin
+      response = Net::HTTP.get(URI.parse(url))
+      parsed_json = ActiveSupport::JSON.decode(response)
+      $topmovies = parsed_json
+
+    rescue SocketError => e
+      puts e.message
+    end
+
   def search
     $searchtype = "movies"
     require 'net/http'
@@ -16,11 +30,13 @@ class PagesController < ApplicationController
       $users = User.all
 
         $type = "users"
+        redirect_to '/pages/list'
     elsif params[:type] == "lists"
 
       $lists = MyList.all
         $type = "lists"
-    else
+        redirect_to '/pages/list'
+    elsif params[:type] == "movies"
       $type = "movies"
       query.gsub! /\s+/, "+"
       url = "http://mymovieapi.com/?title=#{query}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
@@ -32,9 +48,24 @@ class PagesController < ApplicationController
       rescue SocketError => e
         puts e.message
       end
+      redirect_to '/pages/list'
+    else
+      $randomstring = "abcdefghijklmnopqrstuvwxyz"
+      $randomnr = rand(26)
+      $randomnr2 = rand(10)
+      $randomsearch = $randomstring[$randomnr..$randomnr]
+      url = "http://mymovieapi.com/?title=#{$randomsearch}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
+      begin
+        response = Net::HTTP.get(URI.parse(url))
+        parsed_json = ActiveSupport::JSON.decode(response)
+        $randommovie = parsed_json[$randomnr2]
+      rescue SocketError => e
+        puts e.message
+      end
+      redirect_to(:back)
     end
 
-    redirect_to '/pages/list'
+    
   end
 
   def find_followers
