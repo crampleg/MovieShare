@@ -23,11 +23,23 @@ class PagesController < ApplicationController
     $searchtype = "movies"
     require 'net/http'
     require 'json'
-    
     query = params[:query]
+    $users = []
 
+    $q = query
     if params[:type] == "users"
-      $users = User.all
+      usrs = User.all
+
+      if query.length != 0
+        usrs.each do |user|
+          usrnm = user.username
+          if usrnm.include? query
+            $users.push(user)
+          else
+
+          end
+        end
+      end
 
         $type = "users"
         redirect_to '/pages/list'
