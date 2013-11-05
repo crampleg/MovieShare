@@ -130,53 +130,35 @@
 			<% end %>
 		<% end %>
 	<% elsif $type == "users" %>
+		<% $users.each do |user| %>
 		<div class="row users">
 			<div class="row user">
 				<div class="col-xs-3">
 					<%= image_tag("userpic.jpeg") %>
 				</div>
 				<div class="col-xs-3">
-					<h4>Simon Hordvik</h4>
+					<h4><%= user.username %></h4>
 				</div>
 				<div class="col-xs-3">
-					<h4>46 following</h4>
+					<h4>0 following</h4>
 				</div>
 				<div class="col-xs-3">
-					<h4>35 followers</h4>
-				</div>
-			</div>
-			<div class="row user">
-				<div class="col-xs-3">
-					<%= image_tag("userpic.jpeg") %>
-				</div>
-				<div class="col-xs-3">
-					<h4>Julie Dahl</h4>
-				</div>
-				<div class="col-xs-3">
-					<h4>66 following</h4>
-				</div>
-				<div class="col-xs-3">
-					<h4>37 followers</h4>
-				</div>
-			</div>
-			<div class="user row">
-				<div class="col-xs-3">
-					<%= image_tag("userpic.jpeg") %>
-				</div>
-				<div class="col-xs-3">
-					<h4>Kristoffer Oeseth</h4>
-				</div>
-				<div class="col-xs-3">
-					<h4>43 <br>following</h4>
-				</div>
-				<div class="col-xs-3">
-					<h4>15 <br>followers</h4>
+					<h4>0 followers</h4>
 				</div>
 			</div>
 		</div>
+		<% end %>
 
 	<% else %>
-		<h2> Lists Template </h2>
+		<% $lists.each do |list| %>
+		<div class="row users">
+			<div class="row user">
+				<div class="col-xs-3">
+					<h4><%= list.list_name %></h4>
+				</div>
+			</div>
+		</div>
+		<% end %>
 	<% end %>
 </div>
 

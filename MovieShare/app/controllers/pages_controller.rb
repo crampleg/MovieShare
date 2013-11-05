@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   $title = nil
 
-
+  $lists = "test"
   $description = "default"
   def search
     $searchtype = "movies"
@@ -13,8 +13,12 @@ class PagesController < ApplicationController
     query = params[:query]
 
     if params[:type] == "users"
+      $users = User.all
+
         $type = "users"
     elsif params[:type] == "lists"
+
+      $lists = MyList.all
         $type = "lists"
     else
       $type = "movies"
