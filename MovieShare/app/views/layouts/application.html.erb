@@ -19,10 +19,26 @@
 	   </div>
 	   <div class ="col-lg-6 col-md-6 search">
       <div class="row btn-row">
-         
-          
+          <%= form_tag("/pages/list", method: "post") do %>
+            <div class="row">
+              <%= radio_button_tag(:type, "movies", true) %> 
+              <%= label_tag(:q, "Movies") %> 
+              <%= radio_button_tag(:type, "users") %> 
+              <%= label_tag(:q, "Users") %>
+              <%= radio_button_tag(:type, "lists") %> 
+              <%= label_tag(:q, "Lists") %>
+            </div>
+            <div class="row input-row">
+             <div class="input-group">
+             <%= text_field_tag :query, params[:query], class: 'form-control' %>
+              <span class="input-group-btn">
+                <%= submit_tag "Search", class: 'btn btn-default' %>
+              </span>
+            </div>
+            </div>              
+        <% end %>
         
-         <div class="btn-group">
+         <!--<div class="btn-group">
             <button type="button" class="btn btn-default">
               <span class="glyphicon glyphicon-film"></span> Movies
             </button>
@@ -33,6 +49,7 @@
               <span class="glyphicon glyphicon-list"></span> Lists
             </button>
          </div>
+
         </div>
        <%= form_tag do %>
         <div class="row input-row">
@@ -44,6 +61,8 @@
         </div>
         </div>
         <% end %>
+        -->
+        </div>
       </div>
  	   <div class ="col-lg-3 col-md-3 profile">
       <div class="row">

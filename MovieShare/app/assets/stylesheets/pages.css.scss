@@ -198,6 +198,7 @@
 		text-align: center;
 	}
 
+
 	.movieinlist {
 		margin-bottom: 20px!important;
 		padding-bottom: 30px;
@@ -238,8 +239,26 @@
 			margin-bottom: 7px!important;
 		}
 	}
+
 }
 
+
+
+.users {
+	
+	.user {
+	padding: 20px;
+	
+		img {
+			height: 60px;
+			width: 60px;
+		}
+	}
+
+	.user:nth-child(even) {
+		background-color: white;
+	}
+}
 .button-group-vertical{
 		.inputtt{
 		background-color: grey !important;

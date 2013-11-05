@@ -3,33 +3,34 @@ class PagesController < ApplicationController
 
   $title = nil
 
-  $type = "users"
 
   $description = "default"
-  def getmovie
+  def search
     $searchtype = "movies"
     require 'net/http'
     require 'json'
     
     query = params[:query]
-    query.gsub! /\s+/, "+"
-    url = "http://mymovieapi.com/?title=#{query}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
-    
-    begin
+
+    if params[:type] == "users"
+        $type = "users"
+    elsif params[:type] == "lists"
+        $type = "lists"
+    else
+      $type = "movies"
+      query.gsub! /\s+/, "+"
+      url = "http://mymovieapi.com/?title=#{query}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
+      begin
       response = Net::HTTP.get(URI.parse(url))
       parsed_json = ActiveSupport::JSON.decode(response)
       $movies = parsed_json
 
-    rescue SocketError => e
-      puts e.message
+      rescue SocketError => e
+        puts e.message
+      end
     end
-    
-    redirect_to '/pages/list'
-  
-  end
 
-  def set_search_type
-    redirect_to(:back)
+    redirect_to '/pages/list'
   end
 
   def find_followers
