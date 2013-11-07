@@ -10,6 +10,11 @@ class PagesController < ApplicationController
   $description = "default"
   $lol = "lol"
   $test = "lolololol"
+  $list_id = "0"
+
+  $l_id = "0"
+  $m_id = "0"
+  $listmovies = []
 
     topratedsearch = "p"
     url = "http://mymovieapi.com/?title=#{topratedsearch}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
@@ -113,6 +118,7 @@ class PagesController < ApplicationController
   end 
 
   def getmovie
+    $lol = "HAHAHAHAHAHAHHAHAHA"
     $type ="movies"
     $test = params[:id]
     url = "http://mymovieapi.com/?id=#{$test}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
@@ -127,7 +133,31 @@ class PagesController < ApplicationController
     redirect_to '/pages/list'
   end 
 
+  def addmovie 
+
+    $l_id = params[:list]
+    $m_id = params[:movieid]
+
+    ListMovie.create(:list_id => params[:list], :movie_name => params[:movieid])
+
+    $lol = "lalallalalala"
+    redirect_to '/pages/list'
+  end
+
   def updateprofile
+    $list_id = params[:list]
+    $listmovies = []
+    ListMovie.find_all_by_list_id($list_id).each do |movie|
+      url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
+      begin
+        response = Net::HTTP.get(URI.parse(url))
+        parsed_json = ActiveSupport::JSON.decode(response)
+        $listmovies.push(parsed_json)
+      rescue SocketError => e
+        puts e.message
+      end
+    end
+
     $description = params[:mytext]
     redirect_to(:back)
   end

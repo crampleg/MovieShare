@@ -38,34 +38,14 @@
 										Add to list<span class="caret"></span>
 									</button>
 									<table class="dropdown-menu" role="menu">
+										<tr>
+							              <td><button class="btn btn-primary">WishList</button></td>
 							            <tr>
-							              <td>WishList</td> 
-							              <td><button class="btn btn-success">Add</button></td>
+									<% find_lists.each do |list| %>
+										<tr>
+							              <td><%= button_to list.list_name, { :controller => "pages", :action => "moviepage", :list => list.id, :movieid => movie["imdb_id"] }, :class => "btn btn-default"  %></button></td>
 							            <tr>
-							            <tr>
-							              <td>My Top Ten Movies</td>
-							              <td><button class="btn btn-success">Add</button></td>
-							            <tr>
-							            <tr>
-							              <td>Top Horror Movies</td>
-							              <td><button class="btn btn-success">Add</button></td>
-							            <tr>
-							            <tr>
-							              <td>Worst Movies</td>
-							              <td><button class="btn btn-success">Add</button></td>
-							            <tr>
-							            <tr>
-							              <td>Worst Movies</td>
-							              <td><button class="btn btn-success">Add</button></td>
-							            <tr>
-							            <tr>
-							              <td>Worst Movies</td>
-							              <td><button class="btn btn-success">Add</button></td>
-							            <tr>
-							            <tr>
-							              <td>Worst Movies</td>
-							              <td><button class="btn btn-success">Add</button></td>
-							            <tr>
+									<% end %>
 		          					</table>
 		          				</div>
 							</div>
