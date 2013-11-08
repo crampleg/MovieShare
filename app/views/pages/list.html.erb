@@ -119,13 +119,7 @@
 						<%= image_tag("userpic.jpeg") %>
 					</div>
 					<div class="col-xs-3">
-						<h4><%= user.username %></h4>
-					</div>
-					<div class="col-xs-3">
-						<h4>0 following</h4>
-					</div>
-					<div class="col-xs-3">
-						<h4>0 followers</h4>
+						<h4><%= button_to user.username, { :controller => "pages", :action => "profile", :user => user } %></h4>    #when clicking this user, a ton of variables has to be set: $current_viewable_user etc. 
 					</div>
 				</div>
 			</div>

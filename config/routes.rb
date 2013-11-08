@@ -31,6 +31,7 @@ MovieShare::Application.routes.draw do
     post "pages/mainpage" => :toprated
     get 'pages/moviepage' => :getmovie
     post 'pages/moviepage' => :addmovie
+    post 'pages/profile' => :gotouserprofile
 
   end
 

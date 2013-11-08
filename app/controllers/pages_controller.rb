@@ -28,19 +28,18 @@ class PagesController < ApplicationController
     end
   
   def search
-
-    query = params[:query]
+    query = params[:query]         #the input string that the user wrote in the search field
     $users = []
     $q = query
-    $lol = params[:type]
-    if params[:type] == "users"
-      usrs = User.all
+    $lol = params[:type]           #the radio button value the use set (movies, users, lists)
+    if params[:type] == "users"    #if the user checked the 'Users' radio button
+      usrs = User.all              #find all users
 
-      if query.length != 0
-        usrs.each do |user|
-          usrnm = user.username
-          if usrnm.include? query
-            $users.push(user)
+      if query.length != 0         #check that the input string is not empty
+        usrs.each do |user|        
+          usrnm = user.username    #for every user, find the user name
+          if usrnm.include? query  #if the user name includes the search input string 
+            $users.push(user)      #then add the user to the list that is presented as search results 
           else
 
           end
@@ -144,9 +143,9 @@ class PagesController < ApplicationController
     redirect_to '/pages/list'
   end
 
-  def updateprofile
-    $list_id = params[:list]
-    $listmovies = []
+  def updateprofile                 #this function is called when a user clicks a list he has created in profilepage
+    $list_id = params[:list]        #the list_id is sent as a parameter
+    $listmovies = []                
     ListMovie.find_all_by_list_id($list_id).each do |movie|
       url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
       begin
@@ -160,6 +159,11 @@ class PagesController < ApplicationController
 
     $description = params[:mytext]
     redirect_to(:back)
+  end
+  
+  def gotouserprofile
+    $current_visited_user = params[:user]
+    
   end
 
   helper_method :find_followers, :find_following, :find_lists, :search
