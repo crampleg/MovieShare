@@ -162,8 +162,8 @@ class PagesController < ApplicationController
   end
   
   def gotouserprofile
-    #$current_visited_user = params[:user]
-    $current_visited_user = "HEY"; 
+    $current_visited_user = params[:user]
+    #$current_visited_user = "HEY"; 
     redirect_to '/pages/profile'
     
   end
