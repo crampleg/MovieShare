@@ -162,8 +162,7 @@ class PagesController < ApplicationController
   end
   
   def gotouserprofile
-    $current_visited_user = params[:user]
-    #$current_visited_user = "HEY"; 
+    $current_visited_user = User.find_by_id(params[:user_id])
     redirect_to '/pages/profile'
     
   end
