@@ -162,9 +162,14 @@ class PagesController < ApplicationController
   end
   
   def gotouserprofile
-    $current_visited_user = User.find_by_id(params[:user_id])
-    redirect_to '/pages/profile'
-    
+    user = params[:user_id]
+    if (user != $current_user.id) {}
+      $current_visited_user = User.find_by_id(user)    
+      redirect_to '/pages/profile'
+    }
+    else {
+      redirect_to '/pages/profilepage' 
+    }
   end
 
   helper_method :find_followers, :find_following, :find_lists, :search
