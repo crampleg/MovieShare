@@ -21,7 +21,8 @@
 					  	</div>
 					  	<div class="modal-body">
                             <% find_visited_following.each do |fol| %>
-                                <p><%= fol %></p>
+                                <% user = User.find_by_id(fol) %>
+								<p><%= button_to user.username+"   ---   "+user.firstname+" "+user.lastname, { :controller => "pages", :action => "profile", :user_id => user.id, :type => "gotoprofile" }, :class => "btn btn-default"  %></p>
                             <% end %>
 						</div>
 					</div>
