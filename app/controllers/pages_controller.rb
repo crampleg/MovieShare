@@ -209,7 +209,7 @@ class PagesController < ApplicationController
     redirect_to '/pages/profile'
   end
 
-  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following :find_lists, :search
+  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :search
 
 end
 
