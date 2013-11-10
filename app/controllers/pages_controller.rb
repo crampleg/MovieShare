@@ -169,7 +169,7 @@ class PagesController < ApplicationController
     
     else 
       redirect_to '/pages/profilepage' 
-    
+    end
   end
 
   helper_method :find_followers, :find_following, :find_lists, :search
