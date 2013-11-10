@@ -99,13 +99,13 @@ class PagesController < ApplicationController
 
   def find_following
     #find all user the current user is following
-    following = Follower.find_all_by_user_id_follower($current_user)
+    following = Follower.find_all_by_user_id_follower($current_user.id)
     following_user_names = []
     following.each do |fol|
       username = User.find(fol.user_id_model).username
       following_user_names.push(username)
     end
-    return following_user_names
+    return following
   end
   
   def find_visited_followers
