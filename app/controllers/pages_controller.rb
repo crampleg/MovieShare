@@ -133,7 +133,10 @@ class PagesController < ApplicationController
   def find_lists
     MyList.find_all_by_owner_id($current_user.id)
   end
-
+  
+  def find_visited_lists
+    MyList.find_all_by_owner_id($current_visited_user.id)
+  end
 
   def getlist
     $title = "Hello world"
@@ -196,7 +199,7 @@ class PagesController < ApplicationController
     redirect_to '/pages/profile'
   end
 
-  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :search
+  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search
 
 end
 

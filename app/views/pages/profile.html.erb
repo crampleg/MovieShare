@@ -65,10 +65,11 @@
 	<div class="col-xs-4">
 		<h1>My Lists</h1>
 		<div class="button-group-vertical">
-		<button class="btn btn-primary active"><%= :list_name%></button>
-		<button class="btn btn-primary"><%= :list_name%></button>
-		<button class="btn btn-primary"><%= :list_name%></button>
-	
+			<% find_visited_lists.each do |list| %>
+				<div class="row">
+					<%= button_to list.list_name, { :controller => "pages", :action => "profilepage", :list => list.id }, :class => "btn btn-default"  %>
+				</div>
+			<% end %>	
 		</div>
 	
 	</div>
