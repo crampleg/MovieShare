@@ -161,7 +161,7 @@ class PagesController < ApplicationController
     redirect_to(:back)
   end
   
-  def gotouserprofile
+  def gotouserprofileorig
     user = params[:user_id] 
     if (user != $current_user.id)       #does not work, fix!
       $current_visited_user = User.find_by_id(user)    
@@ -169,6 +169,17 @@ class PagesController < ApplicationController
     
     else 
       redirect_to '/pages/profilepage' 
+    end
+  end
+  
+  def gotouserprofile
+    user = params[:user_id] 
+    type = params[:type]
+    if (type == "gotoprofile")
+      $current_visited_user = User.find_by_id(user)    
+      redirect_to '/pages/profile'
+    elsif (type == "addfollower")
+      #logikk
     end
   end
 

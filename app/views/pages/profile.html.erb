@@ -42,7 +42,7 @@
 					 <div class="modal fade" id="movies_modal">
 			 			<div class="modal-header">
 			    			<a class="close" data-dismiss="modal">&times;</a>
-			    			<h3>Following</h3>
+			    			<h3>Followers</h3>
 				  		</div>
 					  	<div class="modal-body">
 					    	<p>Description</p>
@@ -50,7 +50,7 @@
 					</div>
 			</div>
 			<div class= "row">
-		 		<button class="btn btn-primary">Follow</button>
+		 		<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id }, class="btn btn-primary">
 			</div>
 		</div>	
 	</div>
