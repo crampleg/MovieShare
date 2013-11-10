@@ -35,7 +35,8 @@ Title:
 							  	</div>
 							  	<div class="modal-body">
                                   <% find_following.each do |fol| %>
-                                      <p><%= fol %></p>
+                                      <% user = User.find_by_id(fol) %>
+									  <p><%= user.firstname %></p>
                                   <% end %>
 								</div>
 							</div>
