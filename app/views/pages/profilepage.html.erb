@@ -97,7 +97,7 @@ Title:
 						<button class="btn btn-default"> <%= list.list_name %></button>
 					</div>
 					<% $listmovies.each do |movie| %>
-						<%= image_tag(movie["poster"]["imdb"]) rescue image_tag("empty.png") %>
+						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
 					<% end %>
 				<% end %>
 			<% end %>
