@@ -189,11 +189,14 @@ class PagesController < ApplicationController
   
   
   def gotoprofile_or_addfollower
-    user = params[:user_id] 
-    type = params[:type]
-    $current_visited_user = User.find_by_id(user) 
-    if (type == "gotoprofile")   
+    if (type == "gotoprofile")  
+      user = params[:user_id] 
+      type = params[:type]
+      $current_visited_user = User.find_by_id(user)  
     elsif (type == "addfollower")
+      user = params[:user_id] 
+      type = params[:type]
+      $current_visited_user = User.find_by_id(user) 
       Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
     elsif (type == "showmovies")
       $list_id = params[:list]        #the list_id is sent as a parameter
