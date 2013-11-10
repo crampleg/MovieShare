@@ -67,7 +67,7 @@
 		<div class="button-group-vertical">
 			<% find_visited_lists.each do |list| %>
 				<div class="row">
-					<%= button_to list.list_name, { :controller => "pages", :action => "profile", :list => list.id, :type => "showmovies" }, :class => "btn btn-default"  %>
+					<%= button_to list.list_name, { :controller => "pages", :action => "profilepage", :list => list.id }, :class => "btn btn-default"  %>
 				</div>
 			<% end %>	
 		</div>

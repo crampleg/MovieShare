@@ -189,29 +189,12 @@ class PagesController < ApplicationController
   
   
   def gotoprofile_or_addfollower
-    if (type == "gotoprofile")  
-      user = params[:user_id] 
-      type = params[:type]
-      $current_visited_user = User.find_by_id(user)  
+    user = params[:user_id] 
+    type = params[:type]
+    $current_visited_user = User.find_by_id(user) 
+    if (type == "gotoprofile")   
     elsif (type == "addfollower")
-      user = params[:user_id] 
-      type = params[:type]
-      $current_visited_user = User.find_by_id(user) 
       Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
-    elsif (type == "showmovies")
-      $list_id = params[:list]        #the list_id is sent as a parameter
-      $listmovies = []                
-      ListMovie.find_all_by_list_id($list_id).each do |movie|
-        url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
-        begin
-          response = Net::HTTP.get(URI.parse(url))
-          parsed_json = ActiveSupport::JSON.decode(response)
-          $listmovies.push(parsed_json)
-        rescue SocketError => e
-          puts e.message
-        end
-      end
-      $description = params[:mytext]
     end
     redirect_to '/pages/profile'
   end
