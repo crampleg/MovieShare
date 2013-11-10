@@ -84,6 +84,10 @@ class PagesController < ApplicationController
 
     
   end
+  
+  def find_followers_no
+    Person.count(:conditions => "age > 26")
+  end
 
   def find_followers
     #find all followers of a user with id $current_user.id
