@@ -179,6 +179,10 @@ class PagesController < ApplicationController
     if (type == "gotoprofile")   
     elsif (type == "addfollower")
       Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
+      $current_visited_user.followers_no = $current_visited_user.followers_no + 1
+      $current_visited_user.save
+      $current_user.following_no = $current_user.following_no + 1
+      $current_user.save
     end
     redirect_to '/pages/profile'
   end
