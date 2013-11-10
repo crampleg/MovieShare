@@ -85,9 +85,6 @@ class PagesController < ApplicationController
     
   end
   
-  def find_followers_no
-    Person.count(:conditions => "age > 26")
-  end
 
   def find_followers
     #find all followers of a user with id $current_user.id
@@ -187,28 +184,14 @@ class PagesController < ApplicationController
     redirect_to(:back)
   end
   
-  def gotouserprofileorig
-    user = params[:user_id] 
-    if (user != $current_user.id)       #does not work, fix!
-      $current_visited_user = User.find_by_id(user)    
-      redirect_to '/pages/profile'
-    
-    else 
-      redirect_to '/pages/profilepage' 
-    end
-  end
   
-  def gotouserprofile
+  def gotoprofile_or_addfollower
     user = params[:user_id] 
     type = params[:type]
     $current_visited_user = User.find_by_id(user) 
     if (type == "gotoprofile")   
     elsif (type == "addfollower")
       Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
-      $current_visited_user.followers_no = $current_visited_user.followers_no + 1
-      $current_visited_user.save
-      $current_user.following_no = $current_user.following_no + 1
-      $current_user.save
     end
     redirect_to '/pages/profile'
   end
