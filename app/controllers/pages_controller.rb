@@ -162,8 +162,8 @@ class PagesController < ApplicationController
   end
   
   def gotouserprofile
-    user = params[:user_id]
-    if (user != $current_user.id)
+    user = params[:user_id] 
+    if (user != $current_user.id)       #does not work, fix!
       $current_visited_user = User.find_by_id(user)    
       redirect_to '/pages/profile'
     
