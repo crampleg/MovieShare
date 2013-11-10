@@ -106,6 +106,28 @@ class PagesController < ApplicationController
     end
     return following_user_names
   end
+  
+  def find_visited_followers
+    #find all followers of a user with id $current_user.id
+    followers = Follower.find_all_by_user_id_model($current_visited_user.id)
+    followers_user_names = []
+    followers.each do |follower|
+      username = User.find(follower.user_id_follower).username
+      followers_user_names.push(username)
+    end
+    return followers_user_names
+  end
+  
+  def find_visited_following
+    #find all user the current user is following
+    following = Follower.find_all_by_user_id_follower($current_visited_user)
+    following_user_names = []
+    following.each do |fol|
+      username = User.find(fol.user_id_model).username
+      following_user_names.push(username)
+    end
+    return following_user_names
+  end
 
   def find_lists
     MyList.find_all_by_owner_id($current_user.id)
@@ -187,7 +209,7 @@ class PagesController < ApplicationController
     redirect_to '/pages/profile'
   end
 
-  helper_method :find_followers, :find_following, :find_lists, :search
+  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following :find_lists, :search
 
 end
 
