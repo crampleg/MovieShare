@@ -175,12 +175,12 @@ class PagesController < ApplicationController
   def gotouserprofile
     user = params[:user_id] 
     type = params[:type]
-    if (type == "gotoprofile")
-      $current_visited_user = User.find_by_id(user)    
-      redirect_to '/pages/profile'
+    $current_visited_user = User.find_by_id(user) 
+    if (type == "gotoprofile")   
     elsif (type == "addfollower")
-      #logikk
+      Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
     end
+    redirect_to '/pages/profile'
   end
 
   helper_method :find_followers, :find_following, :find_lists, :search
