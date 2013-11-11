@@ -29,47 +29,66 @@
     <% end %>
 
 <div class= "container">
-    <fieldset>
-     Enter user details
-     <div class="row">
-      <div class="col-xs-6">
-      <div class="form-group">
-        <%= f.label :username %><br />:
-        <%= f.text_field :username, size: 40 %>
-      </div>
-      <div class="form-group">
-        <%= f.label :firstname %><br />:
-        <%= f.text_field :firstname, size: 40 %>
-      </div>
-      <div class="form-group">
-        <%= f.label :lastname %><br />:
-        <%= f.text_field :lastname, size: 40 %>
-      </div>
-    </div>
-    <div class= "col-xs-6">
-      <div class="form-group">
-        <%= f.label :email %><br />:
-        <%= f.text_field :email, size: 40 %>
-      </div>
-      <div class="form-group">
-        <%= f.label :password, 'Password' %><br />:
-        <%= f.password_field :password, size: 40 %>
-      </div>
-      <div class="form-group">
-        <%= f.label :password_confirmation, 'Confirm' %><br />:
-        <%= f.password_field :password_confirmation, size: 40 %>
-      </div>
-    </div>
+ 
+    <h2> Enter user details</h2>
 
-      <div>
-        <%= f.submit %>
+    
+     <div class="row">  
+      <div class="col-sm-6">
+    
+      <div class="input-group">
+
+      <div class="form-group">
+        <%= f.text_field :username, size: 40, class: "form-control", placeholder: "Username" %>
       </div>
-    </div>
-    </fieldset>
+
+      <div class="form-group">
+        <%= f.text_field :firstname, size: 40, class: "form-control", placeholder: "First name" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_field :lastname, size: 40, class: "form-control", placeholder: "Last name" %>
+      </div>
+</div>
+
+  </div>  
+
+  <div class="col-sm-6">
+
+     <div class="input-group">
+
+  
+
+      <div class="form-group">
+        <%= f.text_field :email, size: 40, class: "form-control", placeholder: "Email"  %>
+      </div>
+
+      <div class="form-group">
+        <%= f.password_field :password, size: 40, class: "form-control", placeholder: "Password" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.password_field :password_confirmation, size: 40, class: "form-control", placeholder: "Confirm password"  %>
+      </div>
+
+   
+</div>
+  </div>
+
+
+      
+        <%= f.submit "Sign up!", class: "btn btn-primary" %>
+   
+   
+  </div>
+
+    
 
 <% end %>
-
-
 </div>
+
+
+
+
 </body>
 <html>
