@@ -10,6 +10,7 @@
 </head>
  
 <body>
+  <div class="container">
 <div class="page-header">
   <%= image_tag("MovieShareLogo.png") %>
 </div>
@@ -23,27 +24,31 @@
       <% end %>
 
       <%= form_tag do %>
-          <fieldset>
-            <legend>Please Log In</legend>
-            <div>
-              <%= label_tag :username, 'Username:' %>
-              <%= text_field_tag :username, params[:username] %>
+          <div class="row login">
+            <h2>Please Log In</h2>
+
+            
+              <div class="input-group">
+                  
+                   <%= text_field_tag :username, params[:username] , class: "form-control", placeholder: "Username"%>
+                
+                   
+                  <%= password_field_tag :password, params[:password] , class: "form-control", placeholder: "Password"%>
+                  
             </div>
 
-            <div>
-              <%= label_tag :password, 'Password:' %>
-              <%= password_field_tag :password, params[:password] %>
+             <%= link_to "Already a user?", '/users/new' %>
+            <div class="row">
+              
+              <%= submit_tag "Login", class: "btn btn-primary"  %>
+            
             </div>
 
-            <div>
-              <%= submit_tag "Login" %>
-            </div>
-
-          </fieldset>
+          </div>
       <% end %>
-      <%= link_to "Create New User", '/users/new' %>
+     
     </div>
 
-
+</div>
 </body>
 </html>

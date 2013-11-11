@@ -1,3 +1,21 @@
+.container{
+	text-align: center;
+	.login{
+	.input-group{
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto; 
+    	width: 300px;
+    	margin-bottom: 10px;
+	}
+	.btn.btn-primary{
+    	width: 300px !important;
+	}
+	
+}
+
+}
+
 .page-header{
 	img{
 		display: block;
