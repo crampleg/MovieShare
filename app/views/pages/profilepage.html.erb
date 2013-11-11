@@ -107,26 +107,31 @@
 							<div class="modal fade" id="list_modal">
 								<div class="modal-header">
 									<a class="close" data-dismiss="modal">&times</a>
-									<h3><%= list.list_name %><h3>
-								</doiv>
+									<div class="row row1">
+										<h3><%= list.list_name %><h3>
+									</div>
+								</div>
 								<div class="modal-body">
-									<% $listmovies.each do |movie| %>
-										<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
-									<% end %>
-
-									<%= form_tag("/pages/list", method: "post") do %>
-            						
-							            <div class="row input-row">
-							             	<div class="input-group">
-							             		<%= text_field_tag :query, params[:query], class: 'form-control' %>
-							              		<span class="input-group-btn">
+									<div class="row row2">
+										<% $listmovies.each do |movie| %>
+											<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
+										<% end %>
+									</div>
+									<div class="row btn-row">
+          								<%= form_tag("/pages/list", method: "post") do %>
+            							<div class="row">
+              								<%= radio_button_tag(:type, "movies", true) %> 
+              								<%= label_tag(:q, "Movies") %>
+            							</div>
+            							<div class="row input-row">
+             								<div class="input-group">
+             									<%= text_field_tag :query, params[:query], class: 'form-control' %>
                 									<%= submit_tag "Search", class: 'btn btn-default' %>
-              									</span>
             								</div>
             							</div>              
-        							<% end %>
+        								<% end %>
+        							</div>
 								</div>
-							</div>
 					</div>
 				<% end %>
 
