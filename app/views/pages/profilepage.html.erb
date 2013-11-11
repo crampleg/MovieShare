@@ -102,12 +102,41 @@
 					<% $listmovies.each do |movie| %>
 						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
 					<% end %>
+
+						<a type="button" class="btn btn-default" href="#list_modal" data-toggle="modal"></br><h4>Add movie</h4></a>
+							<div class="modal fade" id="list_modal">
+								<div class="modal-header">
+									<a class="close" data-dismiss="modal">&times</a>
+									<h3><%= list.list_name %><h3>
+								</doiv>
+								<div class="modal-body">
+									<% $listmovies.each do |movie| %>
+										<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
+									<% end %>
+
+									<%= form_tag("/pages/list", method: "post") do %>
+            						
+							            <div class="row input-row">
+							             	<div class="input-group">
+							             		<%= text_field_tag :query, params[:query], class: 'form-control' %>
+							              		<span class="input-group-btn">
+                									<%= submit_tag "Search", class: 'btn btn-default' %>
+              									</span>
+            								</div>
+            							</div>              
+        							<% end %>
+								</div>
+							</div>
+					</div>
 				<% end %>
+
 			<% end %>
-			
 		</div>	
 		
 </div>
+
+
+
 			<div class="modal fade" id="newlist_modal">
 				<form accept-charset="UTF-8" action="/my_lists" class="new_my_list" id="new_my_list" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="GcmRwZclX8C/Rp62Uj5y7Ykp2mILicCBIH2vqP1u3kU="></div>
 	
