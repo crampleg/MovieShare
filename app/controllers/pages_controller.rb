@@ -213,7 +213,7 @@ class PagesController < ApplicationController
   end
   
   def get_watched_movies
-    list_of_movies = WatchedMovie.find_by_user_id($current_user.id).movies.split(",")  #splits the string of watched movies into a list
+    list_of_movies = WatchedMovie.find_by_user_id($current_user.id).movies.split(";")  #splits the string of watched movies into a list
   end
 
   helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search, :get_watched_movies
