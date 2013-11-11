@@ -176,8 +176,8 @@ class PagesController < ApplicationController
       $list_id = params[:list]        #the list_id is sent as a parameter
       $listmovies = []                
       ListMovie.find_all_by_list_id($list_id).each do |movie|
-        url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
         begin
+          url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
           response = Net::HTTP.get(URI.parse(url))
           parsed_json = ActiveSupport::JSON.decode(response)
           $listmovies.push(parsed_json)
@@ -186,6 +186,15 @@ class PagesController < ApplicationController
         end
       end
     elsif (type == "wishlist")
+      UnseenMovie.find_all_by_owner_id($current_user.id).each do |movie|
+        begin
+          url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
+          response = Net::HTTP.get(URI.parse(url))
+          parsed_json = ActiveSupport::JSON.decode(response)
+          $listmovies.push(parsed_json)
+        rescue
+        end
+      end
     end
     $description = params[:mytext]
     redirect_to(:back)
