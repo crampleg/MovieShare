@@ -32,22 +32,11 @@
 							    	<h3>Following</h3>
 							  	</div>
 							  	<div class="modal-body">
-							  			<div class="row users">
-							  				<div class="row user">
-							  				<% find_following.each do |fol| %>
-							  				   <% user = User.find_by_id(fol) %>
-												<div class="col-xs-2">
-													<%= image_tag("userpic.jpeg") %>
-												</div>
-												<div class="col-xs-4">
-												<h4><%= link_to user.firstname + " "+ user.lastname, { :controller => "pages", :action => "profile", :user_id => user.id, :type => "gotoprofile"}%></h4>
-												</div>
-												<div class="col-xs-3">
-													<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id, :type => "addfollower" }, :class => "btn btn-default" %>
-												</div>
-											 <% end %>
-										</div>
-									</div>	</div>							
+                                  <% find_following.each do |fol| %>
+                                      <% user = User.find_by_id(fol) %>
+									  <p><%= button_to user.username+"   ---   "+user.firstname+" "+user.lastname, { :controller => "pages", :action => "profile", :user_id => user.id, :type => "gotoprofile" }, :class => "btn btn-default"  %></p>
+                                  <% end %>
+								</div>
 							</div>
 					</div>
 					<div class="col-xs-4">
@@ -58,24 +47,10 @@
 					    			<h3>Followers</h3>
 						  		</div>
 							  	<div class="modal-body">
-							  		<div class="row users">
-							  			<div class="row user">
-                                 			<% find_followers.each do |follower| %>
-                                  				<% user = User.find_by_id(follower) %>
-												<div class="col-xs-2">
-													<%= image_tag("userpic.jpeg") %>
-												</div>
-												<div class="col-xs-4">
-												<h4><%= link_to user.firstname + " "+ user.lastname, { :controller => "pages", :action => "profile", :user_id => user.id, :type => "gotoprofile"}%></h4>
-												</div>
-												<div class= "row followbutton">
-												<div class="col-xs-3">
-													<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id, :type => "addfollower" }, :class => "btn btn-default" %>
-												</div>
-											</div>
-                                  			<% end %>
-                              			</div>
-                              		</div>
+                                  <% find_followers.each do |follower| %>
+                                  	  <% user = User.find_by_id(follower) %>
+								      <p><%= button_to user.username+"   ---   "+user.firstname+" "+user.lastname, { :controller => "pages", :action => "profile", :user_id => user.id, :type => "gotoprofile" }, :class => "btn btn-default"  %></p>
+                                  <% end %>
 							  	</div>
 							</div>
 					</div>
@@ -163,11 +138,6 @@
               									</span>
             								</div>
             							</div> 
-
-
-
-            							
-
         								<% end %>
         							</div>
 								</div>

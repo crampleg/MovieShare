@@ -83,29 +83,6 @@
 		}
 	}
 }
-.followingbuttons{
-	.row.users{
-		padding-bottom: 1px;
-		padding-top: 1px;
-		border-bottom: 1px solid #898B8E;
-
-	.col-xs-3{
-		padding-top: 20px;	
-	}
-	}
-}
-
-.btn.followers{
-		.row.users{
-		padding-bottom: 1px;
-		padding-top: 1px;
-		border-bottom: 1px solid #898B8E;
-
-	.col-xs-3{
-		padding-top: 20px;	
-	}
-	}
-}
 
 .movielist {
 
@@ -257,7 +234,7 @@
 	.row.users{
 		padding-bottom: 5px;
 		border-bottom: 1px solid #898B8E;
-		.col-xs-3{
+		.col-xs-{
 			padding-top: 15px!important;
 		}
 	}
