@@ -225,11 +225,19 @@
 .searchlist {
 	margin-top: 30px!important;
 
+
 	img {
 		width: 175px;
 		text-align: center;
 	}
 
+	.row.users{
+		padding-bottom: 5px;
+		border-bottom: 1px solid #898B8E;
+		.col-xs-3{
+			padding-top: 15px!important;
+		}
+	}
 
 	.movieinlist {
 		margin-bottom: 20px!important;
@@ -272,11 +280,14 @@
 		}
 	}
 
+	
+
 }
 
 
 
 .users {
+
 	
 	.user {
 	padding: 20px;
@@ -290,6 +301,8 @@
 	.user:nth-child(even) {
 		background-color: white;
 	}
+
+
 }
 .button-group-vertical{
 		.inputtt{
@@ -317,6 +330,7 @@
 
 .lists{
 	border-bottom: 1px dotted white;
+
 }
 
     .span6.input-large{
