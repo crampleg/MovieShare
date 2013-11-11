@@ -8,9 +8,6 @@ class UsersController < ActionController::Base
     @user = User.new(params[:user])
     respond_to do |format|
       if @user.save
-        @user.following_no='0'
-        @user.followers_no='0'
-        @user.save
         WatchedMovie.create(:user_id => @user.id, :movies => "")
         session[:user_id] = @user.id
         $current_user=@user;
