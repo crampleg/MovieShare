@@ -125,7 +125,7 @@
 						<h4><%= link_to user.firstname + " "+ user.lastname, { :controller => "pages", :action => "profile", :user_id => user.id, :type => "gotoprofile"}%></h4>
 					</div>
 					<div class="col-xs-3">
-						<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id, :type => "addfollower" }, :class => "btn btn-default" %>
+						<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => user.id, :type => "addfollower" }, :class => "btn btn-default" %>
 					</div>
 				</div>
 			</div>
