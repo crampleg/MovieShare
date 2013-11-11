@@ -57,8 +57,10 @@
 					  	</div>
 					</div>
 			</div>
-			<div class= "row">
+			<div class= "row followbutton">
+				
 		 		<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id, :type => "addfollower" }, :class => "btn btn-default" %>
+		 	
 			</div>
 		</div>	
 	</div>
@@ -79,7 +81,7 @@
 			<% find_visited_lists.each do |list| %>
 				<% if list.id.to_s == $list_id %>
 					<div class="row singlelist">
-						<button class="btn btn-default"> <%= list.list_name %></button>
+						<h3> <%= list.list_name %></h3>
 					</div>
 					<% $listmovies.each do |movie| %>
 						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
