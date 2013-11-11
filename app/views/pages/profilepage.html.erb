@@ -101,13 +101,6 @@ Title:
 					<% $listmovies.each do |movie| %>
 						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
 					<% end %>
-				<% else %>
-					<div class="row singlelist">
-						<button class="btn btn-default">"Movies I Want To Watch"</button>
-					</div>
-					<% $listmovies.each do |movie| %>
-						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
-					<% end %>
 				<% end %>
 			<% end %>
 			
