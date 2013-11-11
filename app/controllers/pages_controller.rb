@@ -159,10 +159,10 @@ class PagesController < ApplicationController
   end 
 
   def addmovie 
-    $l_id = params[:list]
     $m_id = params[:movieid]
     type = params[:type]
     if (type == "regular")
+      $l_id = params[:list]
       ListMovie.create(:list_id => params[:list], :movie_name => params[:movieid])
     elsif (type == "wishlist")
       UnseenMovie.create(:owner_id => $current_user.id, :movie_name => params[:movieid] )

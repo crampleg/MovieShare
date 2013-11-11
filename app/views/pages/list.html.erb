@@ -39,7 +39,7 @@
 									</button>
 									<table class="dropdown-menu" role="menu">
 										<tr>
-							              <td><%= button_to "WishList", { :controller => "pages", :action => "moviepage", :list => list.id, :movieid => movie["imdb_id"], :type => "wishlist" }, :class => "btn btn-primary"  %></td>
+							              <td><%= button_to "WishList", { :controller => "pages", :action => "moviepage", :movieid => movie["imdb_id"], :type => "wishlist" }, :class => "btn btn-primary"  %></td>
 							            <tr>
 									<% find_lists.each do |list| %>
 										<tr>
