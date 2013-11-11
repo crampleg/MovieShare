@@ -128,14 +128,20 @@
             								<div style="visibility:hidden">
               								<%= radio_button_tag(:type, "movies", true) %> 
               								<%= label_tag(:q, "Movies") %>
-              							</div>
+              								</div>
             							</div>
             							<div class="row input-row">
              								<div class="input-group">
              									<%= text_field_tag :query, params[:query], class: 'form-control' %>
+              									<span class="input-group-btn">
                 									<%= submit_tag "Search", class: 'btn btn-default' %>
+              									</span>
             								</div>
             							</div> 
+
+
+
+            							
 
         								<% end %>
         							</div>
