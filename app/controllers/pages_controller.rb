@@ -166,6 +166,10 @@ class PagesController < ApplicationController
       ListMovie.create(:list_id => params[:list], :movie_name => params[:movieid])
     elsif (type == "wishlist")
       UnseenMovie.create(:owner_id => $current_user.id, :movie_name => params[:movieid] )
+    elsif (type == "seen")
+      user_watched = WatchedMovie.find_by_user_id($current_user.id)
+      movie_string = user.watched.movies + ";" + params[:movieid]
+      movie_String.save
     end
     redirect_to '/pages/list'
   end
