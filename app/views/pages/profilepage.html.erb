@@ -14,11 +14,11 @@
 				<p> About me: </p>
 				<div class="aboutfield">
 					<p> <%= $description %> </p>
-
+					<div class="row">
+						<a href="#test_modal" data-toggle="modal">Edit profile</a>
+					</div>
 				</div>
-				<div class="row">
-					<a href="#test_modal" data-toggle="modal">Edit profile</a>
-				</div>
+				
 			</div>
 		</div>	
 	</div>
@@ -91,8 +91,8 @@
 			<% end %>
 			
 		</div>
-		<div class="col-sm-9 movielist">
 		
+		<div class="col-sm-9 movielist">
 			<% find_lists.each do |list| %>
 				<% if list.id.to_s == $list_id %>
 					<div class="row singlelist">
@@ -102,8 +102,13 @@
 					<% $listmovies.each do |movie| %>
 						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
 					<% end %>
-
+					<div class="row">
+					<div class="col-sm-9">
+						<br>
 						<a type="button" class="btn btn-default" href="#list_modal" data-toggle="modal"></br><h4>Add movie</h4></a>
+
+					</div>
+					</div>
 							<div class="modal fade" id="list_modal">
 								<div class="modal-header">
 									<a class="close" data-dismiss="modal">&times</a>
@@ -120,15 +125,18 @@
 									<div class="row btn-row">
           								<%= form_tag("/pages/list", method: "post") do %>
             							<div class="row">
+            								<div style="visibility:hidden">
               								<%= radio_button_tag(:type, "movies", true) %> 
               								<%= label_tag(:q, "Movies") %>
+              							</div>
             							</div>
             							<div class="row input-row">
              								<div class="input-group">
              									<%= text_field_tag :query, params[:query], class: 'form-control' %>
                 									<%= submit_tag "Search", class: 'btn btn-default' %>
             								</div>
-            							</div>              
+            							</div> 
+
         								<% end %>
         							</div>
 								</div>
