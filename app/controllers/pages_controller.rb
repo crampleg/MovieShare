@@ -210,11 +210,16 @@ class PagesController < ApplicationController
     user = params[:user_id] 
     type = params[:type]
     $current_visited_user = User.find_by_id(user) 
-    if (type == "gotoprofile")   
+    if (type == "gotoprofile")
+      if ($current_user.id == $current_visited_user.id)
+        redirect_to '/pages/profilepage'
+      else
+        redirect_to '/pages/profile'   
+      end
     elsif (type == "addfollower")
       Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
+      redirect_to '/pages/profile'
     end
-    redirect_to '/pages/profile'
   end
   
   def get_watched_movies
