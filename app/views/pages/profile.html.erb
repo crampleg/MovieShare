@@ -64,16 +64,15 @@
 	</div>
 </div>
 
-
-<div class="row">
-	<div class="col-xs-4">
-		<h1>My Lists</h1>
-		<div class="button-group-vertical">
+<div class="row mylists">
+		<div class="col-sm-3">
+			<h2>My Movie Lists</h2>
 			<% find_visited_lists.each do |list| %>
 				<div class="row">
-					<%= button_to list.list_name, { :controller => "pages", :action => "profilepage", :list => list.id }, :class => "btn btn-default"  %>
+					<%= button_to list.list_name, { :controller => "pages", :action => "profilepage", :list => list.id, :type => "regular" }, :class => "btn btn-default"  %>
 				</div>
-			<% end %>	
+			<% end %>
+			
 		</div>
 		<div class="col-sm-9 movielist">
 		
@@ -86,24 +85,9 @@
 						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
 					<% end %>
 				<% end %>
-			<% end %>			
+			<% end %>
 		</div>	
 	</div>
 
-	<div class="col-sm-8">
-		<div class="row">
-			<div class="list-name">
-			<h1><%= :list_name %></h1>
-		</div></div>
-		<div class="row list-info">
-			<%= image_tag("poster.jpeg") %>
-			<%= image_tag("poster.jpeg") %>
-			<%= image_tag("poster.jpeg") %>
-			<%= image_tag("poster.jpeg") %>
-			<%= image_tag("poster.jpeg") %>
-			<%= image_tag("poster.jpeg") %>
-			<%= image_tag("poster.jpeg") %>
 
-		</div>
-	</div>
 
