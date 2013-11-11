@@ -81,12 +81,12 @@ Title:
 				<a type="button" class="btn btn-default"href= "#newlist_modal" data-toggle="modal"> <span class="glyphicon glyphicon-plus"></span> New Movielist</a>
 			</div>
 			<div class="row">
-				<button class="btn btn-primary">WishList</button>
+				<%= button_to "WishList", { :controller => "pages", :action => "profilepage", :list => list.id, :type => "wishlist" }, :class => "btn btn-primary"  %>
 			</div>
 			
 			<% find_lists.each do |list| %>
 				<div class="row">
-					<%= button_to list.list_name, { :controller => "pages", :action => "profilepage", :list => list.id }, :class => "btn btn-default"  %>
+					<%= button_to list.list_name, { :controller => "pages", :action => "profilepage", :list => list.id, :type => "regular" }, :class => "btn btn-default"  %>
 				</div>
 			<% end %>
 			
