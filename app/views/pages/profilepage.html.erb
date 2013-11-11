@@ -65,8 +65,8 @@ Title:
 					    			<h3>Movies Seen</h3>
 						  		</div>
 							  	<div class="modal-body">
-							    	<% get_watched_movies.each do |movie| %>
-										<p><%= movie %></p>
+									<% get_watched_movies.each do |movie| %>
+										<%= movie["title"] %>
 									<% end %>
 							  	</div>
 							</div>
