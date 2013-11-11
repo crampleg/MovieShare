@@ -211,8 +211,13 @@ class PagesController < ApplicationController
     end
     redirect_to '/pages/profile'
   end
+  
+  def get_watched_movies
+    list_of_movies = []
+    list_of_movies = WatchedMovie.find_by_user_id($current_user.id).split(",")  #splits the string of watched movies into a list
+  end
 
-  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search
+  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search, :get_watched_movies
 
 end
 
