@@ -37,7 +37,7 @@ class UsersController < ActionController::Base
   def index
     @users = User.order(:name)
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { redirect_to '/pages/profilepage'}
       format.json { render json: @users }
     end
   end
