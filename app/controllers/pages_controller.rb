@@ -7,7 +7,8 @@ class PagesController < ApplicationController
   $randommovie = "randommovie"
   $randomnr = "randomnr"
   $lists = "test"
-  $description = "default"
+  $description = "Welcome to my profilepage"
+  $profilepic = ""
   $lol = "lol"
   $test = "lolololol"
   $list_id = "0"
@@ -176,6 +177,7 @@ class PagesController < ApplicationController
   end
 
   def updateprofile                 #this function is called when a user clicks a list he has created in profilepage
+    
     type = params[:type]
     $listmovies = [] 
     if (type == "regular")
@@ -201,8 +203,11 @@ class PagesController < ApplicationController
         end
       end
     end
-    $description = params[:mytext]
-    redirect_to(:back)
+    
+      $description = params[:description]
+      $profilepic = params[:profilepic]
+      redirect_to(:back)
+      
   end
   
   
@@ -210,6 +215,7 @@ class PagesController < ApplicationController
     user = params[:user_id] 
     type = params[:type]
     $current_visited_user = User.find_by_id(user) 
+   
     if (type == "gotoprofile")
       if ($current_user.id == $current_visited_user.id)
         redirect_to '/pages/profilepage'
@@ -249,4 +255,6 @@ class PagesController < ApplicationController
   helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search, :get_watched_movies, :get_visited_watched_movies
 
 end
+
+
 
