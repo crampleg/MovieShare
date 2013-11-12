@@ -46,3 +46,4 @@ gem 'capistrano-rvm', '~> 0.0.3'
 #MySQL stuff
 gem 'mysql2', '< 0.4'
 
+#enTest
