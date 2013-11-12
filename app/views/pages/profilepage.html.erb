@@ -101,6 +101,48 @@
 					<% $listmovies.each do |movie| %>
 						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
 					<% end %>
+
+					<div class="row">
+					<div class="col-sm-9">
+						<br>
+						<a type="button" class="btn btn-default" href="#list_modal" data-toggle="modal"><h4>Add movie</h4></a>
+
+					</div>
+					</div>
+							<div class="modal fade" id="list_modal">
+								<div class="modal-header">
+									<a class="close" data-dismiss="modal">&times</a>
+									<div class="row row1">
+										<h3><%= list.list_name %><h3>
+									</div>
+								</div>
+								<div class="modal-body">
+									<div class="row row2">
+										<% $listmovies.each do |movie| %>
+											<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
+										<% end %>
+									</div>
+									<div class="row btn-row">
+          								<%= form_tag("/pages/list", method: "post") do %>
+            							<div class="row">
+            								<div style="visibility:hidden">
+              								<%= radio_button_tag(:type, "movies", true) %> 
+              								<%= label_tag(:q, "Movies") %>
+              								</div>
+            							</div>
+            							<div class="row input-row">
+             								<div class="input-group">
+             									<%= text_field_tag :query, params[:query], class: 'form-control' %>
+              									<span class="input-group-btn">
+                									<%= submit_tag "Search", class: 'btn btn-default' %>
+              									</span>
+            								</div>
+            							</div> 
+        								<% end %>
+        							</div>
+								</div>
+					</div>
+
 				<% end %>
 			<% end %>
 			
