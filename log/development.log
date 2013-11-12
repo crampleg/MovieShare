@@ -1,0 +1,1486 @@
+
+
+Started GET "/login/new" for 127.0.0.1 at 2013-11-12 11:39:40 -0800
+Connecting to database specified by database.yml
+Processing by LoginController#new as HTML
+Compiled jquery.rating.css  (1ms)  (pid 8607)
+Compiled jquery-star-rating.css  (8ms)  (pid 8607)
+Compiled twitter/bootstrap.css  (2904ms)  (pid 8607)
+Compiled followers.css  (1ms)  (pid 8607)
+Compiled list_movies.css  (1ms)  (pid 8607)
+Compiled login.css  (9ms)  (pid 8607)
+Compiled mainpage.css  (1ms)  (pid 8607)
+Compiled my_lists.css  (2ms)  (pid 8607)
+Compiled pages.css  (149ms)  (pid 8607)
+Compiled scaffolds.css  (14ms)  (pid 8607)
+Compiled sessions.css  (1ms)  (pid 8607)
+Compiled unseen_movies.css  (1ms)  (pid 8607)
+Compiled users.css  (1410ms)  (pid 8607)
+Compiled watched_movies.css  (1ms)  (pid 8607)
+Compiled application.css  (4664ms)  (pid 8607)
+Compiled jquery.js  (3ms)  (pid 8607)
+Compiled jquery_ujs.js  (0ms)  (pid 8607)
+Compiled jquery.rating.js  (0ms)  (pid 8607)
+Compiled jquery-star-rating.js  (5ms)  (pid 8607)
+Compiled twitter/bootstrap/transition.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/alert.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/button.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/carousel.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/collapse.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/dropdown.js  (24ms)  (pid 8607)
+Compiled twitter/bootstrap/modal.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/tooltip.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/popover.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/scrollspy.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/tab.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap/affix.js  (0ms)  (pid 8607)
+Compiled holder.js  (0ms)  (pid 8607)
+Compiled twitter/bootstrap.js  (93ms)  (pid 8607)
+Compiled followers.js  (209ms)  (pid 8607)
+Compiled list_movies.js  (140ms)  (pid 8607)
+Compiled login.js  (135ms)  (pid 8607)
+Compiled mainpage.js  (138ms)  (pid 8607)
+Compiled my_lists.js  (173ms)  (pid 8607)
+Compiled pages.js  (139ms)  (pid 8607)
+Compiled sessions.js  (152ms)  (pid 8607)
+Compiled unseen_movies.js  (134ms)  (pid 8607)
+Compiled users.js  (140ms)  (pid 8607)
+Compiled watched_movies.js  (137ms)  (pid 8607)
+Compiled application.js  (1683ms)  (pid 8607)
+  Rendered login/new.html.erb (6459.1ms)
+Completed 200 OK in 6468ms (Views: 6468.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /jquery.rating.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery-star-rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /jquery-star-rating.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /twitter/bootstrap.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/followers.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /followers.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /application.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/list_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /list_movies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/mainpage.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /mainpage.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /pages.css - 200 OK (2ms)
+
+
+Started GET "/assets/my_lists.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /my_lists.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /login.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/unseen_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /unseen_movies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /users.css - 200 OK (11ms)
+
+
+Started GET "/assets/watched_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /watched_movies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /jquery.rating.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-star-rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /jquery-star-rating.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:47 -0800
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/holder.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /holder.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/followers.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /followers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/list_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /list_movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /login.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/my_lists.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /my_lists.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mainpage.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /mainpage.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/unseen_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /unseen_movies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/watched_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /watched_movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/MovieShareLogo.png" for 127.0.0.1 at 2013-11-12 11:39:48 -0800
+Served asset /MovieShareLogo.png - 304 Not Modified (6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-11-12 11:39:51 -0800
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 18ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:4:in `new'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20131023155844)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "password_digest" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131023155844')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateFollowers (20131030005111)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "followers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id_model" integer, "user_id_follower" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131030005111')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateWatchedMovies (20131031181802)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "watched_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "movies" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181802')[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateMyLists (20131031181926)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "my_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_name" varchar(255), "owner_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181926')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateListMovies (20131031182211)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "list_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182211')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUnseenMovies (20131031182252)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "unseen_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182252')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to AddDescriptionColumnToUsers (20131111213044)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "description" varchar(255)
+SQLite3::SQLException: duplicate column name: description: ALTER TABLE "users" ADD "description" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-11-12 11:40:45 -0800
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:4:in `new'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-11-12 11:40:46 -0800
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:4:in `new'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-11-12 11:40:47 -0800
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:4:in `new'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/Kristoffer/.rvm/gems/ruby-2.0.0-p247@rails3.2.14/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.4ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (99.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (3.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20131023155844)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "password_digest" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131023155844')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateFollowers (20131030005111)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "followers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id_model" integer, "user_id_follower" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131030005111')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateWatchedMovies (20131031181802)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "watched_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "movies" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181802')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateMyLists (20131031181926)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "my_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_name" varchar(255), "owner_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181926')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateListMovies (20131031182211)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "list_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182211')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUnseenMovies (20131031182252)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "unseen_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182252')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddDescriptionColumnToUsers (20131111213044)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "description" varchar(255)
+SQLite3::SQLException: duplicate column name: description: ALTER TABLE "users" ADD "description" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20131023155844)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "password_digest" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131023155844')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateFollowers (20131030005111)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "followers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id_model" integer, "user_id_follower" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131030005111')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateWatchedMovies (20131031181802)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "watched_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "movies" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181802')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateMyLists (20131031181926)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "my_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_name" varchar(255), "owner_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181926')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateListMovies (20131031182211)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "list_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182211')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUnseenMovies (20131031182252)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "unseen_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182252')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to AddDescriptionColumnToUsers (20131111213044)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "description" varchar(255)
+SQLite3::SQLException: duplicate column name: description: ALTER TABLE "users" ADD "description" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (100.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (3.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20131023155844)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "password_digest" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131023155844')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateFollowers (20131030005111)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "followers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id_model" integer, "user_id_follower" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131030005111')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateWatchedMovies (20131031181802)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "watched_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "movies" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181802')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateMyLists (20131031181926)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "my_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_name" varchar(255), "owner_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181926')[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateListMovies (20131031182211)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "list_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182211')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUnseenMovies (20131031182252)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "unseen_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182252')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddDescriptionColumnToUsers (20131111213044)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "description" varchar(255)
+SQLite3::SQLException: duplicate column name: description: ALTER TABLE "users" ADD "description" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20131023155844)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131023155844')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateFollowers (20131030005111)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "followers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id_model" integer, "user_id_follower" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131030005111')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateWatchedMovies (20131031181802)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "watched_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "movies" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181802')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateMyLists (20131031181926)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "my_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_name" varchar(255), "owner_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031181926')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateListMovies (20131031182211)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "list_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "list_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182211')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUnseenMovies (20131031182252)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "unseen_movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "movie_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131031182252')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddDescriptionColumnToUsers (20131111213044)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "description" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131111213044')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Connecting to database specified by database.yml
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb (85.5ms)
+Completed 200 OK in 138ms (Views: 92.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery-star-rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /jquery-star-rating.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery.rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /jquery.rating.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/list_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /list_movies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/followers.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /followers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /login.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/mainpage.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /mainpage.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/my_lists.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /my_lists.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/unseen_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /unseen_movies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/watched_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /watched_movies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /jquery.rating.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery-star-rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /jquery-star-rating.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/holder.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /holder.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/followers.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /followers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/list_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /list_movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /login.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/mainpage.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /mainpage.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/my_lists.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /my_lists.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/unseen_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /unseen_movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/watched_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /watched_movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/MovieShareLogo.png" for 127.0.0.1 at 2013-11-12 11:43:48 -0800
+Served asset /MovieShareLogo.png - 304 Not Modified (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-12 11:44:06 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rfUt7FlLpHSPGypBIi12qHWVytwr93AZkiqaAjG6oh0=", "user"=>{"username"=>"oeseth", "firstname"=>"Kristoffer", "lastname"=>"Oeseth", "email"=>"kristoffer.oseth@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'oeseth' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'kristoffer.oseth@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "users" ("created_at", "description", "email", "firstname", "lastname", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 12 Nov 2013 19:44:06 UTC +00:00], ["description", nil], ["email", "kristoffer.oseth@gmail.com"], ["firstname", "Kristoffer"], ["lastname", "Oeseth"], ["password_digest", "$2a$10$qqiOTP7fwbp5hk84lGO8FewwBWkNzG8/iJ.DOWlxs4uipExCkllNe"], ["updated_at", Tue, 12 Nov 2013 19:44:06 UTC +00:00], ["username", "oeseth"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mWatchedMovie Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "watched_movies" WHERE "watched_movies"."user_id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "watched_movies" ("created_at", "movies", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 12 Nov 2013 19:44:06 UTC +00:00], ["movies", ""], ["updated_at", Tue, 12 Nov 2013 19:44:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pages/mainpage
+Completed 302 Found in 145ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/pages/mainpage" for 127.0.0.1 at 2013-11-12 11:44:06 -0800
+Processing by PagesController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered pages/mainpage.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 30ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-star-rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /jquery-star-rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/list_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /list_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/followers.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /followers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /login.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /jquery.rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /mainpage.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /my_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /unseen_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/watched_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /watched_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /jquery.rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-star-rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /jquery-star-rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:07 -0800
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/holder.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /holder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/followers.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /followers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/list_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /list_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /mainpage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /my_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /unseen_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/watched_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /watched_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/MovieShareLogo.png" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /MovieShareLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userpic.jpeg" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /userpic.jpeg - 304 Not Modified (10ms)
+
+
+Started GET "/assets/poster.jpeg" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /poster.jpeg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/empty.png" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /empty.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/delete.gif" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /delete.gif - 304 Not Modified (9ms)
+
+
+Started GET "/assets/star1.png" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /star1.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-11-12 11:44:08 -0800
+Served asset /twitter/glyphicons-halflings-regular.woff - 304 Not Modified (45ms)
+
+
+Started GET "/pages/profilepage" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Processing by PagesController#profilepage as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "followers" WHERE (user_id_follower = 1)
+  [1m[36mFollower Load (0.1ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id_follower" = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "followers" WHERE (user_id_model = 1)
+  [1m[36mFollower Load (0.1ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id_model" = 1[0m
+  [1m[35mWatchedMovie Load (0.1ms)[0m  SELECT "watched_movies".* FROM "watched_movies" WHERE "watched_movies"."user_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "watched_movies".* FROM "watched_movies" WHERE "watched_movies"."user_id" = 1 LIMIT 1[0m
+  [1m[35mMyList Load (0.1ms)[0m  SELECT "my_lists".* FROM "my_lists" WHERE "my_lists"."owner_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "my_lists".* FROM "my_lists" WHERE "my_lists"."owner_id" = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "my_lists".* FROM "my_lists" WHERE "my_lists"."owner_id" = 1
+  Rendered pages/profilepage.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery-star-rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /jquery-star-rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/followers.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /followers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/list_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /list_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /jquery.rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /login.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /mainpage.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /my_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /unseen_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/watched_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /watched_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /jquery.rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-star-rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /jquery-star-rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/holder.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /holder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/followers.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /followers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/list_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /list_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /mainpage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /my_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /unseen_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/watched_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /watched_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/MovieShareLogo.png" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /MovieShareLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userpic.jpeg" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /userpic.jpeg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/empty.png" for 127.0.0.1 at 2013-11-12 11:44:10 -0800
+Served asset /empty.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Processing by LoginController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rfUt7FlLpHSPGypBIi12qHWVytwr93AZkiqaAjG6oh0="}
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login/new" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Processing by LoginController#new as HTML
+  Rendered login/new.html.erb (17.9ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /jquery.rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-star-rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /jquery-star-rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/list_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /list_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /login.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /mainpage.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/followers.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /followers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /my_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /unseen_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/watched_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /watched_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:33 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /jquery.rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-star-rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /jquery-star-rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/holder.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /holder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/followers.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /followers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/list_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /list_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /mainpage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /my_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /unseen_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/watched_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /watched_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/MovieShareLogo.png" for 127.0.0.1 at 2013-11-12 11:44:34 -0800
+Served asset /MovieShareLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb (16.0ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-star-rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /jquery-star-rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.rating.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /jquery.rating.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/list_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /list_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/followers.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /followers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /login.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /mainpage.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /my_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /unseen_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/watched_movies.css?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /watched_movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /jquery.rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-star-rating.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /jquery-star-rating.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/holder.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /holder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/followers.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /followers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/list_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /list_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mainpage.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /mainpage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_lists.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /my_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unseen_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /unseen_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/watched_movies.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /watched_movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/MovieShareLogo.png" for 127.0.0.1 at 2013-11-12 11:44:35 -0800
+Served asset /MovieShareLogo.png - 304 Not Modified (0ms)
