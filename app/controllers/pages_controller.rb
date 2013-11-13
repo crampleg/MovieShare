@@ -6,7 +6,6 @@ class PagesController < ApplicationController
   $randomsearch = "randomsearch"
   $randommovie = "randommovie"
   $randomnr = "randomnr"
-  $lists = "test"
   
   $profilepic = ""
   $lol = "lol"
@@ -58,6 +57,7 @@ class PagesController < ApplicationController
   def search
     query = params[:query]         #the input string that the user wrote in the search field
     $users = []
+    $lists = []
     $q = query
     $lol = params[:type]           #the radio button value the use set (movies, users, lists)
     if params[:type] == "users"    #if the user checked the 'Users' radio button
@@ -65,8 +65,8 @@ class PagesController < ApplicationController
 
       if query.length != 0         #check that the input string is not empty
         usrs.each do |user|        
-          usrnm = user.username    #for every user, find the user name
-          if usrnm.include? query  #if the user name includes the search input string 
+          usrnm = user.username.downcase    #for every user, find the user name
+          if usrnm.include? query.downcase  #if the user name includes the search input string 
             $users.push(user)      #then add the user to the list that is presented as search results 
           else
 
@@ -77,8 +77,18 @@ class PagesController < ApplicationController
         $type = "users"
         redirect_to '/pages/list'
     elsif params[:type] == "lists"
+      listz = MyList.all              #find all users
 
-      $lists = MyList.all
+      if query.length != 0         #check that the input string is not empty
+        listz.each do |list|        
+          lis = list.list_name.downcase    #for every user, find the user name
+          if lis.include? query.downcase  #if the user name includes the search input string 
+            $lists.push(list)      #then add the user to the list that is presented as search results 
+          else
+
+          end
+        end
+      end
         $type = "lists"
         redirect_to '/pages/list'
     elsif params[:type] == "movies"
@@ -256,8 +266,8 @@ class PagesController < ApplicationController
         redirect_to '/pages/profile'   
       end
     elsif type == "addfollower"
-      Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
-      redirect_to '/pages/profile'
+        Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
+        redirect_to '/pages/profile'
     end
   end
   

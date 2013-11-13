@@ -131,16 +131,18 @@
 			<h2> I'm sorry, we could not find what you were looking for...</h2>
 		<% end %>
 	<% elsif $type == "lists" %>
-		<% if $lists != nil %>
-		<% $lists.each do |list| %>
-		<div class="row users">
-			<div class="row user">
-				<div class="col-xs-3">
-					<h4><%= list.list_name %></h4>
+		<% if $lists.size != 0 %>
+			<% $lists.each do |list| %>
+			<div class="row users">
+				<div class="row user">
+					<div class="col-xs-3">
+						<%= button_to list.list_name, { :controller => "pages", :action => "profile", :list_id => list.id, :type => "addfollower" }, :class => "btn btn-default" %>
+					</div>
 				</div>
 			</div>
-		</div>
-		<% end %>
+			<% end %>
+		<% else %>
+			<h2> I'm sorry, we could not find what you were looking for...</h2>
 		<% end %>
 	<% end %>
 </div>
