@@ -3,7 +3,7 @@
 <body>
 <div class="row">
 
-	<div class="col-sm-7">
+	<div class="col-sm-4">
 		<div class="row profilegroup">
 			<div class="col-xs-5 profilepic">
 				<%= image_tag("userpic.jpeg") %>
@@ -24,7 +24,7 @@
 			</div>
 		</div>	
 	</div>
-	<div class="col-sm-5">
+	<div class="col-sm-4">
 		<div class= "row followingbuttons">
 			<table class="stats">
 				<tr>
@@ -83,6 +83,8 @@
 
 				</div>	
 		</div>
+		<div class="col-sm-4">
+		</div>
 		</div>
 
 <div class="row mylists">
@@ -102,7 +104,7 @@
 			<% end %>
 			
 		</div>
-		<div class="col-sm-9 movielist">
+		<div class="col-sm-5 movielist">
 		
 			<% find_lists.each do |list| %>
 				<% if list.id.to_s == $list_id %>
@@ -158,6 +160,8 @@
 			<% end %>
 			
 		</div>	
+		<div class="col-sm-4">
+		</div>
 		
 </div>
 			<div class="modal fade" id="newlist_modal">
