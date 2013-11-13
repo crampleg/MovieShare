@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-xs-7">
 				<h3><%= $current_visited_user.firstname + " " + $current_visited_user.lastname %></h3>
-				<p><%= $description rescue "non"  %></p>
+				<p><%= $current_visited_user.description rescue "nothing"  %></p>
 			</div>		 	
 		</div>
 	</div>

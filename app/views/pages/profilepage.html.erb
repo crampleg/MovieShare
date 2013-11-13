@@ -10,9 +10,11 @@
 			</div>
 			<div class="col-xs-7">
 				<h3><%= $current_user.firstname + " " + $current_user.lastname %></h3>
-				<p> About me: </p>
+				
 				<div class="aboutfield">
-					<p> <%= $description %> </p>
+					
+					<p> <%= $current_user.description %> </p>
+					
 					<div class="row">
 					<a href="#test_modal" data-toggle="modal">Edit profile</a>
 				</div>

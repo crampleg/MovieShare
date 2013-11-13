@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   $randommovie = "randommovie"
   $randomnr = "randomnr"
   $lists = "test"
-  $description = "Welcome to my profilepage"
+  
   $profilepic = ""
   $lol = "lol"
   $test = "lolololol"
@@ -230,10 +230,14 @@ class PagesController < ApplicationController
         rescue
         end
       end
+    elsif (type == "description")
+      description = params[:description]
+      $current_user.description = description
+      $current_user.save
     end
     
-      $description = params[:description]
-      $profilepic = params[:profilepic]
+      
+      
       redirect_to(:back)
       
   end

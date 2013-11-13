@@ -32,7 +32,6 @@ MovieShare::Application.routes.draw do
     get 'pages/moviepage' => :getmovie
     post 'pages/moviepage' => :addmovie
     post 'pages/profile' => :gotoprofile_or_addfollower
-    
   end
 
   get "login/new"
