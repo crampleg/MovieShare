@@ -25,16 +25,14 @@ MovieShare::Application.routes.draw do
   end
 
   controller :pages do 
-    post 'pages/mainpage' => :search
+    post 'pages/mainpage' => :search 
     post 'pages/list' => :search
+    post 'pages/mainpage' => :gotoprofile_or_addfollower
     post 'pages/profilepage' => :updateprofile
-    post "pages/mainpage" => :toprated
     get 'pages/moviepage' => :getmovie
     post 'pages/moviepage' => :addmovie
     post 'pages/profile' => :gotoprofile_or_addfollower
-
   end
-
 
   get "login/new"
 
@@ -45,13 +43,11 @@ MovieShare::Application.routes.draw do
   get "pages/profile"
 
   get "pages/mylist"
-
-  get "pages/mainpage" 
   
 
   get "pages/profilepage"
    
-
+  get "pages/mainpage"
   get "pages/loginpage"
 
   get "pages/moviepage"

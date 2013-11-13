@@ -82,10 +82,14 @@
               <div class="row-fluid">
                 <div class="col-xs-12">
                   <p> About me:</p>
-                  <%= form_tag do %>
-                  <%= text_field_tag :description, params[:description], class: "span6 input-large" %>
-                  <!--<input class="span6 input-large" type="text" id="aboutMe"></input>-->
+                  <%= form_tag({:controller => "pages", :action => "profilepage", 
+                    :type => "description" } ) do %>
 
+                  <%= text_field_tag :description %>
+
+                  
+                 
+                 
                   <div class="fileinput">
                     <p> Profile picture: </p>
                     <input type="file" class="file"></input>
@@ -94,13 +98,11 @@
               </div>
             </div>
             <div class="modal-footer">
+              
               <div class="row">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-              </div>
-              <div class="row">
+                <%= submit_tag 'Submit', name: nil , class: "btn btn-primary"%>
+                   <% end %>
                 
-                  <%= submit_tag "Save", class: "btn btn-primary" %>
-                <% end %>
                 <!--<a href="/pages/profilepage" class="btn btn-primary">Save Changes</a>-->
               </div>
             </div>

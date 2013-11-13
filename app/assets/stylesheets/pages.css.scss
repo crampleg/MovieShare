@@ -71,15 +71,30 @@
 	
 }
 
+.friendinfo {
+	margin-bottom: 10px!important;
+
+	.btn.btn-default {
+		margin-left: 10px!important;
+		margin-right: 10px!important;
+	}
+}
 .mylists {
+	margin-top: 20px!important;
+
+	.listscol {
+		height: 100%!important;
+		border-right: solid 2px rgba(0, 0, 0, 0.2);
+	}
 	.btn {
 		width: 100%!important;
 		margin-bottom: 2px;
 	}
 	.movielist{
 		.btn.btn-default{
-			width: 150px!important;
-			height: 50px!important;
+			width: 100px!important;
+			float: right;
+
 		}
 	}
 }
@@ -91,7 +106,6 @@
 	}
 }
 .singlelist {
-	margin-top: 20px!important;
 }
 
 .mainpage {
@@ -180,23 +194,36 @@
 	}
 }
 
-	
+.stats {
+	width: 100%;
+	text-align: center
+}
+.stats td {
+	width: 33%;
+	border: none!important;
+}
+
 #nextrandom {
 	position: absolute;
 	left: -40px;
 	top: 65px;		
-	width: 60px;
-	height: 100px;
+	width: 100px!important;
+	height: 40px;
+	margin-left: 10px;
 }
 
 .btn.followers{
-	background-color: #E6E6E6 !important;
- 	border: 1px solid grey;
+	background-color: white !important;
+ 	border: 1px solid rgba(0,0,0, 0.2);
   	color: black;
-  	width: 110px;
-  	height: 60px;
-  	position: inherit;
-  	float: right;
+  	width: 100%;
+  	height: 50px;
+}
+
+.btn.followers p{
+	padding-top: 10px;
+	font-size: 30px;
+	color: #8AD7F8;
 }
 
 .btn.btn-primary{
@@ -345,15 +372,8 @@
     	width: 120px !important;
     }
 
-   .followbutton{
-   	.btn.btn-default{
-   	margin-top: 10px;
-   	margin-left: 2px;
-   	width: 365px;
-   	background-color: #8AD7F8;
-   	color:white;
-   	font-style: bold;
-   }
+   .followbutton .btn {
+   		width: 100%!important;
    }
 
 
