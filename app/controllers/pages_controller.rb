@@ -16,8 +16,9 @@ class PagesController < ApplicationController
   $l_id = "0"
   $m_id = "0"
   $listmovies = []
-
-    topratedsearch = "p"
+  $hei = "dust"
+  def getactivities 
+    topratedsearch = "a"
     url = "http://mymovieapi.com/?title=#{topratedsearch}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
     begin
       response = Net::HTTP.get(URI.parse(url))
@@ -27,6 +28,32 @@ class PagesController < ApplicationController
     rescue SocketError => e
       puts e.message
     end
+  
+    $hei = "hallo"
+    #following records:
+    $following_act = []
+    $following_act = Follower.find_all_by_user_id_follower($current_user.id)
+    
+    #following ids:
+    $following_ids = []
+    $following_act.each do |act|
+      $following_ids.push act.user_id_model
+    end
+
+    $activities = []
+    $activities = Activity.all(:order => "created_at desc")
+
+    $myactivities = []
+
+    $activities.each do |activity|
+      if $following_ids.include? activity.userid
+        $myactivities.push activity
+      end
+    end
+    return $myactivities
+  end
+  
+    
   
   def search
     query = params[:query]         #the input string that the user wrote in the search field
@@ -145,7 +172,7 @@ class PagesController < ApplicationController
 
   def getmovie
     $lol = "HAHAHAHAHAHAHHAHAHA"
-    $type ="movies"
+    $type = "movies"
     $test = params[:id]
     url = "http://mymovieapi.com/?id=#{$test}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
     begin
@@ -165,6 +192,7 @@ class PagesController < ApplicationController
     if (type == "regular")
       $l_id = params[:list]
       ListMovie.create(:list_id => params[:list], :movie_name => params[:movieid])
+      Activity.create(:userid => $current_user.id, :username => $current_user.username, :movieid => params[:movieid], :moviename => params[:moviename], :listid => params[:list], :listname => params[:listname])
     elsif (type == "wishlist")
       UnseenMovie.create(:owner_id => $current_user.id, :movie_name => params[:movieid] )
     elsif (type == "seen")
@@ -214,15 +242,16 @@ class PagesController < ApplicationController
   def gotoprofile_or_addfollower
     user = params[:user_id] 
     type = params[:type]
+    $hallaballa = user.class
     $current_visited_user = User.find_by_id(user) 
-   
-    if (type == "gotoprofile")
+    
+    if type == "gotoprofile"
       if ($current_user.id == $current_visited_user.id)
         redirect_to '/pages/profilepage'
       else
         redirect_to '/pages/profile'   
       end
-    elsif (type == "addfollower")
+    elsif type == "addfollower"
       Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
       redirect_to '/pages/profile'
     end
@@ -252,7 +281,7 @@ class PagesController < ApplicationController
     return list
   end
 
-  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search, :get_watched_movies, :get_visited_watched_movies
+  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search, :get_watched_movies, :get_visited_watched_movies, :getactivities
 
 end
 

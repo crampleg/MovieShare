@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-sm-6">
+	<div class="col-sm-7">
 		<div class="row profilegroup">
 			<div class="col-xs-5">
 				<%= image_tag("userpic.jpeg") %>
@@ -10,10 +10,13 @@
 			</div>		 	
 		</div>
 	</div>
-	<div class="col-sm-6">
+	<div class="col-sm-5">
+	<%= $hallaballa %>
 		<div class= "row followingbuttons">
-			<div class="col-xs-4" >
-				<a type="button" class="btn followers" href="#following_modal" data-toggle="modal">following</br><p><%= Follower.count(:conditions => "user_id_follower = #{$current_visited_user.id}") %></p></a>
+			<table class="stats">
+				<tr>
+				<td>
+					<a type="button" class="btn btn-default followers" href="#following_modal" data-toggle="modal"><p><%= Follower.count(:conditions => "user_id_follower = #{$current_visited_user.id}") %></p></a>
 					<div class="modal fade" id="following_modal">
 					  	<div class="modal-header">
 					    	<a class="close" data-dismiss="modal">&times;</a>
@@ -26,9 +29,9 @@
                             <% end %>
 						</div>
 					</div>
-			</div>
-			<div class="col-xs-4">
-				<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal">followers</br><p><%= Follower.count(:conditions => "user_id_model = #{$current_visited_user.id}") %></p></a>
+				</td>
+				<td>
+					<a type="button" class="btn btn-default followers" href="#followers_modal" data-toggle="modal"><p><%= Follower.count(:conditions => "user_id_model = #{$current_visited_user.id}") %></p></a>
 					 <div class="modal fade" id="followers_modal">
 			 			<div class="modal-header">
 			    			<a class="close" data-dismiss="modal">&times;</a>
@@ -41,10 +44,9 @@
                             <% end %>
 					  	</div>
 					</div>
-			</div>
-
-			<div class="col-xs-4">
-				<a type="button" class="btn followers" href="#movies_modal" data-toggle="modal">movies seen</br><p> <%= get_visited_watched_movies.count %> </p></a>
+				</td>
+				<td>
+					<a type="button" class="btn btn-default followers" href="#movies_modal" data-toggle="modal"><p> <%= get_visited_watched_movies.count %> </p></a>
 					 <div class="modal fade" id="movies_modal">
 			 			<div class="modal-header">
 			    			<a class="close" data-dismiss="modal">&times;</a>
@@ -56,10 +58,17 @@
 							<% end %>
 					  	</div>
 					</div>
-			</div>
+				</td>
+				</tr>
+				<tr>
+					<td>following</td>
+					<td>followers</td>
+					<td>movies seen</td>
+				</tr>
+			</table>
 			<div class= "row followbutton">
 				
-		 		<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id, :type => "addfollower" }, :class => "btn btn-default" %>
+		 		<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id, :type => "addfollower" }, :class => "btn btn-primary" %>
 		 	
 			</div>
 		</div>	

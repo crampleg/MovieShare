@@ -3,7 +3,7 @@
 <body>
 <div class="row">
 
-	<div class="col-sm-6">
+	<div class="col-sm-7">
 		<div class="row profilegroup">
 			<div class="col-xs-5 profilepic">
 				<%= image_tag("userpic.jpeg") %>
@@ -22,10 +22,12 @@
 			</div>
 		</div>	
 	</div>
-	<div class="col-sm-6">
+	<div class="col-sm-5">
 		<div class= "row followingbuttons">
-					<div class="col-xs-4" >
-						<a type="button" class="btn followers" href="#following_modal" data-toggle="modal">following</br><p><%= Follower.count(:conditions => "user_id_follower = #{$current_user.id}") %></p></a>
+			<table class="stats">
+				<tr>
+				<td>
+					<a type="button" class="btn followers" href="#following_modal" data-toggle="modal"><p><%= Follower.count(:conditions => "user_id_follower = #{$current_user.id}") %></p></a>
 							<div class="modal fade" id="following_modal">
 							  	<div class="modal-header">
 							    	<a class="close" data-dismiss="modal">&times;</a>
@@ -38,9 +40,9 @@
                                   <% end %>
 								</div>
 							</div>
-					</div>
-					<div class="col-xs-4">
-						<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal">followers</br><p><%= Follower.count(:conditions => "user_id_model = #{$current_user.id}") %></p></a>
+				</td>
+				<td>
+					<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal"><p><%= Follower.count(:conditions => "user_id_model = #{$current_user.id}") %></p></a>
 							 <div class="modal fade" id="followers_modal">
 					 			<div class="modal-header">
 					    			<a class="close" data-dismiss="modal">&times;</a>
@@ -53,10 +55,9 @@
                                   <% end %>
 							  	</div>
 							</div>
-					</div>
-
-					<div class="col-xs-4">
-						<a type="button" class="btn followers" href="#movies_modal" data-toggle="modal">movies seen</br><p> <%= get_watched_movies.count %> </p></a>
+				</td>
+				<td>
+					<a type="button" class="btn followers" href="#movies_modal" data-toggle="modal"><p> <%= get_watched_movies.count %> </p></a>
 							 <div class="modal fade" id="movies_modal">
 					 			<div class="modal-header">
 					    			<a class="close" data-dismiss="modal">&times;</a>
@@ -68,18 +69,26 @@
 									<% end %>
 							  	</div>
 							</div>
-					</div>
+				</td>
+				</tr>
+				<tr>
+					<td>following</td>
+					<td>followers</td>
+					<td>movies seen</td>
+				</tr>
+			</table>
+
 
 				</div>	
 		</div>
 		</div>
 
 <div class="row mylists">
-		<div class="col-sm-3">
-			<h2>My Movie Lists</h2>
+		<div class="col-sm-3 listscol">
 			<div class="row">
 				<a type="button" class="btn btn-default"href= "#newlist_modal" data-toggle="modal"> <span class="glyphicon glyphicon-plus"></span> New Movielist</a>
 			</div>
+			<h4 style="text-align: center;">My Movie Lists</h4>
 			<div class="row">
 				<%= button_to "WishList", { :controller => "pages", :action => "profilepage", :type => "wishlist" }, :class => "btn btn-primary"  %>
 			</div>
@@ -103,9 +112,9 @@
 					<% end %>
 
 					<div class="row">
-					<div class="col-sm-9">
+					<div class="col-sm-12">
 						<br>
-						<a type="button" class="btn btn-default" href="#list_modal" data-toggle="modal"><h4>Add movie</h4></a>
+						<a type="button" class="btn btn-default" href="#list_modal" data-toggle="modal"><span style="text-align: left;" class="glyphicon glyphicon-plus"></span>add</a>
 
 					</div>
 					</div>

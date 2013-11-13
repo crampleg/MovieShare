@@ -8,9 +8,11 @@
 			<div class="listcontainer">
 				<button id="leftbtn" class="btn btn-default glyphicon glyphicon-chevron-left left"></button>
 				<div id="movies" class="movies">
+                <% if $topmovies != nil %>
                     <% $topmovies.each do |movie| %>
                         <%= link_to image_tag(movie["poster"]["imdb"]), :controller => "pages", :action => "moviepage", :id => movie["imdb_id"] %>
                     <% end %>
+                <% end  %>
 				</div>
 				<button id="rightbtn" class="btn btn-default glyphicon glyphicon-chevron-right right"></button>
 			</div>
@@ -29,53 +31,20 @@
 
 	<h2>Friends Activity</h2>
 	<div class="row friendactivity">
-		<div class="col-xs-12">
-			<div class="row friendinfo">
-				<%= image_tag("userpic.jpeg") %>
-				<strong><a href="#">oeseth</a></strong> 
-				just added 
-				<strong><a href="#">'Thor'</a></strong>
-				to
-				<strong><a href="#">'Top Movies of All Time'</a></strong>
-			</div>
-			<div class="row movielist">
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-            </div>
-		</div>	
+        <% if getactivities != nil %>
+            <% getactivities.each do |activity| %>
+    			<div class="row friendinfo">
+                    <table>
+                        <td><%= image_tag("userpic.jpeg") %></td>
+                        <td><%= button_to activity.username, { :controller => "pages", :action => "profile", :user_id => activity.userid.to_s, :type => "gotoprofile"}, :class => "btn btn-default" %> </td>
+                        <td>just added</td>
+                        <td>
+                            <%= link_to activity.moviename, { :controller => "pages", :action => "moviepage", :id => activity.movieid }, :class => "btn btn-default"  %>
+                        <td>to</td>
+                        <td><%= button_to activity.listname, { :controller => "pages", :action => "profile", :id => activity.listid }, :class => "btn btn-default"  %></td>
+                    </table>
+    			</div>
+            <% end %>
+        <% end %>
 	</div>
-    <div class="row friendactivity">
-        <div class="col-xs-12">
-            <div class="row friendinfo">
-                <%= image_tag("userpic.jpeg") %>
-                <strong><a href="#">oeseth</a></strong> 
-                just added 
-                <strong><a href="#">'Thor'</a></strong>
-                to
-                <strong><a href="#">'Top Movies of All Time'</a></strong>
-            </div>
-            <div class="row movielist">
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-                <%= image_tag("poster.jpeg")%>
-            </div>
-        </div>  
-    </div>
 </div>

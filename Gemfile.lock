@@ -67,7 +67,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25)
     multi_json (1.8.2)
-    mysql2 (0.3.14)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
@@ -138,7 +137,6 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   jquery-star-rating-rails
-  mysql2 (< 0.4)
   rails (= 3.2.14)
   sass-rails (~> 3.2.3)
   sqlite3
