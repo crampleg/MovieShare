@@ -2,6 +2,7 @@
 class PagesController < ApplicationController
   require 'net/http'
   require 'json'
+
   $title = nil
   $randomsearch = "randomsearch"
   $randommovie = "randommovie"
@@ -59,6 +60,7 @@ class PagesController < ApplicationController
     $users = []
     $lists = []
     $q = query
+    counter = 0
     $lol = params[:type]           #the radio button value the use set (movies, users, lists)
     if params[:type] == "users"    #if the user checked the 'Users' radio button
       usrs = User.all              #find all users
@@ -66,10 +68,14 @@ class PagesController < ApplicationController
       if query.length != 0         #check that the input string is not empty
         usrs.each do |user|        
           usrnm = user.username.downcase    #for every user, find the user name
-          if usrnm.include? query.downcase  #if the user name includes the search input string 
+          if usrnm.include? query.downcase 
+            counter += 1
             $users.push(user)      #then add the user to the list that is presented as search results 
           else
 
+          end
+          if counter == 10
+            break
           end
         end
       end
@@ -83,9 +89,13 @@ class PagesController < ApplicationController
         listz.each do |list|        
           lis = list.list_name.downcase    #for every user, find the user name
           if lis.include? query.downcase  #if the user name includes the search input string 
+            counter += 1
             $lists.push(list)      #then add the user to the list that is presented as search results 
           else
 
+          end
+          if counter == 10
+            break
           end
         end
       end
@@ -94,15 +104,13 @@ class PagesController < ApplicationController
     elsif params[:type] == "movies"
       $type = "movies"
       query.gsub! /\s+/, "+"
-      url = "http://mymovieapi.com/?title=#{query}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
-      begin
-      response = Net::HTTP.get(URI.parse(url))
-      parsed_json = ActiveSupport::JSON.decode(response)
+      uri = URI.parse("http://mymovieapi.com/?title=#{query}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0")
+      http = Net::HTTP.new(uri.host, uri.port)
+      request = Net::HTTP::Get.new(uri.request_uri)
+      request.initialize_http_header({"User-Agent" => "My Ruby Script"})
+      response = http.request(request)
+      parsed_json = ActiveSupport::JSON.decode(response.body)
       $movies = parsed_json
-
-      rescue SocketError => e
-        puts e.message
-      end
       redirect_to '/pages/list'
     else
       $randomstring = "abcdefghijklmnopqrstuvwxyz"
