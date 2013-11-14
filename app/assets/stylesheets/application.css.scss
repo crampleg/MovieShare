@@ -116,23 +116,13 @@ body {
 		margin-top: 10px;
 	}
 
-	.dropdown-menu {
-		width: 100%!important;
-		text-align: left;
-		padding: 10px;
-	}
+	table {
+				width: 250px;
 
-	.dropdown-menu tr td:first-child {
-		width: 80%;
-	}
-
-	.dropdown-menu tr {
-		border-bottom: 1px solid #898B8E;
-	}
-
-	.dropdown-menu tr td{
-		padding: 5px;
-	}
+				.btn {
+					width: 245px!important;
+				}
+			}
 
 
 	.nocaret {
@@ -142,8 +132,6 @@ body {
 	}
 
 	.line {
-		margin-top: 10px!important;
-		border-top: 2px dotted #898B8E;
 		width: 250px;
 		display: inline-block;
 	}

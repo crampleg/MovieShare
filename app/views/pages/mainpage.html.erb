@@ -3,7 +3,8 @@
 <% end %>
 <div class="mainpage">
 	<div class="row">
-		<div class="col-xs-12">
+
+		<div class="col-lg-8">
 			<h2>Recently Top Rated</h2>
 			<div class="listcontainer">
 				<button id="leftbtn" class="btn btn-default glyphicon glyphicon-chevron-left left"></button>
@@ -16,7 +17,74 @@
 				</div>
 				<button id="rightbtn" class="btn btn-default glyphicon glyphicon-chevron-right right"></button>
 			</div>
-		</div>	
+            <h2>Friends Activity</h2>
+    <div class="row friendactivity">
+        <% if getactivities != nil %>
+            <% getactivities.each do |activity| %>
+                <div class="row friendinfo">
+                    <table>
+                        <td><%= image_tag("userpic.jpeg") %></td>
+                        <td><%= button_to activity.username, { :controller => "pages", :action => "profile", :user_id => activity.userid.to_s, :type => "gotoprofile"}, :class => "btn btn-default" %> </td>
+                        <td>just added</td>
+                        <td>
+                            <%= link_to activity.moviename, { :controller => "pages", :action => "moviepage", :id => activity.movieid }, :class => "btn btn-default"  %>
+                        <td>to</td>
+                        <td><%= button_to activity.listname, { :controller => "pages", :action => "profile", :list => activity.listid, :type => "list", :user_id => activity.userid.to_s }, :class => "btn btn-default"  %></td>
+                    </table>
+                </div>
+            <% end %>
+        <% end %>
+    </div>
+		</div>
+         <div class= "col-lg-4 rm">
+      <div class="randommovie">
+        <h3> 
+          <%= $randommovie["title"] %> (<%= $randommovie["year"]%>)
+        </h3>
+        <div class="row">
+          <div class="col-xs-2">
+          </div>
+          <div class="col-xs-8 poster">
+            <%= link_to image_tag($randommovie["poster"]["imdb"]), :controller => "pages", :action => "moviepage", :id => $randommovie["imdb_id"] rescue image_tag("empty.png") %>
+          </div>
+          
+        </div>
+        <div class="row">
+              <%= form_tag do %>
+                  <%= submit_tag "Next", class: 'btn btn-default', id: 'nextrandom' %>
+              <% end %>
+            <%= button_to "Seen It!", { :controller => "pages", :action => "moviepage", :movieid => $randommovie["imdb_id"], :type => "seen", :redir => "main" }, :class => "btn btn-success yes btn"  %>
+            <!--
+            <div class="stars">
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
+              <input name="star3" type="radio" class="star" />
+            </div>
+            -->
+        </div>
+        <div class="row line btn-group">
+          <button type="button" class="btn no btn-primary addtolist">Add to list</button>
+          <button type="button" class="btn nocaret btn-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <table class="dropdown-menu" role="menu">
+                                        <tr>
+                                          <td><%= button_to "WishList", { :controller => "pages", :action => "moviepage", :movieid => $randommovie["imdb_id"], :type => "wishlist", :redir => "main" }, :class => "btn btn-primary" %></td>
+                                        <tr>    
+                                        <% find_lists.each do |list| %>
+                                        <tr>
+                                          <td><%= button_to list.list_name, { :controller => "pages", :action => "moviepage", :list => list.id, :movieid => $randommovie["imdb_id"], :moviename => $randommovie["title"], :listname => list.list_name, :type => "regular", :redir => "main" }, :class => "btn btn-default"  %></td>
+                                        <tr>
+                                    <% end %>
+                                    </table>
+        </div>
+
+      </div>
+      </div>
+
+
 	</div>
 	
 	<script>
@@ -29,22 +97,5 @@
         });
 	</script>
 
-	<h2>Friends Activity</h2>
-	<div class="row friendactivity">
-        <% if getactivities != nil %>
-            <% getactivities.each do |activity| %>
-    			<div class="row friendinfo">
-                    <table>
-                        <td><%= image_tag("userpic.jpeg") %></td>
-                        <td><%= button_to activity.username, { :controller => "pages", :action => "profile", :user_id => activity.userid.to_s, :type => "gotoprofile"}, :class => "btn btn-default" %> </td>
-                        <td>just added</td>
-                        <td>
-                            <%= link_to activity.moviename, { :controller => "pages", :action => "moviepage", :id => activity.movieid }, :class => "btn btn-default"  %>
-                        <td>to</td>
-                        <td><%= button_to activity.listname, { :controller => "pages", :action => "profile", :id => activity.listid }, :class => "btn btn-default"  %></td>
-                    </table>
-    			</div>
-            <% end %>
-        <% end %>
-	</div>
+	
 </div>

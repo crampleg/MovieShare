@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-sm-7">
+	<div class="col-sm-4">
 		<div class="row profilegroup">
 			<div class="col-xs-5">
 				<%= image_tag("userpic.jpeg") %>
@@ -10,8 +10,8 @@
 			</div>		 	
 		</div>
 	</div>
-	<div class="col-sm-5">
-	<%= $hallaballa %>
+
+	<div class="col-sm-4">
 		<div class= "row followingbuttons">
 			<table class="stats">
 				<tr>
@@ -71,13 +71,16 @@
 		 		<%= button_to "Follow", { :controller => "pages", :action => "profile", :user_id => $current_visited_user.id, :type => "addfollower" }, :class => "btn btn-primary" %>
 		 	
 			</div>
+			<div class="col-sm-4">
+		</div>
 		</div>	
 	</div>
 </div>
 
 <div class="row mylists">
-		<div class="col-sm-3">
-			<h2>My Movie Lists</h2>
+
+		<div class="col-sm-3 listscol">
+		<h4 style="text-align: center;">My Movie Lists</h4>
 			<% find_visited_lists.each do |list| %>
 				<div class="row">
 					<%= button_to list.list_name, { :controller => "pages", :action => "profilepage", :list => list.id, :type => "regular" }, :class => "btn btn-default"  %>
@@ -93,7 +96,7 @@
 						<h3> <%= list.list_name %></h3>
 					</div>
 					<% $listmovies.each do |movie| %>
-						<%= image_tag(movie["poster"]["imdb"]) rescue movie["title"] %>
+						<%= link_to image_tag(movie["poster"]["imdb"]), :controller => "pages", :action => "moviepage", :id => movie["imdb_id"] rescue link_to image_tag("empty.png"), :controller => "pages", :action => "moviepage", :id => movie["imdb_id"] %>
 					<% end %>
 				<% end %>
 			<% end %>

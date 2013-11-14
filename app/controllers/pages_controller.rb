@@ -2,12 +2,15 @@
 class PagesController < ApplicationController
   require 'net/http'
   require 'json'
+<<<<<<< HEAD
   require 'carrierwave/orm/activerecord'
+=======
+
+>>>>>>> 74e8a239ad3ad9ef0c2d3ddc63a87dc48104437f
   $title = nil
   $randomsearch = "randomsearch"
   $randommovie = "randommovie"
   $randomnr = "randomnr"
-  $lists = "test"
   
   $profilepic = ""
   $lol = "lol"
@@ -59,18 +62,24 @@ class PagesController < ApplicationController
   def search
     query = params[:query]         #the input string that the user wrote in the search field
     $users = []
+    $lists = []
     $q = query
+    counter = 0
     $lol = params[:type]           #the radio button value the use set (movies, users, lists)
     if params[:type] == "users"    #if the user checked the 'Users' radio button
       usrs = User.all              #find all users
 
       if query.length != 0         #check that the input string is not empty
         usrs.each do |user|        
-          usrnm = user.username    #for every user, find the user name
-          if usrnm.include? query  #if the user name includes the search input string 
+          usrnm = user.username.downcase    #for every user, find the user name
+          if usrnm.include? query.downcase 
+            counter += 1
             $users.push(user)      #then add the user to the list that is presented as search results 
           else
 
+          end
+          if counter == 10
+            break
           end
         end
       end
@@ -78,22 +87,34 @@ class PagesController < ApplicationController
         $type = "users"
         redirect_to '/pages/list'
     elsif params[:type] == "lists"
+      listz = MyList.all              #find all users
 
-      $lists = MyList.all
+      if query.length != 0         #check that the input string is not empty
+        listz.each do |list|        
+          lis = list.list_name.downcase    #for every user, find the user name
+          if lis.include? query.downcase  #if the user name includes the search input string 
+            counter += 1
+            $lists.push(list)      #then add the user to the list that is presented as search results 
+          else
+
+          end
+          if counter == 10
+            break
+          end
+        end
+      end
         $type = "lists"
         redirect_to '/pages/list'
     elsif params[:type] == "movies"
       $type = "movies"
       query.gsub! /\s+/, "+"
-      url = "http://mymovieapi.com/?title=#{query}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0"
-      begin
-      response = Net::HTTP.get(URI.parse(url))
-      parsed_json = ActiveSupport::JSON.decode(response)
+      uri = URI.parse("http://mymovieapi.com/?title=#{query}&type=json&plot=simple&episode=0&limit=10&yg=0&mt=M&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0")
+      http = Net::HTTP.new(uri.host, uri.port)
+      request = Net::HTTP::Get.new(uri.request_uri)
+      request.initialize_http_header({"User-Agent" => "My Ruby Script"})
+      response = http.request(request)
+      parsed_json = ActiveSupport::JSON.decode(response.body)
       $movies = parsed_json
-
-      rescue SocketError => e
-        puts e.message
-      end
       redirect_to '/pages/list'
     else
       $randomstring = "abcdefghijklmnopqrstuvwxyz"
@@ -202,7 +223,12 @@ class PagesController < ApplicationController
       user_watched.movies = movie_string
       user_watched.save
     end
-    redirect_to '/pages/list'
+
+    if params[:redir] == "main"
+      redirect_to :back
+    else
+      redirect_to '/pages/list'
+    end
   end
 
   def updateprofile                 #this function is called when a user clicks a list he has created in profilepage
@@ -234,14 +260,6 @@ class PagesController < ApplicationController
     elsif (type == "description")
       description = params[:description]
       $current_user.description = description
-      directory = "app/assets/images"
-      name = params[:avatar]
-      path = File.join(directory, params[:avatar])
-      File.open(File.join(directory, params[:avatar]), 'w') do |f|
-      f.puts path
-      end
-      $current_user.avatar = (params[:avatar])
-
       $current_user.save!
     end
     
@@ -265,7 +283,21 @@ class PagesController < ApplicationController
         redirect_to '/pages/profile'   
       end
     elsif type == "addfollower"
-      Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
+        Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
+        redirect_to '/pages/profile'
+    elsif type == "list"
+        $listmovies = [] 
+        ListMovie.find_all_by_list_id(params[:list]).each do |movie|
+        begin
+          url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
+          response = Net::HTTP.get(URI.parse(url))
+          parsed_json = ActiveSupport::JSON.decode(response)
+          $listmovies.push(parsed_json)
+        rescue SocketError => e
+          puts e.message
+        end
+
+      end
       redirect_to '/pages/profile'
     end
   end
