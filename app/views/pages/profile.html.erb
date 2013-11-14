@@ -96,7 +96,7 @@
 						<h3> <%= list.list_name %></h3>
 					</div>
 					<% $listmovies.each do |movie| %>
-						<%= link_to image_tag(movie["poster"]["imdb"]), :controller => "pages", :action => "moviepage", :id => movie["imdb_id"] rescue movie["title"] rescue movie["title"] %>
+						<%= link_to image_tag(movie["poster"]["imdb"]), :controller => "pages", :action => "moviepage", :id => movie["imdb_id"] rescue link_to image_tag("empty.png"), :controller => "pages", :action => "moviepage", :id => movie["imdb_id"] %>
 					<% end %>
 				<% end %>
 			<% end %>

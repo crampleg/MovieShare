@@ -71,6 +71,13 @@
 	
 }
 
+
+
+.seen {
+	width: 250px;
+	margin-top: 10px;
+}
+
 .friendinfo {
 	margin-bottom: 10px!important;
 
@@ -139,13 +146,13 @@
 		.btn.left {
 			position: absolute;
 			left: 10px;
-			top: 43px;
+			top: 64px;
 		}
 
 		.btn.right {
 			position: absolute;
 			right: 10px;
-			top: 43px;	
+			top: 64px;
 		}
 
 	}
@@ -204,13 +211,10 @@
 	border: none!important;
 }
 
-#nextrandom {
-	position: absolute;
-	left: -40px;
-	top: 65px;		
-	width: 100px!important;
-	height: 40px;
-	margin-left: 10px;
+#nextrandom {	
+	width: 100%!important;
+	max-width: 250px!important;
+	margin-top: 10px;
 }
 
 .btn.followers{
@@ -281,14 +285,22 @@
 		}
 
 		.addtolist {
-			width: 190px;
 			height: 32px;
-			float: right;
 			margin-top: -18px!important;
-
+			float: right;
 			button {
 				height: 30px;
 				padding-top: 5px;
+				width: 250px!important;
+				margin-top: 10px;
+			}
+
+			table {
+				width: 250px;
+
+				.btn {
+					width: 245px!important;
+				}
 			}
 		}
 
@@ -309,6 +321,13 @@
 	
 
 }
+
+.line {
+	.addtolist {
+		width: 250px!important;
+	}	
+}
+
 
 
 
@@ -377,4 +396,14 @@
    		width: 100%!important;
    }
 
+@media(max-width:1199px){
+	#rightbtn {
 
+			top: 42px;
+		}
+
+		#leftbtn {
+
+			top: 42px;
+		}
+}

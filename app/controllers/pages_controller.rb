@@ -211,7 +211,12 @@ class PagesController < ApplicationController
       user_watched.movies = movie_string
       user_watched.save
     end
-    redirect_to '/pages/list'
+
+    if params[:redir] == "main"
+      redirect_to :back
+    else
+      redirect_to '/pages/list'
+    end
   end
 
   def updateprofile                 #this function is called when a user clicks a list he has created in profilepage
