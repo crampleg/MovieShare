@@ -29,7 +29,7 @@
                         <td>
                             <%= link_to activity.moviename, { :controller => "pages", :action => "moviepage", :id => activity.movieid }, :class => "btn btn-default"  %>
                         <td>to</td>
-                        <td><%= button_to activity.listname, { :controller => "pages", :action => "profilepage", :list => activity.listid, :type => "regular" }, :class => "btn btn-default"  %></td>
+                        <td><%= button_to activity.listname, { :controller => "pages", :action => "profile", :list => activity.listid, :type => "list", :user_id => activity.userid.to_s }, :class => "btn btn-default"  %></td>
                     </table>
                 </div>
             <% end %>

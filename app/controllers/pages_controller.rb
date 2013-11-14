@@ -273,6 +273,20 @@ class PagesController < ApplicationController
     elsif type == "addfollower"
         Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
         redirect_to '/pages/profile'
+    elsif type == "list"
+        $listmovies = [] 
+        ListMovie.find_all_by_list_id(params[:list]).each do |movie|
+        begin
+          url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
+          response = Net::HTTP.get(URI.parse(url))
+          parsed_json = ActiveSupport::JSON.decode(response)
+          $listmovies.push(parsed_json)
+        rescue SocketError => e
+          puts e.message
+        end
+
+      end
+      redirect_to '/pages/profile'
     end
   end
   

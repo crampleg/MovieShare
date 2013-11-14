@@ -133,20 +133,17 @@
 	<% elsif $type == "lists" %>
 		<% if $lists.size != 0 %>
 			<% $lists.each do |list| %>
-			<div class="row users">
-				<div class="row user">
-					<div class="col-xs-3">
-						<%= button_to list.list_name, { :controller => "pages", :action => "profile", :list_id => list.id, :type => "addfollower" }, :class => "btn btn-default" %>
-					</div>
-					<div class="col-xs-2">
-						by
-					</div>
-					<div class="col-xs-5">
-						<% user_id = MyList.find_by_id(list.id).owner_id %> 
+			<div class="row friendinfo users">
+			<table style="border: none!important;">
+                        <td><%= button_to list.list_name, { :controller => "pages", :action => "profile", :list_id => list.id, :type => "addfollower" }, :class => "btn btn-default" %></td>
+                        <td>by</td>
+                        <td>
+                            <% user_id = MyList.find_by_id(list.id).owner_id %> 
 						<% username = User.find_by_id(user_id).username %>
 						<%= button_to username, { :controller => "pages", :action => "profile", :user_id => user_id, :type => "gotoprofile"}, :class => "btn btn-default" %>
-					</div>
-				</div>
+						</td>
+                    </table>
+			</div>
 			</div>
 			<% end %>
 		<% else %>
