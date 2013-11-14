@@ -2,6 +2,7 @@
 class PagesController < ApplicationController
   require 'net/http'
   require 'json'
+  require 'carrierwave/orm/activerecord'
   $title = nil
   $randomsearch = "randomsearch"
   $randommovie = "randommovie"
@@ -233,7 +234,15 @@ class PagesController < ApplicationController
     elsif (type == "description")
       description = params[:description]
       $current_user.description = description
-      $current_user.save
+      directory = "app/assets/images"
+      name = params[:avatar]
+      path = File.join(directory, params[:avatar])
+      File.open(File.join(directory, params[:avatar]), 'w') do |f|
+      f.puts path
+      end
+      $current_user.avatar = (params[:avatar])
+
+      $current_user.save!
     end
     
       

@@ -6,7 +6,10 @@
 	<div class="col-sm-7">
 		<div class="row profilegroup">
 			<div class="col-xs-5 profilepic">
-				<%= image_tag("userpic.jpeg") %>
+				
+				<%= image_tag($current_user.avatar) rescue image_tag("userpic.jpeg") %>
+				<p> <%= $current_user.avatar%> </p>
+				
 			</div>
 			<div class="col-xs-7">
 				<h3><%= $current_user.firstname + " " + $current_user.lastname %></h3>
@@ -15,6 +18,7 @@
 					
 					<p> <%= $current_user.description %> </p>
 					
+
 					<div class="row">
 					<a href="#test_modal" data-toggle="modal">Edit profile</a>
 				</div>
