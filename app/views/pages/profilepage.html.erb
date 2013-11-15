@@ -7,8 +7,8 @@
 		<div class="row profilegroup">
 			<div class="col-xs-5 profilepic">
 				
-				<%= image_tag($current_user.avatar) rescue image_tag("userpic.jpeg") %>
-				<p> <%= $current_user.avatar%> </p>
+				<%= image_tag(Gravatar.new($current_user.email).image_url) rescue image_tag("userpic.jpeg") %>
+				
 				
 			</div>
 			<div class="col-xs-7">
