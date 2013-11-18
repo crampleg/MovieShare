@@ -2,7 +2,6 @@
 class PagesController < ApplicationController
   require 'net/http'
   require 'json'
-  require 'carrierwave/orm/activerecord'
 
   $title = nil
   $randomsearch = "randomsearch"
@@ -261,7 +260,7 @@ class PagesController < ApplicationController
     elsif (type == "description")
       description = params[:description]
       $current_user.description = description
-      $current_user.save!
+      $current_user.save
     end
     
       
