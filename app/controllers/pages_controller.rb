@@ -2,11 +2,8 @@
 class PagesController < ApplicationController
   require 'net/http'
   require 'json'
-<<<<<<< HEAD
   require 'carrierwave/orm/activerecord'
-=======
 
->>>>>>> 74e8a239ad3ad9ef0c2d3ddc63a87dc48104437f
   $title = nil
   $randomsearch = "randomsearch"
   $randommovie = "randommovie"
