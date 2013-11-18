@@ -43,9 +43,10 @@
 							            <tr>	
 										<% find_lists.each do |list| %>
 										<tr>
-							              <td><%= button_to list.list_name, { :controller => "pages", :action => "moviepage", :list => list.id, :movieid => movie["imdb_id"], :moviename => movie["title"], :listname => list.list_name, :type => "regular" }, :class => "btn btn-default"  %></td>
+							              <td><%= button_to list.list_name, { :controller => "pages", :action => "moviepage", :list => list.id, :movieid => movie["imdb_id"], :moviename => movie["title"], :listname => list.list_name, :type => "regular" }, :class => "btn btn-default"  %>
+										  </td>
 							            <tr>
-									<% end %>
+										<% end %>
 		          					</table>
 		          				</div>
 							</div>
