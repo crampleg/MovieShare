@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');   //these headers allow cross-domain communication (e.g. a localhost can communicate with the ntnu server)
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 
-$con = new mysqli("localhost", "root", "", "moviesharedb");
+$con = new mysqli("localhost", "root", "", "pinme");
 if (mysqli_connect_errno()) {
     die(mysqli_connect_error());
 }
