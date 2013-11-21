@@ -2,7 +2,7 @@ CONN = ActiveRecord::Base.connection
 
 inserts1 = []
 password = BCrypt::Password.create("movieshare");
-(1..9990).each do |i|
+(1..99990).each do |i|
   (i+1..(i+1)+9).each do|j|
     inserts1.push "(null, #{i}, #{j}, '2013-11-14 22:48:22', '2013-11-14 22:48:22')"
   end
