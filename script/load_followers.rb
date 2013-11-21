@@ -2,16 +2,16 @@ CONN = ActiveRecord::Base.connection
 
 inserts1 = []
 password = BCrypt::Password.create("movieshare");
-(1..99900).each do |i|
-  (i+1..(i+1)+100).each do|j|
+(1..99990).each do |i|
+  (i+1..(i+1)+9).each do|j|
     inserts1.push "(null, #{i}, #{j})"
   end
 end
 
 inserts2 = []
 password = BCrypt::Password.create("movieshare");
-(99901..100001).each do |i|
-  (1..100).each do|j|
+(99991..100000).each do |i|
+  (1..10).each do|j|
     inserts2.push "(null, #{i}, #{j})"
   end
 end
