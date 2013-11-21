@@ -12,4 +12,5 @@ end
 sql1 = "INSERT INTO users VALUES #{inserts1.join(", ")}"
 sql2 = "INSERT INTO watched_movies VALUES #{inserts2.join(", ")}"
 
-CONN.execute sql
+CONN.execute sql1
+CONN.execute sql2
