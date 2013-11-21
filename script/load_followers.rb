@@ -12,7 +12,7 @@ inserts2 = []
 password = BCrypt::Password.create("movieshare");
 (99991..100000).each do |i|
   (1..10).each do|j|
-    inserts2.push "(null, #{i}, #{j})"
+    inserts2.push "(null, #{i}, #{j}, '2013-11-14 22:48:22', '2013-11-14 22:48:22')"
   end
 end
 
