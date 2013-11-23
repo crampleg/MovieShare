@@ -12,7 +12,7 @@ development:
   pool: 5
   timeout: 5000
   encoding: utf8
-  host: mysql://ec2-54-204-219-84.compute-1.amazonaws.com
+  host: ec2-54-204-219-84.compute-1.amazonaws.com
   port: 3306
   
 # Warning: The database defined as "test" will be erased and
@@ -33,6 +33,6 @@ production:
   pool: 5
   timeout: 5000
   encoding: utf8
-  host: mysql://ec2-54-204-219-84.compute-1.amazonaws.com
+  host: ec2-54-204-219-84.compute-1.amazonaws.com
   port: 3306
   
