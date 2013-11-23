@@ -7,7 +7,7 @@ gem 'rails', '3.2.14'
 
 gem 'sqlite3'
 
-#gem 'gravatar-ultimate'
+gem 'gravatar-ultimate'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -45,7 +45,7 @@ gem 'capistrano-rvm', '~> 0.0.3'
 # gem 'debugger'
 
 #MySQL stuff
-#gem 'mysql2', '< 0.4'
+gem 'mysql2', '< 0.4'
 
 #enTest
 #ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5XWWqvyWwjbHUM1Tiedbo6slQmRQqviGb4IdhYyDoR0NLOv7DnIGUdWotkqW4boe+QtZC5I/Bhj3YBRjUNy7y8yfi/aT/Jeeshk0mxGcJb2tty2bnXuRi7OcPB7CoiSWlyjY5rKqSbxECtNApVQdNdLXzRuyK/9kJeQFjTiY4EpWG67xWnm3dtKTm6855IZWOO9NahK8AcQ6DlHWGpyARbOkBGWSktgij+ItIhPvQzvIt8kP2yAsParwwfXii1HUSUZuSbHQXpDjqfTYdm3QVFNq5dZUTPnNMjbSozl03s9MP+oEj+CK7AcLmRC73ZL5grwejvNqU55d+GPDhqJ25 simon.hordvik@gmail.com
