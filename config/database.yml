@@ -12,7 +12,7 @@ development:
   pool: 5
   timeout: 5000
   encoding: utf8
-  host: localhost
+  host: http://ec2-54-204-219-84.compute-1.amazonaws.com
   
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -32,5 +32,5 @@ production:
   pool: 5
   timeout: 5000
   encoding: utf8
-  host: localhost
+  host: http://ec2-54-204-219-84.compute-1.amazonaws.com
   
