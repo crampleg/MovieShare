@@ -63,23 +63,24 @@ class PagesController < ApplicationController
     counter = 0
     $lol = params[:type]           #the radio button value the use set (movies, users, lists)
     if params[:type] == "users"    #if the user checked the 'Users' radio button
-      usrs = User.all              #find all users
-
-      if query.length != 0         #check that the input string is not empty
-        usrs.each do |user|        
-          usrnm = user.username.downcase    #for every user, find the user name
-          if usrnm.include? query.downcase 
-            counter += 1
+      #usrs = User.all              #find all users
+      user = User.find_by_username(query);
+      #if query.length != 0         #check that the input string is not empty
+       # usrs.each do |user|        
+        #  usrnm = user.username.downcase    #for every user, find the user name
+         # if usrnm.include? query.downcase 
+          #  counter += 1
+          if (user > 0) 
             $users.push(user)      #then add the user to the list that is presented as search results 
-          else
-
           end
+            #else
+
+            #end
           if counter == 10
             break
           end
-        end
+          #end
       end
-
         $type = "users"
         redirect_to '/pages/list'
     elsif params[:type] == "lists"
