@@ -7,12 +7,13 @@
 development:
   adapter: mysql2
   database: moviesharedb
-  username: root
-  password:
+  username: movieshare
+  password: movieshare
   pool: 5
   timeout: 5000
   encoding: utf8
-  host: localhost
+  host: ec2-54-204-219-84.compute-1.amazonaws.com
+  port: 3306
   
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -27,10 +28,11 @@ test:
 production:
   adapter: mysql2
   database: moviesharedb2
-  username: root
-  password:
+  username: movieshare
+  password: movieshare
   pool: 5
   timeout: 5000
   encoding: utf8
-  host: localhost
+  host: ec2-54-204-219-84.compute-1.amazonaws.com
+  port: 3306
   
