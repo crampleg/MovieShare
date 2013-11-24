@@ -80,7 +80,7 @@ class PagesController < ApplicationController
             break
           end
           #end
-      end
+      #end
         $type = "users"
         redirect_to '/pages/list'
     elsif params[:type] == "lists"
