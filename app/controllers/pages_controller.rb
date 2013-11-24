@@ -76,9 +76,9 @@ class PagesController < ApplicationController
             #else
 
             #end
-          if counter == 10
-            break
-          end
+          #if counter == 10
+            #break
+            #end
           #end
       #end
         $type = "users"
