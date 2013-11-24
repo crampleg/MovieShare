@@ -70,7 +70,7 @@ class PagesController < ApplicationController
         #  usrnm = user.username.downcase    #for every user, find the user name
          # if usrnm.include? query.downcase 
           #  counter += 1
-          if (user > 0) 
+          if (user) 
             $users.push(user)      #then add the user to the list that is presented as search results 
           end
             #else
