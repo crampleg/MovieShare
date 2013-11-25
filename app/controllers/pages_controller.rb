@@ -1,5 +1,6 @@
 
 class PagesController < ApplicationController
+  skip_before_filter :authorize  #everyone has access to all pages
   require 'net/http'
   require 'json'
 
