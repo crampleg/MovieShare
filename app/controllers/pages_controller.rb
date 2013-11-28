@@ -193,8 +193,8 @@ class PagesController < ApplicationController
   def getmovie
     $lol = "HAHAHAHAHAHAHHAHAHA"
     $type = "movies"
-    $test = params[:id]
-    url = "http://mymovieapi.com/?id=#{$test}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
+    movie_id = params[:id]
+    url = "http://mymovieapi.com/?id=#{movie_id}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
     begin
       response = Net::HTTP.get(URI.parse(url))
       parsed_json = ActiveSupport::JSON.decode(response)
