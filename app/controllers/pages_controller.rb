@@ -147,7 +147,9 @@ class PagesController < ApplicationController
 
   def find_following
     #find all user the current user is following
-    following = Follower.find_all_by_user_id_follower($current_user.id)
+    following = Rails.cache.fetch(:following) do 
+      Follower.find_all_by_user_id_follower($current_user.id)
+    end
     following_user_ids = []
     following.each do |fol|
       user_id = User.find(fol.user_id_model).id
