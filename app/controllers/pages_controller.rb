@@ -322,9 +322,7 @@ class PagesController < ApplicationController
     end
     list_of_movies.each do |movie_id|
      url = "http://mymovieapi.com/?id=#{movie_id}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"  
-     response = Rails.cache.fetch(:response_get_watched_movie) do 
-       Net::HTTP.get(URI.parse(url))
-     end
+     response = Net::HTTP.get(URI.parse(url))
      parsed_json = ActiveSupport::JSON.decode(response)
      list.push(parsed_json)
     end
