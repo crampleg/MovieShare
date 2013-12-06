@@ -317,7 +317,10 @@ class PagesController < ApplicationController
   
   def get_watched_movies
     list = []
-    list_of_movies = WatchedMovie.find_by_user_id($current_user.id).movies.split(";")  #splits the string of watched movies into a list
+    kuk = Rails.cache.fetch(:kuk) do 
+      WatchedMovie.find_by_user_id($current_user.id)  #splits the string of watched movies into a list
+    end
+    list_of_movies = kuk.movies.split(";")
     list_of_movies.each do |movie_id|
      url = "http://mymovieapi.com/?id=#{movie_id}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"  
      response = Net::HTTP.get(URI.parse(url))
