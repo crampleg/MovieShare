@@ -162,9 +162,7 @@ class PagesController < ApplicationController
   
   def find_visited_followers
     #find all followers of a user with id $current_user.id
-    followers = Rails.cache.fetch(:visited_followers) do 
-      Follower.find_all_by_user_id_model($current_visited_user.id)
-    end
+    followers = Follower.find_all_by_user_id_model($current_visited_user.id)
     followers_user_ids = []
     followers.each do |follower|
       user_id = User.find(follower.user_id_follower).id
@@ -175,9 +173,7 @@ class PagesController < ApplicationController
   
   def find_visited_following
     #find all user the current user is following
-    following = Rails.cache.fetch(:visited_following) do 
-      Follower.find_all_by_user_id_follower($current_visited_user.id)
-    end
+    following = Follower.find_all_by_user_id_follower($current_visited_user.id)
     following_user_ids = []
     following.each do |fol|
       user_id = User.find(fol.user_id_model).id
@@ -193,9 +189,7 @@ class PagesController < ApplicationController
   end
   
   def find_visited_lists
-    Rails.cache.fetch(:visited_mylists) do 
-      MyList.find_all_by_owner_id($current_visited_user.id)
-    end
+    MyList.find_all_by_owner_id($current_visited_user.id)
   end
 
   def getlist
@@ -249,7 +243,7 @@ class PagesController < ApplicationController
     $listmovies = [] 
     if (type == "regular")
       $list_id = params[:list]        #the list_id is sent as a parameter               
-      list_of_movies = Rails.cache.fetch(:list_of_movies_from_list) do
+      list_of_movies = Rails.cache.fetch(:list_of_movies_from_list+"#{$list_id}") do
         ListMovie.find_all_by_list_id($list_id)
       end
       list_of_movies.each do |movie|
