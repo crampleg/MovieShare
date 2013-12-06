@@ -245,12 +245,14 @@ class PagesController < ApplicationController
   end
 
   def updateprofile                 #this function is called when a user clicks a list he has created in profilepage
-    
     type = params[:type]
     $listmovies = [] 
     if (type == "regular")
       $list_id = params[:list]        #the list_id is sent as a parameter               
-      ListMovie.find_all_by_list_id($list_id).each do |movie|
+      list_of_movies = Rails.cache.fetch(:list_of_movies_from_list) do
+        ListMovie.find_all_by_list_id($list_id)
+      end
+      list_of_movies.each do |movie|
         begin
           url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
           response = Net::HTTP.get(URI.parse(url))
@@ -261,7 +263,10 @@ class PagesController < ApplicationController
         end
       end
     elsif (type == "wishlist")
-      UnseenMovie.find_all_by_owner_id($current_user.id).each do |movie|
+      list_of_unseen_movies = Rails.cache.fetch(:list_of_unseen_movies_from_list) do
+          UnseenMovie.find_all_by_owner_id($current_user.id)
+      end
+      list_of_unseen_movies.each do |movie|
         begin
           url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
           response = Net::HTTP.get(URI.parse(url))
@@ -271,24 +276,17 @@ class PagesController < ApplicationController
         end
       end
     elsif (type == "description")
-      description = params[:description]
-      $current_user.description = description
+      $current_user.description = params[:description]
       $current_user.save
-    end
-    
-      
-      
-      redirect_to(:back)
-      
+    end     
+    redirect_to(:back)      
   end
   
   
   def gotoprofile_or_addfollower
     user = params[:user_id] 
     type = params[:type]
-    $hallaballa = user.class
     $current_visited_user = User.find_by_id(user) 
-    
     if type == "gotoprofile"
       if ($current_user.id == $current_visited_user.id)
         redirect_to '/pages/profilepage'
@@ -299,8 +297,11 @@ class PagesController < ApplicationController
         Follower.create(:user_id_model => $current_visited_user.id, :user_id_follower => $current_user.id)
         redirect_to '/pages/profile'
     elsif type == "list"
-        $listmovies = [] 
-        ListMovie.find_all_by_list_id(params[:list]).each do |movie|
+        $listmovies = []
+        list_of_movies = Rails.cache.fetch(:list_of_movies_in_a_list) do
+          ListMovie.find_all_by_list_id(params[:list])
+        end  
+        list_of_movies.each do |movie|
         begin
           url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
           response = Net::HTTP.get(URI.parse(url))
@@ -322,9 +323,7 @@ class PagesController < ApplicationController
     end
     list_of_movies.each do |movie_id|
      url = "http://mymovieapi.com/?id=#{movie_id}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"  
-     response = Rails.cache.fetch(:watched_movie_object) do 
-       Net::HTTP.get(URI.parse(url))
-     end
+     response = Net::HTTP.get(URI.parse(url))
      parsed_json = ActiveSupport::JSON.decode(response)
      list.push(parsed_json)
     end
