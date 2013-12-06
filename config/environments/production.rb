@@ -40,7 +40,7 @@ MovieShare::Application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
   # Use a different cache store in production
-  config.cache_store = :dalli_store, { :expires_in => 1.minutes }
+  config.cache_store = :dalli_store, 'ec2-54-227-8-199.compute-1.amazonaws.com', 'ec2-107-21-151-121.compute-1.amazonaws.com', 'ec2-54-196-64-92.compute-1.amazonaws.com', 'ec2-54-211-125-28.compute-1.amazonaws.com', 'ec2-23-20-53-70.compute-1.amazonaws.com', 'ec2-54-204-230-115.compute-1.amazonaws.com', 'ec2-54-196-49-42.compute-1.amazonaws.com', 'ec2-23-20-225-27.compute-1.amazonaws.com',  { :expires_in => 1.minutes }
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
