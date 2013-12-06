@@ -33,7 +33,7 @@
 			<table class="stats">
 				<tr>
 				<td>
-					<a type="button" class="btn followers" href="#following_modal" data-toggle="modal"><p><%= Follower.count(:conditions => "user_id_follower = #{$current_user.id}") %></p></a>
+					<a type="button" class="btn followers" href="#following_modal" data-toggle="modal"><p><%= get_following_count %></p></a>
 							<div class="modal fade" id="following_modal">
 							  	<div class="modal-header">
 							    	<a class="close" data-dismiss="modal">&times;</a>
@@ -48,7 +48,7 @@
 							</div>
 				</td>
 				<td>
-					<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal"><p><%= Follower.count(:conditions => "user_id_model = #{$current_user.id}") %></p></a>
+					<a type="button" class="btn followers" href="#followers_modal" data-toggle="modal"><p><%= get_followers_count %></p></a>
 							 <div class="modal fade" id="followers_modal">
 					 			<div class="modal-header">
 					    			<a class="close" data-dismiss="modal">&times;</a>

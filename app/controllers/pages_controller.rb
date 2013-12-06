@@ -334,7 +334,19 @@ class PagesController < ApplicationController
     return list
   end
 
-  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search, :get_watched_movies, :get_visited_watched_movies, :getactivities
+  def get_following_count
+    Rails.cache.fetch(:following_count) do
+      Follower.count(:conditions => "user_id_follower = #{$current_user.id}")
+    end
+  end
+  
+  def get_followers_count
+    Rails.cache.fetch(:followers_count) do
+      Follower.count(:conditions => "user_id_model = #{$current_user.id}")
+    end
+  end
+
+  helper_method :find_followers, :find_following, :find_visited_followers, :find_visited_following, :find_lists, :find_visited_lists, :search, :get_watched_movies, :get_visited_watched_movies, :getactivities, :get_following_count, :get_followers_count
 
 end
 
