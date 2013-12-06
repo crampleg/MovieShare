@@ -243,9 +243,7 @@ class PagesController < ApplicationController
     $listmovies = [] 
     if (type == "regular")
       $list_id = params[:list]        #the list_id is sent as a parameter               
-      list_of_movies = Rails.cache.fetch(:list_of_movies_from_list+"#{$list_id}") do
-        ListMovie.find_all_by_list_id($list_id)
-      end
+      list_of_movies = ListMovie.find_all_by_list_id($list_id)    #cant cache because you can switch between different lists
       list_of_movies.each do |movie|
         begin
           url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
@@ -292,9 +290,7 @@ class PagesController < ApplicationController
         redirect_to '/pages/profile'
     elsif type == "list"
         $listmovies = []
-        list_of_movies = Rails.cache.fetch(:list_of_movies_in_a_list) do
-          ListMovie.find_all_by_list_id(params[:list])
-        end  
+        list_of_movies = ListMovie.find_all_by_list_id(params[:list])
         list_of_movies.each do |movie|
         begin
           url = "http://mymovieapi.com/?id=#{movie.movie_name}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
