@@ -136,7 +136,9 @@ class PagesController < ApplicationController
 
   def find_followers
     #find all followers of a user with id $current_user.id
-    followers = Follower.find_all_by_user_id_model($current_user.id)
+    followers = Rails.cache.fetch(:followers) do 
+      Follower.find_all_by_user_id_model($current_user.id)
+    end
     followers_user_ids = []
     followers.each do |follower|
       user_id = User.find(follower.user_id_follower).id
@@ -160,7 +162,9 @@ class PagesController < ApplicationController
   
   def find_visited_followers
     #find all followers of a user with id $current_user.id
-    followers = Follower.find_all_by_user_id_model($current_visited_user.id)
+    followers = Rails.cache.fetch(:visited_followers) do 
+      Follower.find_all_by_user_id_model($current_visited_user.id)
+    end
     followers_user_ids = []
     followers.each do |follower|
       user_id = User.find(follower.user_id_follower).id
@@ -171,7 +175,9 @@ class PagesController < ApplicationController
   
   def find_visited_following
     #find all user the current user is following
-    following = Follower.find_all_by_user_id_follower($current_visited_user.id)
+    following = Rails.cache.fetch(:visited_following) do 
+      Follower.find_all_by_user_id_follower($current_visited_user.id)
+    end
     following_user_ids = []
     following.each do |fol|
       user_id = User.find(fol.user_id_model).id
@@ -181,11 +187,15 @@ class PagesController < ApplicationController
   end
 
   def find_lists
-    MyList.find_all_by_owner_id($current_user.id)
+    Rails.cache.fetch(:mylists) do 
+      MyList.find_all_by_owner_id($current_user.id)
+    end
   end
   
   def find_visited_lists
-    MyList.find_all_by_owner_id($current_visited_user.id)
+    Rails.cache.fetch(:visited_mylists) do 
+      MyList.find_all_by_owner_id($current_visited_user.id)
+    end
   end
 
   def getlist
@@ -193,7 +203,6 @@ class PagesController < ApplicationController
   end 
 
   def getmovie
-    $lol = "HAHAHAHAHAHAHHAHAHA"
     $type = "movies"
     movie_id = params[:id]
     url = "http://mymovieapi.com/?id=#{movie_id}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"
@@ -308,10 +317,14 @@ class PagesController < ApplicationController
   
   def get_watched_movies
     list = []
-    list_of_movies = WatchedMovie.find_by_user_id($current_user.id).movies.split(";")  #splits the string of watched movies into a list
+    list_of_movies = Rails.cache.fetch(:list_of_movies) do 
+      WatchedMovie.find_by_user_id($current_user.id).movies.split(";")  #splits the string of watched movies into a list
+    end
     list_of_movies.each do |movie_id|
      url = "http://mymovieapi.com/?id=#{movie_id}&type=json&plot=simple&episode=0&lang=en-US&aka=simple&release=simple&business=0&tech=0"  
-     response = Net::HTTP.get(URI.parse(url))
+     response = Rails.cache.fetch(:response_get_watched_movie) do 
+       Net::HTTP.get(URI.parse(url))
+     end
      parsed_json = ActiveSupport::JSON.decode(response)
      list.push(parsed_json)
     end
